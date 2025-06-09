@@ -1,0 +1,12 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Your rule content
+
+For running any archive when **testing**, ALWAYS use: `./deploy_and_run.sh "python3 file_to_run.py" nodo8`
+
+This will deploy the project to the cluster on the node 8, and run it there. If you use another interpreter, then you change python3 for the correspondent one. This is is only when we want to test scripts and run them, it is not meant to be included in the project code.
+- You can @ files here
+- You can use markdown but dont have to

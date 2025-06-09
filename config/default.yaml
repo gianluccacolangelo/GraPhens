@@ -1,0 +1,90 @@
+# GraPhens Default Configuration
+# This file contains the default settings for the GraPhens system
+
+# Data directories
+data:
+  ontology_dir: "data/ontology"
+  embeddings_dir: "data/embeddings"
+  visualizations_dir: "visualizations"
+
+# Ontology settings
+ontology:
+  update_on_start: false
+  format: "json"  # "json" or "obo"
+  use_github: true
+  check_interval_days: 30
+
+# Augmentation settings
+augmentation:
+  type: "local"  # "local" or "api"
+  include_ancestors: true
+  include_descendants: false
+  api_base_url: "https://ontology.jax.org/api/hp"  # Only used if type is "api"
+
+# Embedding settings
+embedding:
+  type: "memmap"  # "memmap", "lookup", "sentence_transformer", "huggingface", "tfidf", "openai"
+  fallback_type: "sentence_transformer"  # Fallback if preferred type is not available
+  
+  # Memory-mapped embeddings settings
+  memmap:
+    auto_convert: true  # Auto-convert pickle to memmap if needed
+    
+  # Pre-trained embeddings settings
+  lookup:
+    embedding_file: "hpo_embeddings_gsarti_biobert-nli_20250317_162424.pkl" # null means use latest in embeddings_dir
+  
+  # Sentence transformer settings
+  sentence_transformer:
+    model_name: "all-MiniLM-L6-v2"
+    batch_size: 32
+  
+  # Hugging Face settings
+  huggingface:
+    model_name_or_path: "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext"
+    max_length: 128
+    use_gpu: false
+    batch_size: 32
+  
+  # TF-IDF settings
+  tfidf:
+    max_features: 768
+    ngram_range: [1, 2]
+  
+  # OpenAI settings
+  openai:
+    model: "text-embedding-3-small"
+    api_key: ""  # Should be set via environment variable OPENAI_API_KEY
+
+# Graph settings
+graph:
+  adjacency:
+    include_reverse_edges: true
+  
+  assembler:
+    validate: true
+  
+  # Global context settings (null = no global context)
+  global_context:
+    type: null  # "hpo_dag" or null
+    include_root: false
+
+# Visualization settings
+visualization:
+  enabled: false
+  type: "graphviz"
+  format: "png"
+  limit_nodes: 100
+
+# Logging settings
+logging:
+  level: "INFO"  # "DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"
+  file: null  # null = console only
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# Performance settings
+performance:
+  cache_hpo_provider: true
+  cache_orchestrator: true
+  use_batch_processing: true
+  prefer_memmap_embeddings: true 

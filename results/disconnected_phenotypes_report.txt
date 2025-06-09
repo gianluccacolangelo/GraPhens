@@ -1,0 +1,2393 @@
+Total disconnected phenotypes: 1305
+
+Gene: ABCA3 (9 disconnected phenotypes)
+  - HP:0032316: Family history
+  - HP:0032316: Family history
+  - HP:0034981: Exposure to birds
+  - HP:0032974: Abnormal cellular composition of bronchoalveolar fluid
+  - HP:0032316: Family history
+  - HP:4000110: Exposure history
+  - HP:0032316: Family history
+  - HP:0032316: Family history
+  - HP:0032316: Family history
+
+Gene: ABCB4 (2 disconnected phenotypes)
+  - HP:0031685: Abnormal stool composition
+  - HP:0031685: Abnormal stool composition
+
+Gene: ABCG5 (2 disconnected phenotypes)
+  - HP:0031480: Abnormal mitral valve leaflet morphology
+  - HP:0031443: Abnormal tricuspid valve leaflet morphology
+
+Gene: ACD (1 disconnected phenotypes)
+  - HP:0032316: Family history
+
+Gene: ACOX1 (3 disconnected phenotypes)
+  - HP:0011145: Symptomatic seizures
+  - HP:0030933: 1-minute APGAR score of 6
+  - HP:0030926: 5-minute APGAR score of 6
+
+Gene: ACTA1 (2 disconnected phenotypes)
+  - HP:0009128: Aplasia/Hypoplasia involving the musculature of the extremities
+  - HP:0002118: Abnormal cerebral ventricle morphology
+
+Gene: ACTB (3 disconnected phenotypes)
+  - HP:0012832: Bilateral
+  - HP:0002744: obsolete Bilateral cleft lip and palate
+  - HP:0012483: Abnormal alpha granules
+
+Gene: ACTG1 (2 disconnected phenotypes)
+  - HP:0012781: Mid-frequency hearing loss
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: ACTL6A (1 disconnected phenotypes)
+  - HP:0100202: Absent epiphysis of the distal phalanx of the 5th toe
+
+Gene: ACVR1 (1 disconnected phenotypes)
+  - HP:0004575: Fusion of midcervical facet joints
+
+Gene: ADAM9 (3 disconnected phenotypes)
+  - HP:0007769: Peripheral retinal degeneration
+  - HP:0007769: Peripheral retinal degeneration
+  - HP:0007769: Peripheral retinal degeneration
+
+Gene: ADAR (1 disconnected phenotypes)
+  - HP:0031666: Late systolic murmur
+
+Gene: ADCY1 (1 disconnected phenotypes)
+  - HP:0012713: Moderate hearing impairment
+
+Gene: ADGRV1 (5 disconnected phenotypes)
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: AFG3L2 (2 disconnected phenotypes)
+  - HP:0033249: Focal substantia nigra T2 hyperintensity
+  - HP:0034692: Elongated mitochondria
+
+Gene: AGO2 (2 disconnected phenotypes)
+  - HP:0030651: Multifocal
+  - HP:0005556: Abnormality of the metopic suture
+
+Gene: AIFM1 (1 disconnected phenotypes)
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+
+Gene: AK2 (1 disconnected phenotypes)
+  - HP:0012848: Small intestinal stenosis
+
+Gene: ALDH18A1 (1 disconnected phenotypes)
+  - HP:0030750: Grade III preterm intraventricular hemorrhage
+
+Gene: ALG1 (1 disconnected phenotypes)
+  - HP:0008360: Neonatal hypoproteinemia
+
+Gene: ALG11 (1 disconnected phenotypes)
+  - HP:0007616: Nevus flammeus nuchae
+
+Gene: ALG6 (1 disconnected phenotypes)
+  - HP:0012581: Simple renal cyst
+
+Gene: ALG9 (1 disconnected phenotypes)
+  - HP:0012581: Simple renal cyst
+
+Gene: ALPK3 (1 disconnected phenotypes)
+  - HP:0040265: Upper limb muscle hypertrophy
+
+Gene: ALPL (1 disconnected phenotypes)
+  - HP:0100717: Abnormal cementum morphology
+
+Gene: AMACR (1 disconnected phenotypes)
+  - HP:0006976: Necrotizing encephalopathy
+
+Gene: AMER1 (1 disconnected phenotypes)
+  - HP:0011426: Fetal choroid plexus cysts
+
+Gene: ANGPTL3 (1 disconnected phenotypes)
+  - HP:0032318: Family history of heart disease
+
+Gene: AP3B1 (1 disconnected phenotypes)
+  - HP:0005549: obsolete Congenital neutropenia
+
+Gene: AP5Z1 (1 disconnected phenotypes)
+  - HP:0007868: obsolete Age-related macular degeneration
+
+Gene: ARF1 (1 disconnected phenotypes)
+  - HP:0033745: Dysplasia of the superior cerebellar vermis
+
+Gene: ARHGEF18 (1 disconnected phenotypes)
+  - HP:0031527: Retinal edema
+
+Gene: ARMC9 (2 disconnected phenotypes)
+  - HP:0034058: Abnormal fetal morphology
+  - HP:0006369: Irregular patellae
+
+Gene: ARX (1 disconnected phenotypes)
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+
+Gene: ASH1L (1 disconnected phenotypes)
+  - HP:0030263: Torsion of the penis
+
+Gene: ASXL1 (2 disconnected phenotypes)
+  - HP:0011363: Abnormality of hair growth rate
+  - HP:0011363: Abnormality of hair growth rate
+
+Gene: ATP7A (1 disconnected phenotypes)
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+
+Gene: BCKDHB (1 disconnected phenotypes)
+  - HP:0012088: Abnormal urinary odor
+
+Gene: BEST1 (1 disconnected phenotypes)
+  - HP:0030606: Abnormal OCT-measured macular thickness
+
+Gene: BIN1 (1 disconnected phenotypes)
+  - HP:0040265: Upper limb muscle hypertrophy
+
+Gene: BLOC1S5 (1 disconnected phenotypes)
+  - HP:0030398: Abnormal platelet ATP dense granule secretion
+
+Gene: BLOC1S6 (1 disconnected phenotypes)
+  - HP:0008060: Aplasia/Hypoplasia of the fovea
+
+Gene: BPNT2 (3 disconnected phenotypes)
+  - HP:0100500: Fibular deviation of toes
+  - HP:0100500: Fibular deviation of toes
+  - HP:0011428: Short fetal femur length
+
+Gene: BRWD1 (2 disconnected phenotypes)
+  - HP:0020106: Severe giardiasis
+  - HP:0020099: Severe norovirus infection
+
+Gene: BTD (1 disconnected phenotypes)
+  - HP:0030462: Abnormal amplitude of flash visual evoked potentials
+
+Gene: C2CD3 (2 disconnected phenotypes)
+  - HP:0410034: Bilateral alveolar cleft of maxilla
+  - HP:0005676: Rudimentary postaxial polydactyly of hands
+
+Gene: CA2 (3 disconnected phenotypes)
+  - HP:0011514: Abnormality of binocular vision
+  - HP:0041222: Fractured fibula
+  - HP:0041143: Fractured tibia
+
+Gene: CABP2 (1 disconnected phenotypes)
+  - HP:0012781: Mid-frequency hearing loss
+
+Gene: CACNA1B (2 disconnected phenotypes)
+  - HP:0032795: Generalized myoclonic-tonic-clonic seizure
+  - HP:0032795: Generalized myoclonic-tonic-clonic seizure
+
+Gene: CACNA1C (1 disconnected phenotypes)
+  - HP:0010710: 3-5 finger syndactyly
+
+Gene: CAMTA1 (1 disconnected phenotypes)
+  - HP:0032795: Generalized myoclonic-tonic-clonic seizure
+
+Gene: CAPN5 (2 disconnected phenotypes)
+  - HP:0500081: Pseudophakia
+  - HP:0011497: Rubeosis iridis
+
+Gene: CARD11 (10 disconnected phenotypes)
+  - HP:0030371: Increased proportion of naive B cells
+  - HP:0030371: Increased proportion of naive B cells
+  - HP:0410376: Increased proportion of naive CD8 T cells
+  - HP:0030372: Decreased proportion of naive B cells
+  - HP:0031695: Severe parainfluenza infection
+  - HP:0410376: Increased proportion of naive CD8 T cells
+  - HP:0030371: Increased proportion of naive B cells
+  - HP:0030371: Increased proportion of naive B cells
+  - HP:0410376: Increased proportion of naive CD8 T cells
+  - HP:0410376: Increased proportion of naive CD8 T cells
+
+Gene: CARMIL2 (6 disconnected phenotypes)
+  - HP:0410376: Increased proportion of naive CD8 T cells
+  - HP:0030683: Vaginitis
+  - HP:0100281: Chronic colitis
+  - HP:0034549: Adrenal leiomyoma
+  - HP:0410376: Increased proportion of naive CD8 T cells
+  - HP:0410376: Increased proportion of naive CD8 T cells
+
+Gene: CARS2 (1 disconnected phenotypes)
+  - HP:0032795: Generalized myoclonic-tonic-clonic seizure
+
+Gene: CASR (1 disconnected phenotypes)
+  - HP:0011741: Secondary hyperaldosteronism
+
+Gene: CBL (1 disconnected phenotypes)
+  - HP:0040292: Left hemiplegia
+
+Gene: CCDC22 (1 disconnected phenotypes)
+  - HP:0041218: Fractured distal phalanx
+
+Gene: CCDC39 (2 disconnected phenotypes)
+  - HP:0031592: Situs inversus with levocardia
+  - HP:0031592: Situs inversus with levocardia
+
+Gene: CCNO (1 disconnected phenotypes)
+  - HP:0031416: Abnormal nasal mucus secretion
+
+Gene: CD19 (3 disconnected phenotypes)
+  - HP:0020106: Severe giardiasis
+  - HP:0032136: Decreased circulating IgG1 concentration
+  - HP:0032136: Decreased circulating IgG1 concentration
+
+Gene: CD247 (1 disconnected phenotypes)
+  - HP:0031398: Increased proportion of naive T cells
+
+Gene: CD3D (2 disconnected phenotypes)
+  - HP:0031379: Abnormal T cell proliferation
+  - HP:0031379: Abnormal T cell proliferation
+
+Gene: CD3G (2 disconnected phenotypes)
+  - HP:0012388: Acute bronchitis
+  - HP:0005379: obsolete Severe T lymphocytopenia
+
+Gene: CD40LG (1 disconnected phenotypes)
+  - HP:0031384: Reduced T cell CD40 expression
+
+Gene: CD81 (1 disconnected phenotypes)
+  - HP:0033277: Glomerular fibrinoid necrosis
+
+Gene: CD8A (2 disconnected phenotypes)
+  - HP:0031399: Abnormal proportion of double-negative alpha-beta regulatory T cell
+  - HP:0031399: Abnormal proportion of double-negative alpha-beta regulatory T cell
+
+Gene: CDC42 (3 disconnected phenotypes)
+  - HP:0033835: Abnormal renal vascular morphology
+  - HP:0000535: obsolete Sparse and thin eyebrow
+  - HP:0000535: obsolete Sparse and thin eyebrow
+
+Gene: CDC45 (2 disconnected phenotypes)
+  - HP:0011218: Abnormal shape of the frontal region
+  - HP:0005676: Rudimentary postaxial polydactyly of hands
+
+Gene: CDH11 (2 disconnected phenotypes)
+  - HP:0041218: Fractured distal phalanx
+  - HP:0030125: Sacralization of the fifth lumbar vertebra
+
+Gene: CDKN1B (5 disconnected phenotypes)
+  - HP:0011763: Pituitary carcinoma
+  - HP:0011763: Pituitary carcinoma
+  - HP:0011763: Pituitary carcinoma
+  - HP:0011763: Pituitary carcinoma
+  - HP:0030077: Bronchial neoplasm
+
+Gene: CDKN2A (1 disconnected phenotypes)
+  - HP:0030159: Cervical polyp
+
+Gene: CEACAM16 (2 disconnected phenotypes)
+  - HP:0012832: Bilateral
+  - HP:0012832: Bilateral
+
+Gene: CEL (1 disconnected phenotypes)
+  - HP:0031075: Abnormal response to insulin tolerance test
+
+Gene: CEMIP (2 disconnected phenotypes)
+  - HP:0012713: Moderate hearing impairment
+  - HP:0012713: Moderate hearing impairment
+
+Gene: CHD3 (1 disconnected phenotypes)
+  - HP:0000535: obsolete Sparse and thin eyebrow
+
+Gene: CHD7 (1 disconnected phenotypes)
+  - HP:0011644: Coronary sinus diverticulum
+
+Gene: CHN1 (13 disconnected phenotypes)
+  - HP:0000497: Globe retraction and deviation on abduction
+  - HP:0000497: Globe retraction and deviation on abduction
+  - HP:0000497: Globe retraction and deviation on abduction
+  - HP:0000497: Globe retraction and deviation on abduction
+  - HP:0000497: Globe retraction and deviation on abduction
+  - HP:0000497: Globe retraction and deviation on abduction
+  - HP:0000497: Globe retraction and deviation on abduction
+  - HP:0000497: Globe retraction and deviation on abduction
+  - HP:0000497: Globe retraction and deviation on abduction
+  - HP:0000497: Globe retraction and deviation on abduction
+  - HP:0000497: Globe retraction and deviation on abduction
+  - HP:0000497: Globe retraction and deviation on abduction
+  - HP:0000497: Globe retraction and deviation on abduction
+
+Gene: CIITA (1 disconnected phenotypes)
+  - HP:0032260: Opportunistic bacterial infection
+
+Gene: CLN3 (1 disconnected phenotypes)
+  - HP:0031375: Refractory
+
+Gene: CLN6 (1 disconnected phenotypes)
+  - HP:0032795: Generalized myoclonic-tonic-clonic seizure
+
+Gene: CNOT3 (1 disconnected phenotypes)
+  - HP:5200125: Aggression towards others
+
+Gene: COL1A1 (3 disconnected phenotypes)
+  - HP:0032191: Torn meniscus
+  - HP:0041143: Fractured tibia
+  - HP:0031512: Abnormal cutaneous collagen fibril morphology
+
+Gene: COL1A2 (1 disconnected phenotypes)
+  - HP:0041082: Fractured skull
+
+Gene: COL2A1 (7 disconnected phenotypes)
+  - HP:0008820: Absent ossification of capital femoral epiphysis
+  - HP:0005752: Flattened moderately deformed vertebrae
+  - HP:0008820: Absent ossification of capital femoral epiphysis
+  - HP:0008820: Absent ossification of capital femoral epiphysis
+  - HP:0100367: Short phalanx of the 4th toe
+  - HP:0025537: Plantar edema
+  - HP:0008490: Sacral segmentation defect
+
+Gene: COL3A1 (1 disconnected phenotypes)
+  - HP:0002636: Dilatation of an abdominal artery
+
+Gene: COPG1 (1 disconnected phenotypes)
+  - HP:0031694: Severe adenovirus infection
+
+Gene: COQ2 (1 disconnected phenotypes)
+  - HP:0030650: Focal
+
+Gene: COQ9 (2 disconnected phenotypes)
+  - HP:0033130: Abnormal renal echogenicity
+  - HP:0011426: Fetal choroid plexus cysts
+
+Gene: COX15 (1 disconnected phenotypes)
+  - HP:0030085: Abnormal CSF lactate concentration
+
+Gene: CPAMD8 (1 disconnected phenotypes)
+  - HP:0011486: Abnormal corneal thickness
+
+Gene: CPOX (1 disconnected phenotypes)
+  - HP:0033400: Acute abdomen
+
+Gene: CPT2 (2 disconnected phenotypes)
+  - HP:0025212: Triggered by fasting
+  - HP:0025215: Triggered by febrile illness
+
+Gene: CR2 (1 disconnected phenotypes)
+  - HP:0030371: Increased proportion of naive B cells
+
+Gene: CSF2RB (7 disconnected phenotypes)
+  - HP:6000245: Elevated circulating granulocyte-macrophage colony-stimulating factor concentration
+  - HP:0430133: Tobacco use history
+  - HP:6000245: Elevated circulating granulocyte-macrophage colony-stimulating factor concentration
+  - HP:4000214: Diminished breath sounds
+  - HP:0032969: Traction bronchiectasis
+  - HP:0011718: Abnormality of the pulmonary veins
+  - HP:0035010: Occupational exposure history
+
+Gene: CSNK2B (1 disconnected phenotypes)
+  - HP:0032668: Myoclonic status epilepticus without coma
+
+Gene: CSPP1 (1 disconnected phenotypes)
+  - HP:0012575: Abnormal nephron morphology
+
+Gene: CTLA4 (2 disconnected phenotypes)
+  - HP:0033185: Triggered by EBV infection
+  - HP:0033185: Triggered by EBV infection
+
+Gene: CTNND1 (1 disconnected phenotypes)
+  - HP:0034057: Fetal anomaly
+
+Gene: CTPS1 (1 disconnected phenotypes)
+  - HP:0033697: Vesicular eruption
+
+Gene: CTSK (3 disconnected phenotypes)
+  - HP:0100039: Thickened cortex of bones
+  - HP:0041143: Fractured tibia
+  - HP:0041143: Fractured tibia
+
+Gene: CXCR4 (1 disconnected phenotypes)
+  - HP:0025625: Elevated proportion of CD4+ effector memory T cells
+
+Gene: CYLD (11 disconnected phenotypes)
+  - HP:0031024: Cylindroma
+  - HP:0025367: Trichoepithelioma
+  - HP:0031024: Cylindroma
+  - HP:0031024: Cylindroma
+  - HP:0031024: Cylindroma
+  - HP:0031024: Cylindroma
+  - HP:0031024: Cylindroma
+  - HP:0031024: Cylindroma
+  - HP:0031024: Cylindroma
+  - HP:0025367: Trichoepithelioma
+  - HP:0025367: Trichoepithelioma
+
+Gene: CYP27A1 (5 disconnected phenotypes)
+  - HP:6000527: Elevated circulating cholestanol concentration
+  - HP:6000527: Elevated circulating cholestanol concentration
+  - HP:6000527: Elevated circulating cholestanol concentration
+  - HP:6000527: Elevated circulating cholestanol concentration
+  - HP:6000527: Elevated circulating cholestanol concentration
+
+Gene: DIAPH1 (6 disconnected phenotypes)
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0012713: Moderate hearing impairment
+  - HP:0025725: Type 1 congenital pulmonary airway malformation
+  - HP:0020103: Invasive pulmonary aspergillosis
+  - HP:0410393: Increased proportion of central memory CD4-positive, alpha-beta T cells
+  - HP:0410396: Increased proportion of central memory CD8-positive, alpha-beta T cells
+
+Gene: DISP1 (1 disconnected phenotypes)
+  - HP:0002744: obsolete Bilateral cleft lip and palate
+
+Gene: DKC1 (1 disconnected phenotypes)
+  - HP:0025240: Preretinal hemorrhage
+
+Gene: DLD (1 disconnected phenotypes)
+  - HP:0033469: 10-minute APGAR score of 1
+
+Gene: DNAAF6 (2 disconnected phenotypes)
+  - HP:0025695: Mucus plug
+  - HP:0025695: Mucus plug
+
+Gene: DNAH11 (2 disconnected phenotypes)
+  - HP:0032384: Uniparental isodisomy
+  - HP:0410042: Abnormal liver morphology
+
+Gene: DNAJC19 (3 disconnected phenotypes)
+  - HP:0500044: Upper eyelid retraction
+  - HP:0031195: Apical hypertrabeculation of the left ventricle
+  - HP:0004857: Hyperchromic macrocytic anemia
+
+Gene: DNAJC7 (1 disconnected phenotypes)
+  - HP:0012894: Paraspinal muscle hypertrophy
+
+Gene: DNASE1 (3 disconnected phenotypes)
+  - HP:0034239: Renal vein thrombosis
+  - HP:0033555: Anti-Ro/SS-A antibody positivity
+  - HP:0033555: Anti-Ro/SS-A antibody positivity
+
+Gene: DNM1L (1 disconnected phenotypes)
+  - HP:0011037: Decreased urine output
+
+Gene: DNM2 (2 disconnected phenotypes)
+  - HP:0030174: Increased peripheral myelin thickness
+  - HP:0005185: Global systolic dysfunction
+
+Gene: DNMT3B (19 disconnected phenotypes)
+  - HP:0031411: Abnormal chromosome morphology
+  - HP:0031411: Abnormal chromosome morphology
+  - HP:0031411: Abnormal chromosome morphology
+  - HP:0031411: Abnormal chromosome morphology
+  - HP:0031411: Abnormal chromosome morphology
+  - HP:0031411: Abnormal chromosome morphology
+  - HP:0031411: Abnormal chromosome morphology
+  - HP:0031411: Abnormal chromosome morphology
+  - HP:0031411: Abnormal chromosome morphology
+  - HP:0031411: Abnormal chromosome morphology
+  - HP:0031411: Abnormal chromosome morphology
+  - HP:0031411: Abnormal chromosome morphology
+  - HP:0031411: Abnormal chromosome morphology
+  - HP:0031411: Abnormal chromosome morphology
+  - HP:0031411: Abnormal chromosome morphology
+  - HP:0031411: Abnormal chromosome morphology
+  - HP:0031411: Abnormal chromosome morphology
+  - HP:0031411: Abnormal chromosome morphology
+  - HP:0031411: Abnormal chromosome morphology
+
+Gene: DOCK8 (11 disconnected phenotypes)
+  - HP:0410338: Plant product allergy
+  - HP:0020106: Severe giardiasis
+  - HP:0500094: Latex allergy
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+  - HP:0410324: Dust mite allergy
+  - HP:0012395: Seasonal allergy
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+  - HP:0033000: Subglottic laryngitis
+  - HP:0410338: Plant product allergy
+  - HP:0011113: Abnormality of cytokine secretion
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+
+Gene: DPM1 (1 disconnected phenotypes)
+  - HP:0005556: Abnormality of the metopic suture
+
+Gene: DSC2 (1 disconnected phenotypes)
+  - HP:0030957: Ventricular septal aneurysm
+
+Gene: DSG2 (1 disconnected phenotypes)
+  - HP:0012667: Regional left ventricular wall motion abnormality
+
+Gene: ECHS1 (2 disconnected phenotypes)
+  - HP:0032668: Myoclonic status epilepticus without coma
+  - HP:0500184: Abnormal CSF amino acid concentration
+
+Gene: EDN3 (1 disconnected phenotypes)
+  - HP:0012714: Severe hearing impairment
+
+Gene: EED (2 disconnected phenotypes)
+  - HP:0003888: Flattened humeral heads
+  - HP:0045008: Abnormal shape of the radius
+
+Gene: EFEMP2 (2 disconnected phenotypes)
+  - HP:0004952: Pulmonary arteriovenous fistulas
+  - HP:0031668: Diastolic heart murmur
+
+Gene: EFNB1 (3 disconnected phenotypes)
+  - HP:0004132: Dimple on nasal tip
+  - HP:0005556: Abnormality of the metopic suture
+  - HP:0004132: Dimple on nasal tip
+
+Gene: EGFR (1 disconnected phenotypes)
+  - HP:0030359: Squamous cell lung carcinoma
+
+Gene: ELAC2 (2 disconnected phenotypes)
+  - HP:0006688: Paroxysmal tachycardia
+  - HP:0034791: Increased muscle succinate dehydrogenase staining
+
+Gene: ELANE (1 disconnected phenotypes)
+  - HP:0005549: obsolete Congenital neutropenia
+
+Gene: ELN (1 disconnected phenotypes)
+  - HP:0033588: Labial adhesion
+
+Gene: EPS8L2 (1 disconnected phenotypes)
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: ESRRB (5 disconnected phenotypes)
+  - HP:0012714: Severe hearing impairment
+  - HP:0012714: Severe hearing impairment
+  - HP:0012714: Severe hearing impairment
+  - HP:0012714: Severe hearing impairment
+  - HP:0012714: Severe hearing impairment
+
+Gene: ETHE1 (1 disconnected phenotypes)
+  - HP:0030085: Abnormal CSF lactate concentration
+
+Gene: ETV6 (1 disconnected phenotypes)
+  - HP:0000357: Abnormal location of ears
+
+Gene: EYA4 (1 disconnected phenotypes)
+  - HP:0012781: Mid-frequency hearing loss
+
+Gene: FAAP24 (2 disconnected phenotypes)
+  - HP:0033185: Triggered by EBV infection
+  - HP:0034685: Abnormal liver enzyme activity or concentration
+
+Gene: FAM111B (2 disconnected phenotypes)
+  - HP:0025273: Achilles tendonitis
+  - HP:0006494: Aplasia/Hypoplasia involving bones of the feet
+
+Gene: FANCB (1 disconnected phenotypes)
+  - HP:0011751: Abnormal posterior pituitary morphogenesis
+
+Gene: FANCD2 (4 disconnected phenotypes)
+  - HP:0020047: Abnormal myeloid cell morphology
+  - HP:0032189: Cellular hypersensitivity to diepoxybutane
+  - HP:0032188: Cellular hypersensitivity to mitomycin C
+  - HP:0032188: Cellular hypersensitivity to mitomycin C
+
+Gene: FANCE (5 disconnected phenotypes)
+  - HP:0032188: Cellular hypersensitivity to mitomycin C
+  - HP:0032188: Cellular hypersensitivity to mitomycin C
+  - HP:0032188: Cellular hypersensitivity to mitomycin C
+  - HP:0032188: Cellular hypersensitivity to mitomycin C
+  - HP:0032188: Cellular hypersensitivity to mitomycin C
+
+Gene: FANCF (6 disconnected phenotypes)
+  - HP:0032189: Cellular hypersensitivity to diepoxybutane
+  - HP:0032189: Cellular hypersensitivity to diepoxybutane
+  - HP:0032189: Cellular hypersensitivity to diepoxybutane
+  - HP:0032188: Cellular hypersensitivity to mitomycin C
+  - HP:0032189: Cellular hypersensitivity to diepoxybutane
+  - HP:0032189: Cellular hypersensitivity to diepoxybutane
+
+Gene: FAR1 (2 disconnected phenotypes)
+  - HP:0000236: Abnormal anterior fontanelle morphology
+  - HP:0011413: Shoulder dystocia
+
+Gene: FARS2 (1 disconnected phenotypes)
+  - HP:0007747: Monocular horizontal nystagmus
+
+Gene: FASTKD2 (1 disconnected phenotypes)
+  - HP:0040292: Left hemiplegia
+
+Gene: FBXL4 (2 disconnected phenotypes)
+  - HP:0008336: Complex organic aciduria
+  - HP:0008336: Complex organic aciduria
+
+Gene: FCHO1 (2 disconnected phenotypes)
+  - HP:0032518: Disseminated dermatophytosis
+  - HP:0100313: Cerebral granulomatosis
+
+Gene: FERMT3 (2 disconnected phenotypes)
+  - HP:0031130: Impaired calcium ionophore-induced platelet aggregation
+  - HP:0031129: Impaired phorbol myristate acetate-induced platelet aggregation
+
+Gene: FGB (1 disconnected phenotypes)
+  - HP:0011901: Dysfibrinogenemia
+
+Gene: FGFR1 (3 disconnected phenotypes)
+  - HP:0002744: obsolete Bilateral cleft lip and palate
+  - HP:0025382: Hypodipsia
+  - HP:0011346: Mild expressive language delay
+
+Gene: FGFR2 (2 disconnected phenotypes)
+  - HP:0009288: Curved proximal phalanx of the 4th finger
+  - HP:0008519: Abnormal coccyx morphology
+
+Gene: FGFR3 (4 disconnected phenotypes)
+  - HP:0034772: Decreased skull base length
+  - HP:0010878: Fetal cystic hygroma
+  - HP:0009447: Aplasia/Hypoplasia of the phalanges of the 3rd finger
+  - HP:0006413: Broad tibial metaphyses
+
+Gene: FLT4 (1 disconnected phenotypes)
+  - HP:0005143: Anomalous origin of right pulmonary artery from ascending aorta
+
+Gene: FN1 (4 disconnected phenotypes)
+  - HP:6000415: Intradural spinal lipoma
+  - HP:0025666: Very preterm birth
+  - HP:0025666: Very preterm birth
+  - HP:0033495: Segmental glomerulosclerosis
+
+Gene: FOXG1 (1 disconnected phenotypes)
+  - HP:5200019: Stereotypic whole-body movements
+
+Gene: FOXN1 (1 disconnected phenotypes)
+  - HP:0033185: Triggered by EBV infection
+
+Gene: FOXP1 (1 disconnected phenotypes)
+  - HP:0012482: Frontal venous angioma
+
+Gene: FRAS1 (1 disconnected phenotypes)
+  - HP:0009930: Asymmetry of the nares
+
+Gene: GABBR2 (1 disconnected phenotypes)
+  - HP:5200019: Stereotypic whole-body movements
+
+Gene: GABRG2 (1 disconnected phenotypes)
+  - HP:0033718: EEG with central epileptiform discharges
+
+Gene: GALE (1 disconnected phenotypes)
+  - HP:0030403: Spontaneous platelet aggregation
+
+Gene: GALM (2 disconnected phenotypes)
+  - HP:0012022: Congenital portosystemic venous shunt
+  - HP:0012022: Congenital portosystemic venous shunt
+
+Gene: GATA3 (2 disconnected phenotypes)
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: GATA6 (1 disconnected phenotypes)
+  - HP:0011543: Superior-inferior ventricles without criss-cross atrioventricular valves
+
+Gene: GATAD2B (3 disconnected phenotypes)
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+  - HP:0010182: Abnormality of the distal phalanges of the toes
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+
+Gene: GCSH (1 disconnected phenotypes)
+  - HP:0025219: Triggered by vaccination
+
+Gene: GFM1 (2 disconnected phenotypes)
+  - HP:6001084: T2-hyperintense putaminal rim
+  - HP:0012832: Bilateral
+
+Gene: GGCX (2 disconnected phenotypes)
+  - HP:0009898: Underdeveloped crus of the helix
+  - HP:0009898: Underdeveloped crus of the helix
+
+Gene: GJB1 (1 disconnected phenotypes)
+  - HP:0032145: Sural nerve atrophy
+
+Gene: GJB3 (1 disconnected phenotypes)
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: GJB6 (1 disconnected phenotypes)
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: GLUD1 (1 disconnected phenotypes)
+  - HP:0010892: Abnormal circulating branched chain amino acid concentration
+
+Gene: GP1BA (41 disconnected phenotypes)
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0030403: Spontaneous platelet aggregation
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030403: Spontaneous platelet aggregation
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030136: Enhanced ristocetin cofactor assay activity
+  - HP:0030132: Absence of large von Willebrand factor multimers
+
+Gene: GPT2 (1 disconnected phenotypes)
+  - HP:0500154: Hypoalaninemia
+
+Gene: GYG1 (7 disconnected phenotypes)
+  - HP:0034519: Muscle fiber fuchsinophilic inclusion bodies
+  - HP:0034519: Muscle fiber fuchsinophilic inclusion bodies
+  - HP:0034519: Muscle fiber fuchsinophilic inclusion bodies
+  - HP:0034519: Muscle fiber fuchsinophilic inclusion bodies
+  - HP:0034519: Muscle fiber fuchsinophilic inclusion bodies
+  - HP:0410167: Abnormal morphology of the chest musculature
+  - HP:0001457: Abnormality of the musculature of the upper arm
+
+Gene: GYS2 (1 disconnected phenotypes)
+  - HP:0030924: 5-minute APGAR score of 4
+
+Gene: H3-3A (3 disconnected phenotypes)
+  - HP:0011676: Tetralogy of Fallot with absent subarterial conus
+  - HP:0030650: Focal
+  - HP:0000535: obsolete Sparse and thin eyebrow
+
+Gene: HBA2 (4 disconnected phenotypes)
+  - HP:0005507: Hemoglobin Barts
+  - HP:0005507: Hemoglobin Barts
+  - HP:0034609: Polychromasia
+  - HP:0025215: Triggered by febrile illness
+
+Gene: HBB (7 disconnected phenotypes)
+  - HP:0034609: Polychromasia
+  - HP:0025322: Venous occlusion
+  - HP:0034609: Polychromasia
+  - HP:0034609: Polychromasia
+  - HP:6000228: Failure to increase oxygen saturation on hyperoxia test
+  - HP:0034609: Polychromasia
+  - HP:0034609: Polychromasia
+
+Gene: HCFC1 (1 disconnected phenotypes)
+  - HP:0012714: Severe hearing impairment
+
+Gene: HDAC8 (1 disconnected phenotypes)
+  - HP:0030959: Muscular ventricular septal aneurysm
+
+Gene: HEY2 (1 disconnected phenotypes)
+  - HP:0025666: Very preterm birth
+
+Gene: HIBCH (1 disconnected phenotypes)
+  - HP:0045011: Decreased urine bicarbonate concentration
+
+Gene: HIKESHI (2 disconnected phenotypes)
+  - HP:0025215: Triggered by febrile illness
+  - HP:0025215: Triggered by febrile illness
+
+Gene: HMBS (1 disconnected phenotypes)
+  - HP:0100017: Capsular cataract
+
+Gene: HMOX1 (2 disconnected phenotypes)
+  - HP:0033480: Hypobilirubinemia
+  - HP:0033480: Hypobilirubinemia
+
+Gene: HMX1 (1 disconnected phenotypes)
+  - HP:0009940: Asymmetry of the mandible
+
+Gene: HNF4A (1 disconnected phenotypes)
+  - HP:0011413: Shoulder dystocia
+
+Gene: HNRNPK (2 disconnected phenotypes)
+  - HP:0004132: Dimple on nasal tip
+  - HP:0000535: obsolete Sparse and thin eyebrow
+
+Gene: HOGA1 (1 disconnected phenotypes)
+  - HP:0010474: Bladder stones
+
+Gene: HPS5 (2 disconnected phenotypes)
+  - HP:0500088: Foveal depigmentation
+  - HP:0030397: Abnormal platelet dense granule secretion
+
+Gene: HPS6 (1 disconnected phenotypes)
+  - HP:0030398: Abnormal platelet ATP dense granule secretion
+
+Gene: HSD17B10 (1 disconnected phenotypes)
+  - HP:0011179: Beta-EEG
+
+Gene: HSD17B4 (2 disconnected phenotypes)
+  - HP:0005556: Abnormality of the metopic suture
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: HTRA2 (1 disconnected phenotypes)
+  - HP:0034033: Peripheral cyanosis
+
+Gene: HTT (4 disconnected phenotypes)
+  - HP:0031063: Impaired feeding ability
+  - HP:0010847: EEG with spike-wave complexes (<2.5 Hz)
+  - HP:0033152: Abnormal pharynx physiology
+  - HP:0010847: EEG with spike-wave complexes (<2.5 Hz)
+
+Gene: HUWE1 (1 disconnected phenotypes)
+  - HP:0005549: obsolete Congenital neutropenia
+
+Gene: IARS2 (2 disconnected phenotypes)
+  - HP:0030738: Altman type II sacrococcygeal teratoma
+  - HP:0500184: Abnormal CSF amino acid concentration
+
+Gene: ICOS (4 disconnected phenotypes)
+  - HP:0030683: Vaginitis
+  - HP:0100281: Chronic colitis
+  - HP:0031949: Recurrent bacterial upper respiratory tract infections
+  - HP:0031949: Recurrent bacterial upper respiratory tract infections
+
+Gene: ICOSLG (1 disconnected phenotypes)
+  - HP:0032076: Abnormal male urethral meatus morphology
+
+Gene: IFT140 (5 disconnected phenotypes)
+  - HP:0030526: Severe constriction of peripheral visual field
+  - HP:0011798: Renal oncocytoma
+  - HP:0004713: Reversible renal failure
+  - HP:0011798: Renal oncocytoma
+  - HP:0004713: Reversible renal failure
+
+Gene: IGF2 (2 disconnected phenotypes)
+  - HP:0100600: Penoscrotal transposition
+  - HP:0012714: Severe hearing impairment
+
+Gene: IKBKB (6 disconnected phenotypes)
+  - HP:0010451: Aplasia/Hypoplasia of the spleen
+  - HP:0031398: Increased proportion of naive T cells
+  - HP:0031695: Severe parainfluenza infection
+  - HP:0031398: Increased proportion of naive T cells
+  - HP:0031695: Severe parainfluenza infection
+  - HP:0025064: Thalamic hemorrhage
+
+Gene: IKBKG (2 disconnected phenotypes)
+  - HP:0032557: History of bone marrow transplant
+  - HP:0012648: Decreased inflammatory response
+
+Gene: IKZF1 (8 disconnected phenotypes)
+  - HP:0032162: Unusual skin infection
+  - HP:0020064: Abnormal eosinophil count
+  - HP:0020064: Abnormal eosinophil count
+  - HP:0020064: Abnormal eosinophil count
+  - HP:0020064: Abnormal eosinophil count
+  - HP:0020064: Abnormal eosinophil count
+  - HP:0020064: Abnormal eosinophil count
+  - HP:0020064: Abnormal eosinophil count
+
+Gene: IKZF2 (1 disconnected phenotypes)
+  - HP:0020108: Unusual parasitic infection
+
+Gene: IL2RB (2 disconnected phenotypes)
+  - HP:0031694: Severe adenovirus infection
+  - HP:0020099: Severe norovirus infection
+
+Gene: IL6R (4 disconnected phenotypes)
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+  - HP:0410257: Neutrophilia in presence of infection
+  - HP:0410257: Neutrophilia in presence of infection
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+
+Gene: IMPG2 (2 disconnected phenotypes)
+  - HP:0030564: Best corrected visual acuity 1.1 LogMAR
+  - HP:0030557: Best corrected visual acuity 0.4 LogMAR
+
+Gene: IQSEC2 (1 disconnected phenotypes)
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+
+Gene: IRF2BPL (1 disconnected phenotypes)
+  - HP:0011218: Abnormal shape of the frontal region
+
+Gene: IRF4 (1 disconnected phenotypes)
+  - HP:0025618: Reduced plasma cell count
+
+Gene: ISCA2 (1 disconnected phenotypes)
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+
+Gene: ITGA2B (1 disconnected phenotypes)
+  - HP:0011881: Decreased platelet glycoprotein VI
+
+Gene: ITGB3 (1 disconnected phenotypes)
+  - HP:0030747: Preterm intraventricular hemorrhage
+
+Gene: KAT6B (1 disconnected phenotypes)
+  - HP:0000535: obsolete Sparse and thin eyebrow
+
+Gene: KATNIP (1 disconnected phenotypes)
+  - HP:0007362: Aplasia/Hypoplasia of the brainstem
+
+Gene: KCNC2 (1 disconnected phenotypes)
+  - HP:0012481: Cerebral venous angioma
+
+Gene: KCNH5 (3 disconnected phenotypes)
+  - HP:0032715: Focal bilateral motor seizure
+  - HP:0032715: Focal bilateral motor seizure
+  - HP:0032715: Focal bilateral motor seizure
+
+Gene: KCNQ4 (1 disconnected phenotypes)
+  - HP:0012832: Bilateral
+
+Gene: KDM5A (1 disconnected phenotypes)
+  - HP:0011544: L-looping of the right ventricle
+
+Gene: KIF20A (1 disconnected phenotypes)
+  - HP:0031444: Dilatation of the tricuspid annulus
+
+Gene: KLHL24 (2 disconnected phenotypes)
+  - HP:0032316: Family history
+  - HP:0034835: Cardiac polyglucosan accumulation
+
+Gene: KMT2A (2 disconnected phenotypes)
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+
+Gene: KYNU (5 disconnected phenotypes)
+  - HP:0010745: Aplasia of the phalanges of the toes
+  - HP:0004207: Abnormal 5th finger morphology
+  - HP:0010710: 3-5 finger syndactyly
+  - HP:0040107: Abnormal posterior semicircular canal morphology
+  - HP:0008490: Sacral segmentation defect
+
+Gene: LIG4 (1 disconnected phenotypes)
+  - HP:0020099: Severe norovirus infection
+
+Gene: LIMS2 (1 disconnected phenotypes)
+  - HP:0025659: Decreased circulating creatine kinase concentration
+
+Gene: LITAF (1 disconnected phenotypes)
+  - HP:0006881: Diffuse peripheral demyelination
+
+Gene: LMX1B (1 disconnected phenotypes)
+  - HP:0010590: Abnormality of the distal femoral epiphysis
+
+Gene: LRP4 (1 disconnected phenotypes)
+  - HP:0006264: Aplasia/Hypoplasia of the 2nd finger
+
+Gene: LRPPRC (2 disconnected phenotypes)
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+  - HP:0012714: Severe hearing impairment
+
+Gene: MALT1 (3 disconnected phenotypes)
+  - HP:0032167: Clostridium difficile enteritis
+  - HP:0031379: Abnormal T cell proliferation
+  - HP:0031379: Abnormal T cell proliferation
+
+Gene: MAN1B1 (1 disconnected phenotypes)
+  - HP:0000535: obsolete Sparse and thin eyebrow
+
+Gene: MAN2B2 (3 disconnected phenotypes)
+  - HP:0410354: Increased sialylated N-glycan level
+  - HP:4000201: Abnormal circulating alpha mannosidase activity
+  - HP:0410354: Increased sialylated N-glycan level
+
+Gene: MAN2C1 (1 disconnected phenotypes)
+  - HP:0011729: Abnormality of joint mobility
+
+Gene: MARVELD2 (4 disconnected phenotypes)
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: MCM10 (1 disconnected phenotypes)
+  - HP:0032557: History of bone marrow transplant
+
+Gene: MFF (2 disconnected phenotypes)
+  - HP:0025456: Abnormal CSF protein concentration
+  - HP:0025737: Abnormal subthalamic nucleus morphology
+
+Gene: MGME1 (1 disconnected phenotypes)
+  - HP:0007250: Recurrent external ophthalmoplegia
+
+Gene: MPL (2 disconnected phenotypes)
+  - HP:0020060: Decreased red blood cell count
+  - HP:0032309: Abnormal granulocyte count
+
+Gene: MSH6 (1 disconnected phenotypes)
+  - HP:0100706: Abnormal oligodendroglia morphology
+
+Gene: MT-ND3 (2 disconnected phenotypes)
+  - HP:0032668: Myoclonic status epilepticus without coma
+  - HP:0032668: Myoclonic status epilepticus without coma
+
+Gene: MT-ND5 (4 disconnected phenotypes)
+  - HP:0025737: Abnormal subthalamic nucleus morphology
+  - HP:0033249: Focal substantia nigra T2 hyperintensity
+  - HP:0025737: Abnormal subthalamic nucleus morphology
+  - HP:0033249: Focal substantia nigra T2 hyperintensity
+
+Gene: MT-ND6 (4 disconnected phenotypes)
+  - HP:0004881: Episodic hypoventilation
+  - HP:6001084: T2-hyperintense putaminal rim
+  - HP:6001084: T2-hyperintense putaminal rim
+  - HP:0004881: Episodic hypoventilation
+
+Gene: MT-TE (2 disconnected phenotypes)
+  - HP:0007769: Peripheral retinal degeneration
+  - HP:5200125: Aggression towards others
+
+Gene: MT-TF (1 disconnected phenotypes)
+  - HP:0040292: Left hemiplegia
+
+Gene: MT-TI (3 disconnected phenotypes)
+  - HP:0012832: Bilateral
+  - HP:0012832: Bilateral
+  - HP:0034792: Decreased muscle succinate dehydrogenase staining
+
+Gene: MT-TK (1 disconnected phenotypes)
+  - HP:0030086: Reduced CSF lactate
+
+Gene: MT-TL2 (1 disconnected phenotypes)
+  - HP:0008507: Static ophthalmoparesis
+
+Gene: MT-TS1 (1 disconnected phenotypes)
+  - HP:0032855: Photosensitive myoclonic-tonic-clonic seizure
+
+Gene: MT-TT (1 disconnected phenotypes)
+  - HP:0012832: Bilateral
+
+Gene: MT-TV (2 disconnected phenotypes)
+  - HP:0033625: Emotional insecurity
+  - HP:0032015: Dysmetric horizontal saccades
+
+Gene: MTM1 (1 disconnected phenotypes)
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+
+Gene: MTO1 (2 disconnected phenotypes)
+  - HP:0012828: Severe
+  - HP:0005941: Intermittent hyperpnea at rest
+
+Gene: MTRFR (2 disconnected phenotypes)
+  - HP:0007747: Monocular horizontal nystagmus
+  - HP:0030085: Abnormal CSF lactate concentration
+
+Gene: MYO1A (1 disconnected phenotypes)
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: MYO1C (1 disconnected phenotypes)
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: MYO7A (2 disconnected phenotypes)
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: MYOC (2 disconnected phenotypes)
+  - HP:0012630: Abnormal trabecular meshwork morphology
+  - HP:0012634: Iris pigment dispersion
+
+Gene: MYSM1 (1 disconnected phenotypes)
+  - HP:4000209: Abnormal erythrocyte adenosine deaminase activity
+
+Gene: NACC1 (5 disconnected phenotypes)
+  - HP:0031063: Impaired feeding ability
+  - HP:0031063: Impaired feeding ability
+  - HP:0031063: Impaired feeding ability
+  - HP:0031063: Impaired feeding ability
+  - HP:0031063: Impaired feeding ability
+
+Gene: NDUFA10 (2 disconnected phenotypes)
+  - HP:0005237: Degenerative liver disease
+  - HP:0005237: Degenerative liver disease
+
+Gene: NDUFAF3 (1 disconnected phenotypes)
+  - HP:0033249: Focal substantia nigra T2 hyperintensity
+
+Gene: NDUFAF6 (1 disconnected phenotypes)
+  - HP:0030085: Abnormal CSF lactate concentration
+
+Gene: NDUFS2 (1 disconnected phenotypes)
+  - HP:0033249: Focal substantia nigra T2 hyperintensity
+
+Gene: NDUFS4 (2 disconnected phenotypes)
+  - HP:0004881: Episodic hypoventilation
+  - HP:0006688: Paroxysmal tachycardia
+
+Gene: NDUFS8 (3 disconnected phenotypes)
+  - HP:0007747: Monocular horizontal nystagmus
+  - HP:0007747: Monocular horizontal nystagmus
+  - HP:0004881: Episodic hypoventilation
+
+Gene: NDUFV1 (1 disconnected phenotypes)
+  - HP:0004881: Episodic hypoventilation
+
+Gene: NDUFV2 (1 disconnected phenotypes)
+  - HP:0006859: Posterior leukoencephalopathy
+
+Gene: NEB (1 disconnected phenotypes)
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+
+Gene: NFKB2 (3 disconnected phenotypes)
+  - HP:0032157: Recurrent genital herpes
+  - HP:0020106: Severe giardiasis
+  - HP:0020106: Severe giardiasis
+
+Gene: NOD2 (2 disconnected phenotypes)
+  - HP:0006167: Prominent proximal interphalangeal joints
+  - HP:0006167: Prominent proximal interphalangeal joints
+
+Gene: NOG (3 disconnected phenotypes)
+  - HP:0012714: Severe hearing impairment
+  - HP:0004610: Lumbar spinal canal stenosis
+  - HP:0004214: Curved phalanges of the 5th finger
+
+Gene: NPRL3 (3 disconnected phenotypes)
+  - HP:0040292: Left hemiplegia
+  - HP:0011294: EEG with frontal sharp waves
+  - HP:0011294: EEG with frontal sharp waves
+
+Gene: NRP1 (1 disconnected phenotypes)
+  - HP:0025668: Abnormal neck morphology
+
+Gene: NSMCE3 (3 disconnected phenotypes)
+  - HP:0032071: Eosinophilic pneumonia
+  - HP:0033006: Diffuse alveolar damage
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+
+Gene: NTHL1 (1 disconnected phenotypes)
+  - HP:0031494: Ovarian mucinous tumor
+
+Gene: NUBPL (3 disconnected phenotypes)
+  - HP:6000416: T2 hyperintense cerebellar lesion
+  - HP:0010951: Abnormal third ventricle morphology
+  - HP:6000416: T2 hyperintense cerebellar lesion
+
+Gene: NUP133 (3 disconnected phenotypes)
+  - HP:0033130: Abnormal renal echogenicity
+  - HP:0012568: Lower eyelid edema
+  - HP:0020133: Podocyte hypertrophy
+
+Gene: NUP62 (1 disconnected phenotypes)
+  - HP:0012832: Bilateral
+
+Gene: ODAD3 (2 disconnected phenotypes)
+  - HP:0031657: Abnormal heart sound
+  - HP:0031657: Abnormal heart sound
+
+Gene: OPA1 (2 disconnected phenotypes)
+  - HP:0011292: EEG with occipital sharp waves
+  - HP:0031192: Abnormal morphology of left ventricular trabeculae
+
+Gene: OSTM1 (3 disconnected phenotypes)
+  - HP:6000647: Bulging fontanelle
+  - HP:0030173: Peripheral hypermyelination
+  - HP:0041055: Fractured humerus
+
+Gene: OTOA (2 disconnected phenotypes)
+  - HP:0012713: Moderate hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: OTOGL (4 disconnected phenotypes)
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: P2RY12 (1 disconnected phenotypes)
+  - HP:0011882: Decreased platelet P2Y12 receptor
+
+Gene: PACS1 (5 disconnected phenotypes)
+  - HP:0006157: Prominent palmar flexion creases
+  - HP:0012832: Bilateral
+  - HP:0025310: Oval pupil
+  - HP:0006157: Prominent palmar flexion creases
+  - HP:0011346: Mild expressive language delay
+
+Gene: PAK3 (1 disconnected phenotypes)
+  - HP:0007362: Aplasia/Hypoplasia of the brainstem
+
+Gene: PARN (1 disconnected phenotypes)
+  - HP:0034981: Exposure to birds
+
+Gene: PARS2 (1 disconnected phenotypes)
+  - HP:0030085: Abnormal CSF lactate concentration
+
+Gene: PAX1 (4 disconnected phenotypes)
+  - HP:0032168: Clostridium difficile colitis
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+  - HP:0410035: Abnormal T cell activation
+  - HP:0410035: Abnormal T cell activation
+
+Gene: PAX3 (1 disconnected phenotypes)
+  - HP:0100811: Aplasia/Hypoplasia of the colon
+
+Gene: PBX1 (2 disconnected phenotypes)
+  - HP:0011659: Tetralogy of Fallot with absent pulmonary valve
+  - HP:0001991: Aplasia/Hypoplasia of toe
+
+Gene: PCCB (4 disconnected phenotypes)
+  - HP:0003571: Propionic acidemia
+  - HP:0003571: Propionic acidemia
+  - HP:0003571: Propionic acidemia
+  - HP:0003571: Propionic acidemia
+
+Gene: PCSK9 (1 disconnected phenotypes)
+  - HP:0003142: Excessive purine production
+
+Gene: PDHA1 (1 disconnected phenotypes)
+  - HP:0012832: Bilateral
+
+Gene: PDSS2 (1 disconnected phenotypes)
+  - HP:0030086: Reduced CSF lactate
+
+Gene: PEX3 (1 disconnected phenotypes)
+  - HP:0005143: Anomalous origin of right pulmonary artery from ascending aorta
+
+Gene: PEX6 (1 disconnected phenotypes)
+  - HP:0008459: Cervical vertebral agenesis
+
+Gene: PHYH (2 disconnected phenotypes)
+  - HP:0012709: Abnormal brain choline/creatine ratio by MRS
+  - HP:0012714: Severe hearing impairment
+
+Gene: PIGL (1 disconnected phenotypes)
+  - HP:0025757: Abnormal nail surface
+
+Gene: PIGP (1 disconnected phenotypes)
+  - HP:0033130: Abnormal renal echogenicity
+
+Gene: PIGU (1 disconnected phenotypes)
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+
+Gene: PIK3CD (8 disconnected phenotypes)
+  - HP:0033537: Mosaic pulmonary attenuation pattern
+  - HP:0033537: Mosaic pulmonary attenuation pattern
+  - HP:0033537: Mosaic pulmonary attenuation pattern
+  - HP:0033537: Mosaic pulmonary attenuation pattern
+  - HP:0033537: Mosaic pulmonary attenuation pattern
+  - HP:0033537: Mosaic pulmonary attenuation pattern
+  - HP:0033537: Mosaic pulmonary attenuation pattern
+  - HP:0033537: Mosaic pulmonary attenuation pattern
+
+Gene: PKP2 (2 disconnected phenotypes)
+  - HP:0003140: T-wave inversion in the right precordial leads
+  - HP:0003140: T-wave inversion in the right precordial leads
+
+Gene: PLG (1 disconnected phenotypes)
+  - HP:0030831: Rhonchi
+
+Gene: PLN (1 disconnected phenotypes)
+  - HP:0031651: Abnormal tricuspid valve physiology
+
+Gene: PLP1 (2 disconnected phenotypes)
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+
+Gene: PMM2 (1 disconnected phenotypes)
+  - HP:0010451: Aplasia/Hypoplasia of the spleen
+
+Gene: PMPCA (1 disconnected phenotypes)
+  - HP:0032015: Dysmetric horizontal saccades
+
+Gene: PNPT1 (1 disconnected phenotypes)
+  - HP:0030086: Reduced CSF lactate
+
+Gene: POLR3A (1 disconnected phenotypes)
+  - HP:0033784: Dentin dysplasia
+
+Gene: POR (2 disconnected phenotypes)
+  - HP:0410218: Hypoplasia of maxilla relative to mandible
+  - HP:0034772: Decreased skull base length
+
+Gene: POU2AF1 (1 disconnected phenotypes)
+  - HP:0040208: Elevated CSF biopterin level
+
+Gene: PRKAG2 (1 disconnected phenotypes)
+  - HP:0031674: Antidromic atrioventricular reentrant tachycardia
+
+Gene: PRKDC (1 disconnected phenotypes)
+  - HP:0040311: Symmetric polyarthritis
+
+Gene: PROC (1 disconnected phenotypes)
+  - HP:0008717: Unilateral renal atrophy
+
+Gene: PRPF4 (1 disconnected phenotypes)
+  - HP:6000367: Central thinning of the outer nuclear layer of the retina
+
+Gene: PRPS1 (2 disconnected phenotypes)
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0012713: Moderate hearing impairment
+
+Gene: PRR12 (1 disconnected phenotypes)
+  - HP:0030504: Grouped congenital hypertrophy of retinal pigment epithelium
+
+Gene: PUS1 (3 disconnected phenotypes)
+  - HP:0012827: Borderline
+  - HP:0012829: Profound
+  - HP:0012828: Severe
+
+Gene: PXDN (1 disconnected phenotypes)
+  - HP:0030855: Anterior staphyloma
+
+Gene: PYCR1 (1 disconnected phenotypes)
+  - HP:0030458: Abnormal timing of pattern onset/offset visual evoked potentials
+
+Gene: RAB23 (2 disconnected phenotypes)
+  - HP:0000236: Abnormal anterior fontanelle morphology
+  - HP:0005486: Small fontanelle
+
+Gene: RAB40AL (1 disconnected phenotypes)
+  - HP:0045058: Abnormality of the testis size
+
+Gene: RAC2 (2 disconnected phenotypes)
+  - HP:0410294: Decreased specific antibody response to protein vaccine
+  - HP:0025625: Elevated proportion of CD4+ effector memory T cells
+
+Gene: RALA (1 disconnected phenotypes)
+  - HP:0032053: Focal cortical dysplasia type IIb
+
+Gene: RAP1B (3 disconnected phenotypes)
+  - HP:0012787: Recurrent pyelonephritis
+  - HP:0025098: Dysgenesis of the hypothalamus
+  - HP:0012395: Seasonal allergy
+
+Gene: RARB (1 disconnected phenotypes)
+  - HP:0031614: Inferior retinal coloboma
+
+Gene: RDX (1 disconnected phenotypes)
+  - HP:0012714: Severe hearing impairment
+
+Gene: RECQL4 (1 disconnected phenotypes)
+  - HP:0012193: Anaplastic large-cell lymphoma
+
+Gene: REEP6 (1 disconnected phenotypes)
+  - HP:0030554: Best corrected visual acuity 0.1 LogMAR
+
+Gene: RELA (1 disconnected phenotypes)
+  - HP:0012395: Seasonal allergy
+
+Gene: RELB (1 disconnected phenotypes)
+  - HP:0032255: Opportunistic fungal infection
+
+Gene: REN (11 disconnected phenotypes)
+  - HP:0002703: Abnormality of skull ossification
+  - HP:0002703: Abnormality of skull ossification
+  - HP:0002703: Abnormality of skull ossification
+  - HP:0002703: Abnormality of skull ossification
+  - HP:0002703: Abnormality of skull ossification
+  - HP:0002703: Abnormality of skull ossification
+  - HP:0002703: Abnormality of skull ossification
+  - HP:0002703: Abnormality of skull ossification
+  - HP:0002703: Abnormality of skull ossification
+  - HP:0002703: Abnormality of skull ossification
+  - HP:0002703: Abnormality of skull ossification
+
+Gene: RERE (1 disconnected phenotypes)
+  - HP:0040090: Abnormal tympanic membrane morphology
+
+Gene: RFC1 (1 disconnected phenotypes)
+  - HP:6000416: T2 hyperintense cerebellar lesion
+
+Gene: RHOBTB2 (1 disconnected phenotypes)
+  - HP:0040292: Left hemiplegia
+
+Gene: RNU4ATAC (1 disconnected phenotypes)
+  - HP:0200001: Dysharmonic accelerated bone age
+
+Gene: ROBO3 (6 disconnected phenotypes)
+  - HP:0010993: Abnormal cerebral subcortex morphology
+  - HP:0010993: Abnormal cerebral subcortex morphology
+  - HP:0010993: Abnormal cerebral subcortex morphology
+  - HP:0010993: Abnormal cerebral subcortex morphology
+  - HP:0010993: Abnormal cerebral subcortex morphology
+  - HP:0010993: Abnormal cerebral subcortex morphology
+
+Gene: RPE65 (1 disconnected phenotypes)
+  - HP:0030979: Dilatation of large choroidal vessels
+
+Gene: RPS19 (1 disconnected phenotypes)
+  - HP:0025633: Abnormal ureter morphology
+
+Gene: RPS20 (1 disconnected phenotypes)
+  - HP:0030420: Vulvar adenocarcinoma
+
+Gene: RYR1 (1 disconnected phenotypes)
+  - HP:0009537: Flexion contracture of the 2nd finger
+
+Gene: SAMHD1 (1 disconnected phenotypes)
+  - HP:0032547: Low intraocular pressure
+
+Gene: SARS2 (3 disconnected phenotypes)
+  - HP:0031375: Refractory
+  - HP:0012825: Mild
+  - HP:0012828: Severe
+
+Gene: SCN1A (2 disconnected phenotypes)
+  - HP:0010858: EEG with hyperventilation-induced epileptiform discharges
+  - HP:0011200: EEG with generalized polymorphic epileptiform discharges
+
+Gene: SCN3A (1 disconnected phenotypes)
+  - HP:0030650: Focal
+
+Gene: SCN8A (2 disconnected phenotypes)
+  - HP:0030926: 5-minute APGAR score of 6
+  - HP:0032893: Gastroenteritis-related afebrile seizure
+
+Gene: SEC61A1 (1 disconnected phenotypes)
+  - HP:0033000: Subglottic laryngitis
+
+Gene: SERAC1 (2 disconnected phenotypes)
+  - HP:0200011: Abnormal length of corpus callosum
+  - HP:0012714: Severe hearing impairment
+
+Gene: SERPIND1 (1 disconnected phenotypes)
+  - HP:0031678: Atherosclerotic lesion
+
+Gene: SERPINI1 (8 disconnected phenotypes)
+  - HP:0100314: Cerebral inclusion bodies
+  - HP:0100314: Cerebral inclusion bodies
+  - HP:0100314: Cerebral inclusion bodies
+  - HP:0100314: Cerebral inclusion bodies
+  - HP:0100314: Cerebral inclusion bodies
+  - HP:0100314: Cerebral inclusion bodies
+  - HP:0100314: Cerebral inclusion bodies
+  - HP:0100314: Cerebral inclusion bodies
+
+Gene: SET (1 disconnected phenotypes)
+  - HP:0040092: Asymmetry of the shape of the ears
+
+Gene: SFTPA2 (12 disconnected phenotypes)
+  - HP:4000110: Exposure history
+  - HP:4000110: Exposure history
+  - HP:4000110: Exposure history
+  - HP:0025223: Triggered by smoking
+  - HP:4000110: Exposure history
+  - HP:4000110: Exposure history
+  - HP:4000110: Exposure history
+  - HP:0025223: Triggered by smoking
+  - HP:4000110: Exposure history
+  - HP:0025223: Triggered by smoking
+  - HP:4000110: Exposure history
+  - HP:4000110: Exposure history
+
+Gene: SFTPB (1 disconnected phenotypes)
+  - HP:0030864: Intercostal retractions
+
+Gene: SGCD (24 disconnected phenotypes)
+  - HP:0030101: Absent muscle fiber alpha sarcoglycan
+  - HP:0030110: Absent muscle fiber delta sarcoglycan
+  - HP:0030106: Absent muscle fiber beta sarcoglycan
+  - HP:0030101: Absent muscle fiber alpha sarcoglycan
+  - HP:0030109: Absent muscle fiber gamma sarcoglycan
+  - HP:0030110: Absent muscle fiber delta sarcoglycan
+  - HP:0030106: Absent muscle fiber beta sarcoglycan
+  - HP:0030101: Absent muscle fiber alpha sarcoglycan
+  - HP:0030108: Reduced muscle fiber gamma sarcoglycan
+  - HP:0030106: Absent muscle fiber beta sarcoglycan
+  - HP:0030101: Absent muscle fiber alpha sarcoglycan
+  - HP:0030109: Absent muscle fiber gamma sarcoglycan
+  - HP:0030107: Reduced muscle fiber beta sarcoglycan
+  - HP:0030101: Absent muscle fiber alpha sarcoglycan
+  - HP:0030109: Absent muscle fiber gamma sarcoglycan
+  - HP:0030110: Absent muscle fiber delta sarcoglycan
+  - HP:0030107: Reduced muscle fiber beta sarcoglycan
+  - HP:0030101: Absent muscle fiber alpha sarcoglycan
+  - HP:0030109: Absent muscle fiber gamma sarcoglycan
+  - HP:0030101: Absent muscle fiber alpha sarcoglycan
+  - HP:0031299: Elevated left atrial pressure
+  - HP:0025265: Stiff toe
+  - HP:0030101: Absent muscle fiber alpha sarcoglycan
+  - HP:0030101: Absent muscle fiber alpha sarcoglycan
+
+Gene: SHANK3 (1 disconnected phenotypes)
+  - HP:0009239: Aplasia/Hypoplasia of the distal phalanx of the 5th finger
+
+Gene: SIX5 (2 disconnected phenotypes)
+  - HP:0012714: Severe hearing impairment
+  - HP:0012713: Moderate hearing impairment
+
+Gene: SLC16A2 (1 disconnected phenotypes)
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+
+Gene: SLC18A2 (1 disconnected phenotypes)
+  - HP:0034554: Paucity of peroxisomes
+
+Gene: SLC1A2 (3 disconnected phenotypes)
+  - HP:0032816: Neonatal multifocal myoclonic seizure
+  - HP:0032842: Generalized-onset epileptic spasm
+  - HP:0012820: Bilateral vocal cord paralysis
+
+Gene: SLC1A3 (2 disconnected phenotypes)
+  - HP:0040292: Left hemiplegia
+  - HP:0011288: EEG with parietal sharp slow waves
+
+Gene: SLC29A3 (8 disconnected phenotypes)
+  - HP:0031685: Abnormal stool composition
+  - HP:0430023: Abnormality of the maxillary sinus
+  - HP:0025619: Elevated plasma cell count
+  - HP:0034920: Nasal mucosa vasculitis
+  - HP:0020064: Abnormal eosinophil count
+  - HP:0100039: Thickened cortex of bones
+  - HP:0033211: Decreased total iron binding capacity
+  - HP:0012716: Moderate conductive hearing impairment
+
+Gene: SLC2A1 (10 disconnected phenotypes)
+  - HP:0025377: Triggered by exertion
+  - HP:0025377: Triggered by exertion
+  - HP:0030086: Reduced CSF lactate
+  - HP:0030933: 1-minute APGAR score of 6
+  - HP:0025377: Triggered by exertion
+  - HP:0025261: Stiff finger
+  - HP:0005524: Macrocytic hemolytic disease
+  - HP:0025377: Triggered by exertion
+  - HP:0030086: Reduced CSF lactate
+  - HP:0030086: Reduced CSF lactate
+
+Gene: SLFN14 (3 disconnected phenotypes)
+  - HP:0030398: Abnormal platelet ATP dense granule secretion
+  - HP:0030398: Abnormal platelet ATP dense granule secretion
+  - HP:0030398: Abnormal platelet ATP dense granule secretion
+
+Gene: SLX4 (2 disconnected phenotypes)
+  - HP:0030770: Craniorachischisis
+  - HP:0011454: Abnormal malleus morphology
+
+Gene: SMCHD1 (3 disconnected phenotypes)
+  - HP:0011052: Agenesis of maxillary premolar
+  - HP:3000040: Abnormality of ethmoid sinus
+  - HP:0011431: Fetal fifth finger clinodactyly
+
+Gene: SMS (1 disconnected phenotypes)
+  - HP:0000535: obsolete Sparse and thin eyebrow
+
+Gene: SNX10 (1 disconnected phenotypes)
+  - HP:0011037: Decreased urine output
+
+Gene: SNX14 (1 disconnected phenotypes)
+  - HP:0040265: Upper limb muscle hypertrophy
+
+Gene: SP110 (3 disconnected phenotypes)
+  - HP:0032557: History of bone marrow transplant
+  - HP:0034890: Positive CMV urine nucleic acid test
+  - HP:0033587: Vulvar abscess
+
+Gene: SPEG (1 disconnected phenotypes)
+  - HP:0031195: Apical hypertrabeculation of the left ventricle
+
+Gene: SPEN (2 disconnected phenotypes)
+  - HP:0031666: Late systolic murmur
+  - HP:0011431: Fetal fifth finger clinodactyly
+
+Gene: SPTBN4 (5 disconnected phenotypes)
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+
+Gene: SSBP1 (1 disconnected phenotypes)
+  - HP:0030493: Abnormality of foveal pigmentation
+
+Gene: STAT3 (14 disconnected phenotypes)
+  - HP:4000029: Antigliadin antibody positivity
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+
+Gene: STAT6 (1 disconnected phenotypes)
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+
+Gene: STIM1 (1 disconnected phenotypes)
+  - HP:0031133: Increased annexin V binding to platelet phosphatidylserine
+
+Gene: STXBP2 (1 disconnected phenotypes)
+  - HP:0030396: Abnormal platelet granule secretion
+
+Gene: TAFAZZIN (2 disconnected phenotypes)
+  - HP:0033113: Gallop rhythm
+  - HP:0031195: Apical hypertrabeculation of the left ventricle
+
+Gene: TBC1D24 (2 disconnected phenotypes)
+  - HP:0030650: Focal
+  - HP:0007868: obsolete Age-related macular degeneration
+
+Gene: TBL1XR1 (1 disconnected phenotypes)
+  - HP:0025227: Triggered by excitement
+
+Gene: TBR1 (1 disconnected phenotypes)
+  - HP:0010181: Duplication of phalanx of toe
+
+Gene: TBX20 (1 disconnected phenotypes)
+  - HP:0011719: Supracardiac total anomalous pulmonary venous connection
+
+Gene: TBX4 (2 disconnected phenotypes)
+  - HP:0008365: Abnormal talus morphology
+  - HP:0008365: Abnormal talus morphology
+
+Gene: TBX5 (1 disconnected phenotypes)
+  - HP:0001454: Abnormality of the upper arm
+
+Gene: TCF12 (1 disconnected phenotypes)
+  - HP:0000236: Abnormal anterior fontanelle morphology
+
+Gene: TCF3 (1 disconnected phenotypes)
+  - HP:0032022: Eosinophilic dermal infiltration
+
+Gene: TCF7L2 (2 disconnected phenotypes)
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+  - HP:0007425: Hyperextensible skin of face
+
+Gene: TCIRG1 (3 disconnected phenotypes)
+  - HP:0032557: History of bone marrow transplant
+  - HP:0032557: History of bone marrow transplant
+  - HP:0032557: History of bone marrow transplant
+
+Gene: TCOF1 (2 disconnected phenotypes)
+  - HP:0012714: Severe hearing impairment
+  - HP:0008773: Aplasia/Hypoplasia of the middle ear
+
+Gene: TECTA (7 disconnected phenotypes)
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0012713: Moderate hearing impairment
+  - HP:0012713: Moderate hearing impairment
+  - HP:0012713: Moderate hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: TELO2 (3 disconnected phenotypes)
+  - HP:0012832: Bilateral
+  - HP:0010925: Nuclear punctate cataract
+  - HP:0031666: Late systolic murmur
+
+Gene: TERC (1 disconnected phenotypes)
+  - HP:6000457: Mallory bodies
+
+Gene: TET3 (2 disconnected phenotypes)
+  - HP:0012716: Moderate conductive hearing impairment
+  - HP:5200295: Periodic limb movements
+
+Gene: TFE3 (1 disconnected phenotypes)
+  - HP:0007893: obsolete Progressive retinal degeneration
+
+Gene: TGFB1 (1 disconnected phenotypes)
+  - HP:0006859: Posterior leukoencephalopathy
+
+Gene: TGFBR1 (1 disconnected phenotypes)
+  - HP:0002636: Dilatation of an abdominal artery
+
+Gene: THPO (3 disconnected phenotypes)
+  - HP:0011301: Absent foot
+  - HP:0003953: Absent forearm bone
+  - HP:0034600: Elevated circulating thrombopoietin concentration
+
+Gene: TIMP3 (7 disconnected phenotypes)
+  - HP:0033663: Air trapping
+  - HP:0025582: Submacular hemorrhage
+  - HP:0033663: Air trapping
+  - HP:0007769: Peripheral retinal degeneration
+  - HP:0007777: Chorioretinal scar
+  - HP:0025243: Subretinal hemorrhage
+  - HP:0007777: Chorioretinal scar
+
+Gene: TMEM237 (1 disconnected phenotypes)
+  - HP:0033745: Dysplasia of the superior cerebellar vermis
+
+Gene: TMEM43 (1 disconnected phenotypes)
+  - HP:0100572: Fibrous cardiac diverticulum
+
+Gene: TMEM94 (3 disconnected phenotypes)
+  - HP:4000139: Fetal abdominal cyst
+  - HP:0025678: Fetal hydrothorax
+  - HP:0012797: Lymphatic vessel neoplasm
+
+Gene: TNFSF12 (1 disconnected phenotypes)
+  - HP:0030371: Increased proportion of naive B cells
+
+Gene: TNFSF13 (1 disconnected phenotypes)
+  - HP:0030385: Increased proportion of marginal zone B cells
+
+Gene: TOP2B (4 disconnected phenotypes)
+  - HP:0030723: Congenital megalourethra
+  - HP:0011249: Absent antitragus
+  - HP:0011418: Abnormal insertion of umbilical cord
+  - HP:0011249: Absent antitragus
+
+Gene: TPM3 (3 disconnected phenotypes)
+  - HP:0025377: Triggered by exertion
+  - HP:0012894: Paraspinal muscle hypertrophy
+  - HP:6000655: Femoral neck fracture
+
+Gene: TRAC (1 disconnected phenotypes)
+  - HP:0033563: Anti-tissue transglutaminase antibody positivity
+
+Gene: TRAF3 (4 disconnected phenotypes)
+  - HP:0033583: Follicular bronchiolitis
+  - HP:0030831: Rhonchi
+  - HP:0040090: Abnormal tympanic membrane morphology
+  - HP:0032130: Mycobacterium abscessus abscessus infection
+
+Gene: TRAF7 (7 disconnected phenotypes)
+  - HP:0100498: Deviation of toes
+  - HP:5200110: Infrequent social engagement with peers
+  - HP:0006167: Prominent proximal interphalangeal joints
+  - HP:0011572: Supramitral ring
+  - HP:6000112: Hockey-stick palmar crease
+  - HP:0011426: Fetal choroid plexus cysts
+  - HP:4000083: Lack of interest in peers
+
+Gene: TRMT5 (1 disconnected phenotypes)
+  - HP:0004952: Pulmonary arteriovenous fistulas
+
+Gene: TRPV4 (2 disconnected phenotypes)
+  - HP:0011346: Mild expressive language delay
+  - HP:0012820: Bilateral vocal cord paralysis
+
+Gene: TTR (1 disconnected phenotypes)
+  - HP:3000042: Abnormal jugular vein morphology
+
+Gene: TUBA1A (4 disconnected phenotypes)
+  - HP:0033745: Dysplasia of the superior cerebellar vermis
+  - HP:0012832: Bilateral
+  - HP:0040292: Left hemiplegia
+  - HP:0012832: Bilateral
+
+Gene: TUBB2A (1 disconnected phenotypes)
+  - HP:0033745: Dysplasia of the superior cerebellar vermis
+
+Gene: TUBB3 (5 disconnected phenotypes)
+  - HP:0011191: Unilateral multifocal epileptiform discharges
+  - HP:0033744: Global cerebellar dysplasia
+  - HP:0033744: Global cerebellar dysplasia
+  - HP:0033745: Dysplasia of the superior cerebellar vermis
+  - HP:0010950: Abnormal fourth ventricle morphology
+
+Gene: TULP3 (1 disconnected phenotypes)
+  - HP:0025154: Portosystemic collateral veins
+
+Gene: UNC13A (1 disconnected phenotypes)
+  - HP:0010857: EEG with periodic abnormalities
+
+Gene: UNC80 (6 disconnected phenotypes)
+  - HP:5200058: Sensory hypersensitivity
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+
+Gene: USP7 (3 disconnected phenotypes)
+  - HP:0500016: Abnormal cardiac MRI
+  - HP:0500016: Abnormal cardiac MRI
+  - HP:0500016: Abnormal cardiac MRI
+
+Gene: USP9X (1 disconnected phenotypes)
+  - HP:0012716: Moderate conductive hearing impairment
+
+Gene: VARS1 (2 disconnected phenotypes)
+  - HP:0030650: Focal
+  - HP:0030650: Focal
+
+Gene: VCP (1 disconnected phenotypes)
+  - HP:0033453: Limited neck extension
+
+Gene: VWF (57 disconnected phenotypes)
+  - HP:0030129: Impaired ristocetin cofactor assay activity
+  - HP:0030130: Impaired von Willebrand factor collagen binding activity
+  - HP:0030131: Abnormal von Willebrand factor multimer distribution
+  - HP:0030129: Impaired ristocetin cofactor assay activity
+  - HP:0030130: Impaired von Willebrand factor collagen binding activity
+  - HP:0030129: Impaired ristocetin cofactor assay activity
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0030129: Impaired ristocetin cofactor assay activity
+  - HP:0040225: Decrease in high molecular weight von Willebrand factor Multimers
+  - HP:0030129: Impaired ristocetin cofactor assay activity
+  - HP:0030130: Impaired von Willebrand factor collagen binding activity
+  - HP:0030129: Impaired ristocetin cofactor assay activity
+  - HP:0030130: Impaired von Willebrand factor collagen binding activity
+  - HP:0030131: Abnormal von Willebrand factor multimer distribution
+  - HP:0030129: Impaired ristocetin cofactor assay activity
+  - HP:0030130: Impaired von Willebrand factor collagen binding activity
+  - HP:0030131: Abnormal von Willebrand factor multimer distribution
+  - HP:0030129: Impaired ristocetin cofactor assay activity
+  - HP:0030134: Total absence von Willebrand factor multimers
+  - HP:0030129: Impaired ristocetin cofactor assay activity
+  - HP:0030130: Impaired von Willebrand factor collagen binding activity
+  - HP:0030131: Abnormal von Willebrand factor multimer distribution
+  - HP:0030129: Impaired ristocetin cofactor assay activity
+  - HP:0030130: Impaired von Willebrand factor collagen binding activity
+  - HP:0030131: Abnormal von Willebrand factor multimer distribution
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0030129: Impaired ristocetin cofactor assay activity
+  - HP:0030134: Total absence von Willebrand factor multimers
+  - HP:0030129: Impaired ristocetin cofactor assay activity
+  - HP:0030134: Total absence von Willebrand factor multimers
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0040241: Increased RIPA
+  - HP:0040241: Increased RIPA
+  - HP:0040225: Decrease in high molecular weight von Willebrand factor Multimers
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0040241: Increased RIPA
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0040241: Increased RIPA
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0040241: Increased RIPA
+  - HP:0030129: Impaired ristocetin cofactor assay activity
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0040241: Increased RIPA
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0040241: Increased RIPA
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0040241: Increased RIPA
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0040241: Increased RIPA
+  - HP:0030129: Impaired ristocetin cofactor assay activity
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0040241: Increased RIPA
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0040241: Increased RIPA
+  - HP:0030129: Impaired ristocetin cofactor assay activity
+  - HP:0030132: Absence of large von Willebrand factor multimers
+  - HP:0030403: Spontaneous platelet aggregation
+
+Gene: WDR19 (2 disconnected phenotypes)
+  - HP:0033130: Abnormal renal echogenicity
+  - HP:0012581: Simple renal cyst
+
+Gene: WDR26 (2 disconnected phenotypes)
+  - HP:0011525: Iris nevus
+  - HP:0006959: Proximal spinal muscular atrophy
+
+Gene: WDR5 (1 disconnected phenotypes)
+  - HP:0025666: Very preterm birth
+
+Gene: WDR62 (1 disconnected phenotypes)
+  - HP:0005486: Small fontanelle
+
+Gene: WDR72 (1 disconnected phenotypes)
+  - HP:0004916: Generalized distal tubular acidosis
+
+Gene: WFS1 (2 disconnected phenotypes)
+  - HP:0012713: Moderate hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: WIPF1 (1 disconnected phenotypes)
+  - HP:0033700: Papulovesicular eruption
+
+Gene: WNT10A (2 disconnected phenotypes)
+  - HP:0010604: Cyst of the eyelid
+  - HP:0000535: obsolete Sparse and thin eyebrow
+
+Gene: YIF1B (1 disconnected phenotypes)
+  - HP:0032795: Generalized myoclonic-tonic-clonic seizure
+
+Gene: ZBTB20 (1 disconnected phenotypes)
+  - HP:0012714: Severe hearing impairment
+
+Gene: ZEB2 (2 disconnected phenotypes)
+  - HP:0002744: obsolete Bilateral cleft lip and palate
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+
+Gene: ZIC1 (2 disconnected phenotypes)
+  - HP:0034238: Closed neural tube defect
+  - HP:0011319: Bilambdoid synostosis
+
+Gene: ZMYND10 (2 disconnected phenotypes)
+  - HP:0004880: Respiratory infections in early life
+  - HP:0004880: Respiratory infections in early life
+
+Gene: ZMYND11 (4 disconnected phenotypes)
+  - HP:0009929: Abnormal columella morphology
+  - HP:0410327: Dairy allergy
+  - HP:0040292: Left hemiplegia
+  - HP:0410327: Dairy allergy
+
+Gene: ZNF341 (5 disconnected phenotypes)
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+  - HP:0410385: Decreased proportion of CD8-positive, alpha-beta memory T cells
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+  - HP:0032336: Increased circulating specific IgE antibody concentration
+
+Gene: ZNF462 (2 disconnected phenotypes)
+  - HP:0011606: obsolete Transposition of the great arteries with intact ventricular septum
+  - HP:0040092: Asymmetry of the shape of the ears
+
+Gene: SFTPC (13 disconnected phenotypes)
+  - HP:0025173: Nodular septal thickening on pulmonary HRCT
+  - HP:0025173: Nodular septal thickening on pulmonary HRCT
+  - HP:0025173: Nodular septal thickening on pulmonary HRCT
+  - HP:0034981: Exposure to birds
+  - HP:0030864: Intercostal retractions
+  - HP:0025173: Nodular septal thickening on pulmonary HRCT
+  - HP:0030864: Intercostal retractions
+  - HP:0034092: Anti-cyclic citrullinated peptide antibody positivity
+  - HP:0031695: Severe parainfluenza infection
+  - HP:0032071: Eosinophilic pneumonia
+  - HP:0032992: Abnormal pulmonary fissure architecture
+  - HP:0030864: Intercostal retractions
+  - HP:0032969: Traction bronchiectasis
+
+Gene: A2ML1 (1 disconnected phenotypes)
+  - HP:0012714: Severe hearing impairment
+
+Gene: AASS (3 disconnected phenotypes)
+  - HP:0003168: Dibasicaminoaciduria
+  - HP:0003168: Dibasicaminoaciduria
+  - HP:0000535: obsolete Sparse and thin eyebrow
+
+Gene: ALDH6A1 (5 disconnected phenotypes)
+  - HP:0012556: Hyperbeta-alaninemia
+  - HP:0012556: Hyperbeta-alaninemia
+  - HP:0003571: Propionic acidemia
+  - HP:0003571: Propionic acidemia
+  - HP:0012556: Hyperbeta-alaninemia
+
+Gene: AP3D1 (1 disconnected phenotypes)
+  - HP:0012714: Severe hearing impairment
+
+Gene: ASNS (1 disconnected phenotypes)
+  - HP:0010854: EEG with generalized low amplitude activity
+
+Gene: BRAF (5 disconnected phenotypes)
+  - HP:0031481: Abnormal mitral valve physiology
+  - HP:0002054: Heavy supraorbital ridges
+  - HP:0002054: Heavy supraorbital ridges
+  - HP:0002054: Heavy supraorbital ridges
+  - HP:0002054: Heavy supraorbital ridges
+
+Gene: COL11A2 (3 disconnected phenotypes)
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: GATA2 (3 disconnected phenotypes)
+  - HP:0011450: Unusual CNS infection
+  - HP:0011450: Unusual CNS infection
+  - HP:0011450: Unusual CNS infection
+
+Gene: GRIN2D (1 disconnected phenotypes)
+  - HP:0006830: obsolete Severe neonatal hypotonia in males
+
+Gene: HRAS (2 disconnected phenotypes)
+  - HP:0031670: Continuous heart murmur
+  - HP:0006688: Paroxysmal tachycardia
+
+Gene: KRAS (11 disconnected phenotypes)
+  - HP:0002054: Heavy supraorbital ridges
+  - HP:0002054: Heavy supraorbital ridges
+  - HP:0002054: Heavy supraorbital ridges
+  - HP:0000535: obsolete Sparse and thin eyebrow
+  - HP:0031670: Continuous heart murmur
+  - HP:0009131: Abnormality of the musculature of the thorax
+  - HP:0100823: Genital hernia
+  - HP:0009131: Abnormality of the musculature of the thorax
+  - HP:0010742: Edema of the upper limbs
+  - HP:0031481: Abnormal mitral valve physiology
+  - HP:0012716: Moderate conductive hearing impairment
+
+Gene: MAP2K1 (5 disconnected phenotypes)
+  - HP:0000535: obsolete Sparse and thin eyebrow
+  - HP:0000535: obsolete Sparse and thin eyebrow
+  - HP:0000535: obsolete Sparse and thin eyebrow
+  - HP:0000535: obsolete Sparse and thin eyebrow
+  - HP:0000535: obsolete Sparse and thin eyebrow
+
+Gene: MAP2K2 (2 disconnected phenotypes)
+  - HP:0000535: obsolete Sparse and thin eyebrow
+  - HP:0006290: Discolored lateral incisors
+
+Gene: MRAS (2 disconnected phenotypes)
+  - HP:0030957: Ventricular septal aneurysm
+  - HP:0005185: Global systolic dysfunction
+
+Gene: MYH14 (1 disconnected phenotypes)
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: MYOM1 (3 disconnected phenotypes)
+  - HP:0032316: Family history
+  - HP:0032316: Family history
+  - HP:0032316: Family history
+
+Gene: MYOZ2 (1 disconnected phenotypes)
+  - HP:0032316: Family history
+
+Gene: NRAS (4 disconnected phenotypes)
+  - HP:0009131: Abnormality of the musculature of the thorax
+  - HP:0031481: Abnormal mitral valve physiology
+  - HP:0009131: Abnormality of the musculature of the thorax
+  - HP:0000535: obsolete Sparse and thin eyebrow
+
+Gene: PMS2 (2 disconnected phenotypes)
+  - HP:0100706: Abnormal oligodendroglia morphology
+  - HP:0012482: Frontal venous angioma
+
+Gene: PSAT1 (1 disconnected phenotypes)
+  - HP:0010742: Edema of the upper limbs
+
+Gene: PTPN11 (1 disconnected phenotypes)
+  - HP:0012713: Moderate hearing impairment
+
+Gene: RAF1 (2 disconnected phenotypes)
+  - HP:0006688: Paroxysmal tachycardia
+  - HP:0000535: obsolete Sparse and thin eyebrow
+
+Gene: RIT1 (1 disconnected phenotypes)
+  - HP:0000535: obsolete Sparse and thin eyebrow
+
+Gene: SERPINB6 (1 disconnected phenotypes)
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: SHOC2 (2 disconnected phenotypes)
+  - HP:0031481: Abnormal mitral valve physiology
+  - HP:0031481: Abnormal mitral valve physiology
+
+Gene: SLC1A1 (2 disconnected phenotypes)
+  - HP:0010899: Abnormal circulating aspartate family amino acid concentration
+  - HP:0010899: Abnormal circulating aspartate family amino acid concentration
+
+Gene: SLC25A15 (1 disconnected phenotypes)
+  - HP:4000129: Recent blood transfusion
+
+Gene: SLC52A2 (1 disconnected phenotypes)
+  - HP:0012714: Severe hearing impairment
+
+Gene: SLC52A3 (1 disconnected phenotypes)
+  - HP:0007747: Monocular horizontal nystagmus
+
+Gene: SOS1 (4 disconnected phenotypes)
+  - HP:0002054: Heavy supraorbital ridges
+  - HP:0002054: Heavy supraorbital ridges
+  - HP:0007439: Generalized keratosis follicularis
+  - HP:0000535: obsolete Sparse and thin eyebrow
+
+Gene: STAC3 (1 disconnected phenotypes)
+  - HP:0040045: Abnormal hemidiaphragm morphology
+
+Gene: ACBD5 (2 disconnected phenotypes)
+  - HP:0011411: Forceps delivery
+  - HP:0010859: Frank breech presentation
+
+Gene: ACOX2 (1 disconnected phenotypes)
+  - HP:0011570: Congenital mitral stenosis
+
+Gene: AHCY (1 disconnected phenotypes)
+  - HP:0030714: Subchorionic thrombohematoma
+
+Gene: AICDA (2 disconnected phenotypes)
+  - HP:0410324: Dust mite allergy
+  - HP:0410338: Plant product allergy
+
+Gene: B4GALT7 (2 disconnected phenotypes)
+  - HP:0030835: Elbow pain
+  - HP:0010878: Fetal cystic hygroma
+
+Gene: BBS1 (1 disconnected phenotypes)
+  - HP:0004610: Lumbar spinal canal stenosis
+
+Gene: BBS2 (3 disconnected phenotypes)
+  - HP:0030462: Abnormal amplitude of flash visual evoked potentials
+  - HP:0030462: Abnormal amplitude of flash visual evoked potentials
+  - HP:0030462: Abnormal amplitude of flash visual evoked potentials
+
+Gene: BBS7 (2 disconnected phenotypes)
+  - HP:5200120: Abnormal social emotional interactions
+  - HP:0034685: Abnormal liver enzyme activity or concentration
+
+Gene: CACNA1D (2 disconnected phenotypes)
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: CCDC32 (1 disconnected phenotypes)
+  - HP:0010805: Upturned corners of mouth
+
+Gene: CCDC50 (3 disconnected phenotypes)
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: CDAN1 (3 disconnected phenotypes)
+  - HP:0011312: Fused nails
+  - HP:0025292: Acral
+  - HP:0025292: Acral
+
+Gene: CISD2 (1 disconnected phenotypes)
+  - HP:0030896: Abnormal gastrointestinal transit time
+
+Gene: DYSF (2 disconnected phenotypes)
+  - HP:0030115: Reduced muscle fiber dysferlin
+  - HP:0030115: Reduced muscle fiber dysferlin
+
+Gene: FKRP (6 disconnected phenotypes)
+  - HP:0030093: Abnormal muscle fiber laminin beta 1
+  - HP:0001693: Cardiac shunt
+  - HP:0030285: Splayed superior cerebellar peduncle
+  - HP:0030093: Abnormal muscle fiber laminin beta 1
+  - HP:0030093: Abnormal muscle fiber laminin beta 1
+  - HP:0030093: Abnormal muscle fiber laminin beta 1
+
+Gene: FKTN (1 disconnected phenotypes)
+  - HP:0025215: Triggered by febrile illness
+
+Gene: FLI1 (5 disconnected phenotypes)
+  - HP:0030398: Abnormal platelet ATP dense granule secretion
+  - HP:0012483: Abnormal alpha granules
+  - HP:0012483: Abnormal alpha granules
+  - HP:0030398: Abnormal platelet ATP dense granule secretion
+  - HP:0030398: Abnormal platelet ATP dense granule secretion
+
+Gene: FNIP1 (1 disconnected phenotypes)
+  - HP:0030887: Increased lymphocyte apoptosis
+
+Gene: GABRA1 (3 disconnected phenotypes)
+  - HP:0030651: Multifocal
+  - HP:0030650: Focal
+  - HP:0030650: Focal
+
+Gene: GBE1 (1 disconnected phenotypes)
+  - HP:0031334: Cardiomyocyte inclusion bodies
+
+Gene: GMPPB (5 disconnected phenotypes)
+  - HP:0100305: Ring fibers
+  - HP:0100305: Ring fibers
+  - HP:0100305: Ring fibers
+  - HP:0100305: Ring fibers
+  - HP:0100305: Ring fibers
+
+Gene: GPR143 (1 disconnected phenotypes)
+  - HP:0030463: Asymmetrical distribution of flash visual evoked potentials
+
+Gene: IMPG1 (3 disconnected phenotypes)
+  - HP:0030635: Retinal dystrophy with early macular involvement
+  - HP:0030643: Vitelliform-like retinal lesions
+  - HP:0007769: Peripheral retinal degeneration
+
+Gene: KCNA1 (1 disconnected phenotypes)
+  - HP:0032245: Abnormal metabolism
+
+Gene: KDM4B (1 disconnected phenotypes)
+  - HP:0040063: Decreased adipose tissue
+
+Gene: KIZ (5 disconnected phenotypes)
+  - HP:0008036: obsolete Rod-cone dystrophy
+  - HP:0008036: obsolete Rod-cone dystrophy
+  - HP:0006688: Paroxysmal tachycardia
+  - HP:0008036: obsolete Rod-cone dystrophy
+  - HP:0008036: obsolete Rod-cone dystrophy
+
+Gene: KMT2D (2 disconnected phenotypes)
+  - HP:0040052: Abnormality of lower eyelashes
+  - HP:0410298: Partial absence of specific antibody response to hepatitis B vaccine
+
+Gene: LARS2 (4 disconnected phenotypes)
+  - HP:0025716: Fetal anemia
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:4000092: Poor conversational reciprocity
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: MATR3 (2 disconnected phenotypes)
+  - HP:6000490: Impaired heel-walking ability
+  - HP:0033202: Brachioradialis hyporeflexia
+
+Gene: MOGS (3 disconnected phenotypes)
+  - HP:0012848: Small intestinal stenosis
+  - HP:0025048: Reduced brain choline level by MRS
+  - HP:0011747: Abnormality of the anterior pituitary
+
+Gene: MYO1F (4 disconnected phenotypes)
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+  - HP:0008504: Moderate sensorineural hearing impairment
+
+Gene: PDE6A (1 disconnected phenotypes)
+  - HP:0030526: Severe constriction of peripheral visual field
+
+Gene: PGAP3 (6 disconnected phenotypes)
+  - HP:0032795: Generalized myoclonic-tonic-clonic seizure
+  - HP:0032795: Generalized myoclonic-tonic-clonic seizure
+  - HP:0032795: Generalized myoclonic-tonic-clonic seizure
+  - HP:0032795: Generalized myoclonic-tonic-clonic seizure
+  - HP:0032795: Generalized myoclonic-tonic-clonic seizure
+  - HP:0032795: Generalized myoclonic-tonic-clonic seizure
+
+Gene: PHYKPL (1 disconnected phenotypes)
+  - HP:0010908: Abnormal circulating lysine concentration
+
+Gene: POLR2A (1 disconnected phenotypes)
+  - HP:0025666: Very preterm birth
+
+Gene: POMT1 (1 disconnected phenotypes)
+  - HP:0010496: Hypertrophy of the lower limb
+
+Gene: POMT2 (3 disconnected phenotypes)
+  - HP:0031481: Abnormal mitral valve physiology
+  - HP:0031651: Abnormal tricuspid valve physiology
+  - HP:0040265: Upper limb muscle hypertrophy
+
+Gene: POPDC3 (1 disconnected phenotypes)
+  - HP:0031542: Myelin-like whorls in vacuolated fibers
+
+Gene: PRPH2 (1 disconnected phenotypes)
+  - HP:0030472: Abnormal light-adapted single flash electroretinogram
+
+Gene: RNF31 (2 disconnected phenotypes)
+  - HP:0033428: Systemic autoinflammation
+  - HP:4000034: Infection-associated lymphopenia
+
+Gene: SGCG (22 disconnected phenotypes)
+  - HP:0030107: Reduced muscle fiber beta sarcoglycan
+  - HP:0030102: Reduced muscle fiber alpha sarcoglycan
+  - HP:0030109: Absent muscle fiber gamma sarcoglycan
+  - HP:0030109: Absent muscle fiber gamma sarcoglycan
+  - HP:0031542: Myelin-like whorls in vacuolated fibers
+  - HP:0030107: Reduced muscle fiber beta sarcoglycan
+  - HP:0030102: Reduced muscle fiber alpha sarcoglycan
+  - HP:0030109: Absent muscle fiber gamma sarcoglycan
+  - HP:0100305: Ring fibers
+  - HP:0030107: Reduced muscle fiber beta sarcoglycan
+  - HP:0030102: Reduced muscle fiber alpha sarcoglycan
+  - HP:0030109: Absent muscle fiber gamma sarcoglycan
+  - HP:0031322: Myocardial lymphocytic infiltration
+  - HP:0030107: Reduced muscle fiber beta sarcoglycan
+  - HP:0030102: Reduced muscle fiber alpha sarcoglycan
+  - HP:0030109: Absent muscle fiber gamma sarcoglycan
+  - HP:0030102: Reduced muscle fiber alpha sarcoglycan
+  - HP:0030109: Absent muscle fiber gamma sarcoglycan
+  - HP:0030102: Reduced muscle fiber alpha sarcoglycan
+  - HP:0030109: Absent muscle fiber gamma sarcoglycan
+  - HP:0030107: Reduced muscle fiber beta sarcoglycan
+  - HP:0030109: Absent muscle fiber gamma sarcoglycan
+
+Gene: SLC52A1 (1 disconnected phenotypes)
+  - HP:0011028: Abnormality of blood circulation
+
+Gene: SYN1 (4 disconnected phenotypes)
+  - HP:0020207: Reflex seizure
+  - HP:0020207: Reflex seizure
+  - HP:0020207: Reflex seizure
+  - HP:0020207: Reflex seizure
+
+Gene: TFAP2B (1 disconnected phenotypes)
+  - HP:0011431: Fetal fifth finger clinodactyly
+
+Gene: THBD (3 disconnected phenotypes)
+  - HP:0040224: Abnormality of fibrinolysis
+  - HP:0040224: Abnormality of fibrinolysis
+  - HP:0040224: Abnormality of fibrinolysis
+
+Gene: TOPORS (3 disconnected phenotypes)
+  - HP:0030565: Best corrected visual acuity 1.2 LogMAR
+  - HP:0030565: Best corrected visual acuity 1.2 LogMAR
+  - HP:0030565: Best corrected visual acuity 1.2 LogMAR
+
+Gene: TP53 (1 disconnected phenotypes)
+  - HP:0012034: Liposarcoma
+
+Gene: TRIM32 (2 disconnected phenotypes)
+  - HP:0011038: Abnormal renal tubular resorption
+  - HP:0031542: Myelin-like whorls in vacuolated fibers
+
+Gene: TSPEAR (1 disconnected phenotypes)
+  - HP:0012781: Mid-frequency hearing loss
+
+Gene: UROC1 (1 disconnected phenotypes)
+  - HP:0410217: Reduced blood 5-methyltetrahydrofolate level
+
+Gene: XPNPEP3 (1 disconnected phenotypes)
+  - HP:0032998: Increased cystatin C level
+
+Gene: PRORP (2 disconnected phenotypes)
+  - HP:0033352: Pulmonary hypertensive crisis
+  - HP:0006932: Transient psychotic episodes
+
+Gene: TP63 (1 disconnected phenotypes)
+  - HP:0031731: Increased tear production
+
+Gene: B3GALT6 (1 disconnected phenotypes)
+  - HP:0033710: Rest dyspnea
+
+Gene: ZFX (2 disconnected phenotypes)
+  - HP:0012713: Moderate hearing impairment
+  - HP:0012713: Moderate hearing impairment
+
+Gene: FA2H (1 disconnected phenotypes)
+  - HP:0500073: Abnormal ocular alignment
+
+Gene: ADGRG1 (1 disconnected phenotypes)
+  - HP:0020209: Hot water-induced seizure
+
+Gene: SPI1 (1 disconnected phenotypes)
+  - HP:0020071: Viremia
+
+Gene: SFTPA1 (1 disconnected phenotypes)
+  - HP:0033763: Death in adulthood
+
+Gene: HYOU1 (3 disconnected phenotypes)
+  - HP:6001119: Purulent drainage from skin
+  - HP:0020178: Abnormal dendritic cell count
+  - HP:0034777: Purulent sputum
+
+Gene: IL2RA (2 disconnected phenotypes)
+  - HP:6000686: Mucus in stool
+  - HP:0034890: Positive CMV urine nucleic acid test
+
+Gene: WDR35 (1 disconnected phenotypes)
+  - HP:0025757: Abnormal nail surface
+
+Gene: NFKBIA (1 disconnected phenotypes)
+  - HP:0032260: Opportunistic bacterial infection
+
+Gene: ARFGEF2 (3 disconnected phenotypes)
+  - HP:0012816: Right ventricular noncompaction cardiomyopathy
+  - HP:0012832: Bilateral
+  - HP:0200011: Abnormal length of corpus callosum
+
+Gene: ASPM (2 disconnected phenotypes)
+  - HP:0033695: Occupational disability
+  - HP:0033695: Occupational disability
+
+Gene: SOCS1 (7 disconnected phenotypes)
+  - HP:0020034: Diffuse
+  - HP:0410035: Abnormal T cell activation
+  - HP:0030326: Abnormal macrophage count
+  - HP:6000324: Positive stool Giardia antigen test
+  - HP:0032973: Abnormal bronchoalveolar lavage fluid morphology
+  - HP:0031396: Abnormal proportion of naive T cells
+  - HP:0040311: Symmetric polyarthritis
+
+Gene: TINF2 (1 disconnected phenotypes)
+  - HP:0032557: History of bone marrow transplant
+
+Gene: PIGW (1 disconnected phenotypes)
+  - HP:0034030: Lip cyanosis
+
+Gene: SAT1 (2 disconnected phenotypes)
+  - HP:0033555: Anti-Ro/SS-A antibody positivity
+  - HP:0031197: Cellular urinary casts
+
+Gene: SGPL1 (4 disconnected phenotypes)
+  - HP:0012111: Abnormality of circulating glucocorticoid level
+  - HP:0030258: Hyperpigmented genitalia
+  - HP:0025678: Fetal hydrothorax
+  - HP:0012111: Abnormality of circulating glucocorticoid level
+
+Gene: TLR7 (1 disconnected phenotypes)
+  - HP:0032264: Anti-NMDA receptor antibody positivity
+
+Gene: MASTL (2 disconnected phenotypes)
+  - HP:0034600: Elevated circulating thrombopoietin concentration
+  - HP:0034541: Reduced bone-marrow megakaryocyte size
+

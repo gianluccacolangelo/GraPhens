@@ -1,0 +1,38 @@
+[
+  {
+    "gene": "AARS1",
+    "phenotype_set": 1,
+    "num_phenotypes": 3,
+    "rank": -1
+  },
+  {
+    "gene": "AARS1",
+    "phenotype_set": 2,
+    "num_phenotypes": 3,
+    "rank": -1
+  },
+  {
+    "gene": "AARS1",
+    "phenotype_set": 3,
+    "num_phenotypes": 3,
+    "rank": -1
+  },
+  {
+    "gene": "AARS1",
+    "phenotype_set": 4,
+    "num_phenotypes": 3,
+    "rank": -1
+  },
+  {
+    "gene": "AARS1",
+    "phenotype_set": 5,
+    "num_phenotypes": 2,
+    "rank": -1
+  },
+  {
+    "gene": "AARS1",
+    "phenotype_set": 6,
+    "num_phenotypes": 2,
+    "rank": -1
+  }
+]

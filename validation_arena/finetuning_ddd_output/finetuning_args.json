@@ -1,0 +1,21 @@
+{
+    "ddd_dataset_pt": "validation_arena/DDD_finetuning_dataset.pt",
+    "ddd_label_map_json": "validation_arena/DDD_gene_to_label.json",
+    "pretrained_checkpoint_path": "training_output/checkpoint_epoch_2_part_4.pt",
+    "original_dataset_root": "/home/gcolangelo/GraPhens/data/simulation/output",
+    "original_training_args_json": "training_output/args.json",
+    "output_dir": "validation_arena/finetuning_ddd_output",
+    "epochs": 300,
+    "batch_size": 32,
+    "learning_rate": 1e-06,
+    "weight_decay": 0.0001,
+    "freeze_gcn_layers": true,
+    "freeze_mha_layer": true,
+    "eval_original_val_every_n_epochs": 20,
+    "original_eval_max_batches": 100,
+    "ddd_val_split": 0.2,
+    "num_workers": 2,
+    "device": "cuda",
+    "log_level": "INFO",
+    "seed": 43
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "GenePhenAIv2_Run01_Epoch1_Part4",
+    "evaluator_type": "PyG",
+    "config": {
+      "model_class_fqn": "training.models.models.GenePhenAIv2_0",
+      "checkpoint_path": "training_runs/run_01/checkpoints/checkpoint_epoch_1_part_4.pt",
+      "training_args_path": "training_runs/run_01/args.json",
+      "training_lmdb_dir": "data/datasets/hpo_train_lmdb", 
+      "num_node_features": 768, 
+      "device": "cuda"
+    }
+  },
+  {
+    "name": "Phen2Gene_skewness",
+    "evaluator_type": "Phen2Gene",
+    "config": {
+      "docker_image": "genomicslab/phen2gene",
+      "weighting_method": "sk",
+      "max_genes": 1000,
+      "training_lmdb_dir": "data/datasets/hpo_train_lmdb",
+      "output_dir": "arena_output/phen2gene_results",
+      "verbose": false
+    }
+  }
+] 

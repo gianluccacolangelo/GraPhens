@@ -1,0 +1,23 @@
+{
+  "augmentation": {
+    "type": "local",
+    "data_dir": "data/ontology",
+    "include_ancestors": true,
+    "include_descendants": true
+  },
+  "embedding": {
+    "type": "tfidf",
+    "max_features": 256
+  },
+  "adjacency": {
+    "include_reverse_edges": true
+  },
+  "assembler": {
+    "validate": true
+  },
+  "global_context": {},
+  "visualization": {
+    "type": "graphviz",
+    "output_dir": "output"
+  }
+}

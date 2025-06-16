@@ -1,1 +1,0 @@
-{"train_batch_top10_acc":0.3125,"learning_rate":0.01,"_timestamp":1.7500850171351156e+09,"_runtime":663.344585659,"train_batch_loss":5.451450347900391,"train_batch_top1_acc":0.109375,"epoch":1,"train_batch":9000,"train_batch_mrr":0.1736011654138565,"_wandb":{"runtime":677},"_step":224}

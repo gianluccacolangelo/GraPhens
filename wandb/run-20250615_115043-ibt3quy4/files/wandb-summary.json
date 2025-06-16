@@ -1,1 +1,0 @@
-{"train_batch_mrr":0.551225483417511,"_step":373,"_runtime":1110.765596147,"_wandb":{"runtime":1123},"train_batch_top10_acc":0.7421875,"train_batch_top1_acc":0.4453125,"train_batch":14960,"_timestamp":1.7500001594308124e+09,"epoch":3,"train_batch_loss":2.6112241744995117,"learning_rate":0.0001}

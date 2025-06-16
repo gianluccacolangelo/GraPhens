@@ -1,0 +1,22 @@
+{
+    "dataset_root": "/mnt/gian",
+    "output_dir": "training_runs",
+    "split_mode": "random",
+    "val_split": 0.15,
+    "test_split": 0.15,
+    "precomputed_split_dir": null,
+    "model_version": "2.5",
+    "hidden_channels": 128,
+    "num_heads": 4,
+    "epochs": 100,
+    "batch_size": 128,
+    "learning_rate": 0.01,
+    "weight_decay": 0.0005,
+    "eval_batches": 100,
+    "eval_frequency": 0,
+    "num_workers": 4,
+    "device": "cuda",
+    "log_level": "INFO",
+    "seed": 42,
+    "resume_from_checkpoint": "training_output/checkpoint_epoch_2_part_1.pt"
+}

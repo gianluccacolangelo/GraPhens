@@ -1,0 +1,83 @@
+_wandb:
+    value:
+        cli_version: 0.20.1
+        m: []
+        python_version: 3.12.5
+        t:
+            "1":
+                - 1
+                - 11
+                - 49
+                - 77
+            "2":
+                - 1
+                - 11
+                - 49
+                - 77
+            "3":
+                - 13
+                - 16
+                - 55
+            "4": 3.12.5
+            "5": 0.20.1
+            "6": 4.49.0
+            "10":
+                - 20
+            "12": 0.20.1
+            "13": linux-x86_64
+batch_size:
+    value: 128
+dataset_root:
+    value: /mnt/gian
+device:
+    value: cuda
+epochs:
+    value: 100
+eval_batches:
+    value: 100
+eval_epoch_interval:
+    value: 10
+eval_frequency:
+    value: 0
+hidden_channels:
+    value: 64
+learning_rate:
+    value: 0.01
+log_level:
+    value: INFO
+lr_scheduler_factor:
+    value: 0.1
+lr_scheduler_min_lr:
+    value: 1e-06
+lr_scheduler_patience:
+    value: 5
+model_version:
+    value: "2.0"
+num_heads:
+    value: 4
+num_workers:
+    value: 2
+output_dir:
+    value: training_output
+precomputed_split_dir:
+    value: null
+resume_from_checkpoint:
+    value: null
+seed:
+    value: 42
+split_mode:
+    value: random
+test_split:
+    value: 0.15
+use_lr_scheduler:
+    value: true
+use_wandb:
+    value: true
+val_split:
+    value: 0.15
+wandb_entity:
+    value: gcolangelo
+wandb_project:
+    value: genphenia
+weight_decay:
+    value: 0.0005

@@ -11,6 +11,7 @@ from pathlib import Path
 import time
 import math
 import numpy as np
+import wandb # ADDED: For experiment tracking
 
 # Assuming the script is run from the workspace root
 from training.datasets.lmdb_hpo_dataset import LMDBHPOGraphDataset
@@ -36,10 +37,17 @@ parser.add_argument('--num_heads', type=int, default=4, help='Number of attentio
 # Training Args
 parser.add_argument('--epochs', type=int, default=100, help='Number of training epochs.')
 parser.add_argument('--batch_size', type=int, default=64, help='Batch size for training and evaluation.')
-parser.add_argument('--learning_rate', type=float, default=0.01, help='Initial learning rate (e.g., 0.1 for 1/10 decay per epoch).')
+parser.add_argument('--learning_rate', type=float, default=0.01, help='Initial learning rate.')
 parser.add_argument('--weight_decay', type=float, default=5e-4, help='Weight decay (L2 penalty).')
 parser.add_argument('--eval_batches', type=int, default=100, help='Number of batches to use for validation evaluation.')
-parser.add_argument('--eval_frequency', type=int, default=5, help='Number of evaluations per training epoch.')
+parser.add_argument('--eval_frequency', type=int, default=0, help='Number of evaluations per training epoch (0 to evaluate only at the end of an epoch).')
+parser.add_argument('--eval_epoch_interval', type=int, default=1, help='Run validation every N epochs.')
+
+# ADDED: Learning Rate Scheduler Args
+parser.add_argument('--use_lr_scheduler', action='store_true', help='Flag to enable ReduceLROnPlateau learning rate scheduler.')
+parser.add_argument('--lr_scheduler_factor', type=float, default=0.1, help='Factor by which the learning rate will be reduced.')
+parser.add_argument('--lr_scheduler_patience', type=int, default=10, help='Number of epochs with no improvement after which learning rate will be reduced.')
+parser.add_argument('--lr_scheduler_min_lr', type=float, default=1e-6, help='A lower bound on the learning rate.')
 
 # System Args
 parser.add_argument('--num_workers', type=int, default=4, help='Number of workers for DataLoader.')
@@ -49,11 +57,35 @@ parser.add_argument('--seed', type=int, default=42, help='Random seed for reprod
 # ADDED: Argument to resume training from a checkpoint
 parser.add_argument('--resume_from_checkpoint', type=str, default=None, help='Path to checkpoint file to resume training from.')
 
+# ADDED: W&B Args
+parser.add_argument('--use_wandb', action='store_true', help='Flag to enable Weights & Biases logging.')
+parser.add_argument('--wandb_project', type=str, default='genphenia', help='W&B project name.')
+parser.add_argument('--wandb_entity', type=str, default='gcolangelo', help='W&B entity (username or team).')
+
 args = parser.parse_args()
 
 # --- Setup ---
 output_path = Path(args.output_dir)
 output_path.mkdir(parents=True, exist_ok=True)
+
+# --- W&B Initialization ---
+if args.use_wandb:
+    try:
+        # Generate a descriptive run name
+        run_name = f"v{args.model_version}_bs{args.batch_size}_lr{args.learning_rate}_{int(time.time())}"
+        wandb.init(
+            project=args.wandb_project,
+            entity=args.wandb_entity,
+            config=vars(args),
+            name=run_name,
+            reinit=True
+        )
+        print("Weights & Biases logging enabled.")
+    except Exception as e:
+        print(f"Failed to initialize Weights & Biases: {e}")
+        print("Proceeding with training without W&B logging.")
+        args.use_wandb = False # Disable if init fails
+# -------------------------
 
 # Logging
 log_file = output_path / 'training.log'
@@ -107,7 +139,7 @@ try:
     dataset = LMDBHPOGraphDataset(root_dir=args.dataset_root, readonly=True)
     logger.info(f"Dataset loaded successfully with {len(dataset)} samples.")
 except FileNotFoundError:
-    logger.error(f"LMDB database not found at {args.dataset_root}/hpo_lmdb. Please run convert_to_lmdb.py first.")
+    logger.error(f"LMDB database not found. Expected data.mdb either at {args.dataset_root}/data.mdb or {args.dataset_root}/hpo_lmdb/data.mdb. Please run convert_to_lmdb.py first.")
     exit(1)
 except Exception as e:
     logger.error(f"Error loading dataset: {e}")
@@ -242,6 +274,22 @@ class_weights = None
 criterion = torch.nn.CrossEntropyLoss(weight=class_weights) # Use weights if available
 optimizer = AdamW(model.parameters(), lr=args.learning_rate, weight_decay=args.weight_decay)
 
+# ADDED: LR Scheduler
+scheduler = None
+if args.use_lr_scheduler:
+    # Reduce LR when validation MRR has stopped improving
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer,
+        mode='max',  # We want to maximize MRR
+        factor=args.lr_scheduler_factor,
+        patience=args.lr_scheduler_patience,
+        min_lr=args.lr_scheduler_min_lr,
+        verbose=True
+    )
+    logger.info(f"Using ReduceLROnPlateau LR scheduler, monitoring validation MRR.")
+else:
+    logger.info("Using fixed learning rate schedule (decay by 10x every epoch).")
+
 logger.info("Optimizer and Loss function defined.")
 
 # --- Checkpoint Loading (ADDED) ---
@@ -256,7 +304,11 @@ if args.resume_from_checkpoint:
             optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
             # Determine the epoch to start from. The checkpoint saves the epoch it *completed*.
             start_epoch = checkpoint['epoch'] + 1
-            # You might want to also restore other things like LR scheduler state if you add one
+            
+            # ADDED: Load scheduler state if it exists in the checkpoint
+            if scheduler and 'scheduler_state_dict' in checkpoint and checkpoint['scheduler_state_dict']:
+                scheduler.load_state_dict(checkpoint['scheduler_state_dict'])
+                logger.info("Successfully loaded scheduler state from checkpoint.")
 
             # MODIFIED: Log and potentially warn about model version mismatch
             checkpoint_model_version = checkpoint.get('model_version')
@@ -444,6 +496,7 @@ def train_epoch(loader, val_loader, epoch):
     batches_processed_since_eval = 0
     start_time = time.time()
     epoch_start_time = start_time # For overall epoch timing
+    last_val_mrr = None # Keep track of the last validation MRR for the scheduler, init to None
 
     # Calculate evaluation interval
     if args.eval_frequency <= 0:
@@ -510,6 +563,18 @@ def train_epoch(loader, val_loader, epoch):
                 top_k_log_str_batch = ", ".join([f"Top-{k}: {acc:.3f}" for k, acc in log_top_k_acc.items()])
                 logger.info(f' Epoch {epoch} | Train Batch {i+1}/{len(loader)} | Loss: {loss.item():.4f} | MRR: {log_mrr:.3f} | {top_k_log_str_batch} | Time: {batch_time:.3f}s')
                 if file_handler: file_handler.flush()
+
+                # ADDED: Log training batch metrics to W&B
+                if args.use_wandb:
+                    wandb.log({
+                        "epoch": epoch,
+                        "train_batch": i + 1,
+                        "train_batch_loss": loss.item(),
+                        "train_batch_mrr": log_mrr,
+                        "train_batch_top1_acc": log_top_k_acc.get(1, 0.0),
+                        "train_batch_top10_acc": log_top_k_acc.get(10, 0.0),
+                        "learning_rate": optimizer.param_groups[0]['lr']
+                    })
             # -------------------------------------------
 
         except Exception as e: # Catch errors from main forward/backward/step
@@ -526,14 +591,35 @@ def train_epoch(loader, val_loader, epoch):
         # --- Intra-Epoch Evaluation and Checkpointing ---
         # Evaluate if interval reached OR it's the last batch
         if batches_processed_since_eval >= eval_interval or (i + 1) == len(loader):
+
+            # ADDED: Check if we should run evaluation in this epoch based on the interval
+            run_eval_this_epoch = (epoch % args.eval_epoch_interval == 0 and epoch > 0) or (epoch == args.epochs)
+            if not run_eval_this_epoch:
+                logger.info(f"End of training for epoch {epoch}. Skipping validation as per --eval_epoch_interval={args.eval_epoch_interval}.")
+                if file_handler: file_handler.flush()
+                continue # Skip the rest of the loop, which is just the eval block
+
             logger.info(f"--- Evaluating at Epoch {epoch}, Batch {i+1}/{len(loader)} ---")
             if file_handler: file_handler.flush()
 
             # Capture all returned metrics
             val_loss, val_mrr, val_top_k, val_time = evaluate(val_loader, max_batches=args.eval_batches)
+            last_val_mrr = val_mrr # Store the latest validation MRR
             top_k_log_str = ", ".join([f"Top-{k}: {acc:.4f}" for k, acc in val_top_k.items()])
             logger.info(f"Epoch {epoch} | Batch {i+1} | Val Loss: {val_loss:.4f}, MRR: {val_mrr:.4f}, {top_k_log_str} | Eval Time: {val_time:.2f}s")
             if file_handler: file_handler.flush()
+
+            # ADDED: Log validation metrics to W&B
+            if args.use_wandb:
+                val_metrics = {
+                    "epoch": epoch,
+                    "val_loss": val_loss,
+                    "val_mrr": val_mrr,
+                    "val_time_s": val_time
+                }
+                for k, acc in val_top_k.items():
+                    val_metrics[f"val_top{k}_acc"] = acc
+                wandb.log(val_metrics)
 
             # Checkpoint saving - include new metrics
             # ... (checkpoint name generation) ...
@@ -549,6 +635,7 @@ def train_epoch(loader, val_loader, epoch):
                 'model_version': args.model_version, # ADDED model version
                 'model_state_dict': model.state_dict(),
                 'optimizer_state_dict': optimizer.state_dict(),
+                'scheduler_state_dict': scheduler.state_dict() if scheduler else None, # ADDED scheduler state
                 'val_loss': val_loss,
                 'val_mrr': val_mrr, # ADDED
                 'val_top_k_acc': val_top_k # ADDED
@@ -562,8 +649,8 @@ def train_epoch(loader, val_loader, epoch):
     # --- End of Epoch ---
     avg_epoch_loss = total_loss / total_samples if total_samples > 0 else 0
     epoch_time = time.time() - epoch_start_time
-    # Return avg loss for the whole epoch and time
-    return avg_epoch_loss, epoch_time
+    # Return avg loss for the whole epoch, time, and the last validation MRR
+    return avg_epoch_loss, epoch_time, last_val_mrr
 
 # --- Training Loop ---
 logger.info(f"Starting training loop from epoch {start_epoch}...") # MODIFIED Log
@@ -572,17 +659,19 @@ total_start_time = time.time()
 # MODIFIED: Start loop from start_epoch
 for epoch in range(start_epoch, args.epochs + 1):
     # --- Set Learning Rate for the Epoch ---
-    # Start with args.learning_rate for epoch 1, divide by 10 for subsequent epochs
-    # This calculation uses the *current* epoch number, which is correct even when resuming.
-    current_lr = args.learning_rate / (10**(epoch - 1))
-    for param_group in optimizer.param_groups:
-        param_group['lr'] = current_lr
+    # The new scheduler handles this automatically. We just log the current LR.
+    # The old manual decay logic is removed.
+    current_lr = optimizer.param_groups[0]['lr']
     logger.info(f"--- Epoch {epoch}/{args.epochs} | Learning Rate: {current_lr:.1e} ---")
     if file_handler: file_handler.flush()
 
     # Pass val_loader and epoch to train_epoch for intra-epoch evaluation
-    train_loss, train_time = train_epoch(train_loader, val_loader, epoch)
-    # train_epoch now handles evaluation and checkpointing, so no separate evaluate call here
+    train_loss, train_time, last_val_mrr = train_epoch(train_loader, val_loader, epoch)
+    # train_epoch now handles evaluation and checkpointing
+
+    # ADDED: Step the LR scheduler only if a new validation metric was produced this epoch
+    if scheduler and last_val_mrr is not None:
+        scheduler.step(last_val_mrr)
 
     logger.info(f"Epoch {epoch} Completed | Avg Train Loss: {train_loss:.4f} | Total Epoch Time: {train_time:.2f}s")
     if file_handler: file_handler.flush()
@@ -625,6 +714,16 @@ if file_handler: file_handler.flush()
 logger.info(f"Test Time: {test_time:.2f}s")
 if file_handler: file_handler.flush()
 
+# ADDED: Log final test metrics to W&B
+if args.use_wandb:
+    test_metrics = {
+        "test_loss": test_loss,
+        "test_mrr": test_mrr
+    }
+    for k, acc in test_top_k.items():
+        test_metrics[f"test_top{k}_acc"] = acc
+    wandb.log(test_metrics)
+
 # Save test results - include new metrics
 results = {
     'last_checkpoint_loaded': str(last_checkpoint_path) if last_checkpoint_path.exists() else 'None (final state used)',
@@ -640,5 +739,10 @@ with open(output_path / 'test_results.json', 'w') as f:
 
 logger.info(f"Test results saved to {output_path / 'test_results.json'}")
 if file_handler: file_handler.flush()
+
+# ADDED: Finish W&B run
+if args.use_wandb:
+    wandb.finish()
+
 logger.info("Script finished.")
 if file_handler: file_handler.flush()

@@ -1,0 +1,7 @@
+{"time":"2025-06-15T19:57:22.099205517-03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/gcolangelo/GraPhens/wandb/run-20250615_195717-jfevebzm/logs/debug-core.log"}
+{"time":"2025-06-15T19:57:22.845993551-03:00","level":"INFO","msg":"stream: created new stream","id":"jfevebzm"}
+{"time":"2025-06-15T19:57:22.846052474-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"jfevebzm"}
+{"time":"2025-06-15T19:57:22.846103396-03:00","level":"INFO","msg":"sender: started","stream_id":"jfevebzm"}
+{"time":"2025-06-15T19:57:22.848440531-03:00","level":"INFO","msg":"stream: started","id":"jfevebzm"}
+{"time":"2025-06-15T19:57:22.84844053-03:00","level":"INFO","msg":"handler: started","stream_id":"jfevebzm"}
+{"time":"2025-06-15T19:57:23.173217031-03:00","level":"INFO","msg":"Starting system monitor"}

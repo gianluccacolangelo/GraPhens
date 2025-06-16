@@ -12,8 +12,6 @@ sys.path.insert(0, str(project_root))
 try:
     from training.models.models import GenePhenAIv2_0
     from src.graphens import GraPhens
-    # Import LMDB dataset class *only* for metadata loading
-    from training.datasets.lmdb_hpo_dataset import LMDBHPOGraphDataset
 except ImportError as e:
     print(f"Error importing necessary modules: {e}")
     print("Please ensure the script is run from the project root or the GraPhens package is installed correctly.")
@@ -28,6 +26,7 @@ parser.add_argument('--dataset_root', type=str, default='/home/gcolangelo/GraPhe
 
 # Model & Checkpoint Args
 parser.add_argument('--checkpoint_path', type=str, default='/home/gcolangelo/GraPhens/training_output/checkpoint_epoch_2_part_2.pt', help='Path to the model checkpoint file (.pt).')
+parser.add_argument('--embedding_path', type=str, default='data/embeddings/hpo_embeddings_gsarti_biobert-nli_20250317_162424.pkl', help='Path to the HPO lookup embeddings file (.pkl).')
 parser.add_argument('--hidden_channels', type=int, default=756, help='Number of hidden units in GNN layers (must match training).')
 parser.add_argument('--embedding_model', type=str, default='gsarti/biobert-nli', help='Name of the embedding model used for preprocessing.')
 parser.add_argument('--embedding_dim', type=int, default=768, help='Dimension of the node embeddings (must match training and embedding model).')
@@ -56,23 +55,29 @@ logger.info(f"Using device: {device}")
 # --- Load Metadata (Number of Classes and Gene Mapping) ---
 logger.info(f"Loading metadata from dataset root: {args.dataset_root}")
 try:
-    # Instantiate dataset only to access metadata without loading actual data
-    dataset_meta = LMDBHPOGraphDataset(root_dir=args.dataset_root, readonly=True)
-    num_classes = dataset_meta.num_classes
-    gene_list = dataset_meta.metadata.get('genes', [])
+    metadata_path = Path(args.dataset_root) / 'metadata.json'
+    if not metadata_path.exists():
+         raise FileNotFoundError(f"Metadata file not found: {metadata_path}")
+
+    with open(metadata_path, 'r') as f:
+        metadata = json.load(f)
+
+    gene_list = metadata.get('genes', [])
     if not gene_list:
-        logger.error("Could not retrieve gene list from dataset metadata. Ensure 'genes' key exists in metadata.json within the LMDB directory.")
+        logger.error("Could not retrieve gene list from dataset metadata. Ensure 'genes' key exists in metadata.json.")
         sys.exit(1)
-    if num_classes is None or num_classes != len(gene_list):
-         logger.warning(f"num_classes from metadata ({num_classes}) doesn't match gene list length ({len(gene_list)}). Using gene list length.")
-         num_classes = len(gene_list)
+
+    num_classes = len(gene_list)
 
     # Create index-to-gene mapping
     idx_to_gene = {i: gene for i, gene in enumerate(gene_list)}
     logger.info(f"Successfully loaded metadata: Found {num_classes} classes (genes).")
 
-except FileNotFoundError:
-    logger.error(f"LMDB database metadata not found at {args.dataset_root}. Please provide the correct path to the dataset used for training.")
+except FileNotFoundError as e:
+    logger.error(f"{e}. Please provide the correct path to the directory containing 'metadata.json'.")
+    sys.exit(1)
+except json.JSONDecodeError:
+    logger.error(f"Error decoding JSON from {metadata_path}. The file may be corrupt.")
     sys.exit(1)
 except Exception as e:
     logger.error(f"Error loading dataset metadata: {e}")
@@ -117,7 +122,7 @@ logger.info("Initializing GraPhens with settings matching training preprocessing
 try:
     graphens = (
         GraPhens()
-        .with_lookup_embeddings("data/embeddings/hpo_embeddings_gsarti_biobert-nli_20250317_162424.pkl")
+        .with_lookup_embeddings(args.embedding_path)
         .with_augmentation(include_ancestors=True)
         .with_adjacency_settings(include_reverse_edges=False)
     )

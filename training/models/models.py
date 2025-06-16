@@ -47,7 +47,8 @@ class GenePhenAIv2_0(nn.Module):
         self.bn2 = BatchNorm(hidden_channels)
         self.conv3 = GCNConv(hidden_channels, hidden_channels)
         self.bn3 = BatchNorm(hidden_channels)
-
+        self.conv4 = GCNConv(hidden_channels, hidden_channels)
+        self.bn4 = BatchNorm(hidden_channels)
         # ADDED Dropout Layer
         self.dropout = Dropout(p=self.dropout_prob)
 
@@ -100,7 +101,12 @@ class GenePhenAIv2_0(nn.Module):
 
         x = self.conv3(x, edge_index)
         x = self.bn3(x)
-        x = F.relu(x) # Final node embeddings before pooling [num_nodes, hidden_channels]
+        x = F.relu(x)
+        x = self.dropout(x)
+
+        x = self.conv4(x, edge_index)
+        x = self.bn4(x)
+        x = F.relu(x)
         x = self.dropout(x)
 
         # Apply attention-based graph pooling

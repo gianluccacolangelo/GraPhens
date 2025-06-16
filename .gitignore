@@ -1,1 +1,3 @@
 data/simulation/output/hpo_lmdb/shard_0/data.mdb
+wandb/
+.cursor/

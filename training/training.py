@@ -42,6 +42,7 @@ parser.add_argument('--weight_decay', type=float, default=5e-4, help='Weight dec
 parser.add_argument('--eval_batches', type=int, default=100, help='Number of batches to use for validation evaluation.')
 parser.add_argument('--eval_frequency', type=int, default=0, help='Number of evaluations per training epoch (0 to evaluate only at the end of an epoch).')
 parser.add_argument('--eval_epoch_interval', type=int, default=1, help='Run validation every N epochs.')
+parser.add_argument('--log_frequency', type=int, default=1000, help='Log training metrics every N batches.')
 
 # ADDED: Learning Rate Scheduler Args
 parser.add_argument('--use_lr_scheduler', action='store_true', help='Flag to enable ReduceLROnPlateau learning rate scheduler.')
@@ -496,7 +497,12 @@ def train_epoch(loader, val_loader, epoch):
     batches_processed_since_eval = 0
     start_time = time.time()
     epoch_start_time = start_time # For overall epoch timing
-    last_val_mrr = None # Keep track of the last validation MRR for the scheduler, init to None
+    # This will hold the validation results if evaluation is run
+    validation_results = {
+        'val_loss': None,
+        'val_mrr': None,
+        'val_top_k': None
+    }
 
     # Calculate evaluation interval
     if args.eval_frequency <= 0:
@@ -553,8 +559,8 @@ def train_epoch(loader, val_loader, epoch):
             batches_processed_since_eval += 1
             # ------------------------------------
 
-            # --- Log training progress every 40 batches ---
-            if (i + 1) % 40 == 0:
+            # --- Log training progress every N batches ---
+            if args.log_frequency > 0 and (i + 1) % args.log_frequency == 0:
                 batch_time = time.time() - batch_start_time
                 # Calculate metrics for this specific batch just before logging
                 # Assumes calculate_batch_metrics function exists
@@ -595,109 +601,141 @@ def train_epoch(loader, val_loader, epoch):
             # ADDED: Check if we should run evaluation in this epoch based on the interval
             run_eval_this_epoch = (epoch % args.eval_epoch_interval == 0 and epoch > 0) or (epoch == args.epochs)
             if not run_eval_this_epoch:
-                logger.info(f"End of training for epoch {epoch}. Skipping validation as per --eval_epoch_interval={args.eval_epoch_interval}.")
+                logger.debug(f"End of training block for epoch {epoch}. Skipping validation as per --eval_epoch_interval={args.eval_epoch_interval}.")
+                # We don't continue the whole loop, just skip this eval block
+            else:
+                logger.info(f"--- Evaluating at Epoch {epoch}, Batch {i+1}/{len(loader)} ---")
                 if file_handler: file_handler.flush()
-                continue # Skip the rest of the loop, which is just the eval block
 
-            logger.info(f"--- Evaluating at Epoch {epoch}, Batch {i+1}/{len(loader)} ---")
-            if file_handler: file_handler.flush()
+                # Capture all returned metrics
+                val_loss, val_mrr, val_top_k, val_time = evaluate(val_loader, max_batches=args.eval_batches)
+                
+                # Store validation results to be returned
+                validation_results['val_loss'] = val_loss
+                validation_results['val_mrr'] = val_mrr
+                validation_results['val_top_k'] = val_top_k
 
-            # Capture all returned metrics
-            val_loss, val_mrr, val_top_k, val_time = evaluate(val_loader, max_batches=args.eval_batches)
-            last_val_mrr = val_mrr # Store the latest validation MRR
-            top_k_log_str = ", ".join([f"Top-{k}: {acc:.4f}" for k, acc in val_top_k.items()])
-            logger.info(f"Epoch {epoch} | Batch {i+1} | Val Loss: {val_loss:.4f}, MRR: {val_mrr:.4f}, {top_k_log_str} | Eval Time: {val_time:.2f}s")
-            if file_handler: file_handler.flush()
+                top_k_log_str = ", ".join([f"Top-{k}: {acc:.4f}" for k, acc in val_top_k.items()])
+                logger.info(f"Epoch {epoch} | Batch {i+1} | Val Loss: {val_loss:.4f}, MRR: {val_mrr:.4f}, {top_k_log_str} | Eval Time: {val_time:.2f}s")
+                if file_handler: file_handler.flush()
 
-            # ADDED: Log validation metrics to W&B
-            if args.use_wandb:
-                val_metrics = {
-                    "epoch": epoch,
-                    "val_loss": val_loss,
-                    "val_mrr": val_mrr,
-                    "val_time_s": val_time
-                }
-                for k, acc in val_top_k.items():
-                    val_metrics[f"val_top{k}_acc"] = acc
-                wandb.log(val_metrics)
-
-            # Checkpoint saving - include new metrics
-            # ... (checkpoint name generation) ...
-            part_num = math.ceil((i + 1) / eval_interval) # Calculate part number (1-based)
-            if (i + 1) == len(loader) and batches_processed_since_eval < eval_interval:
-                 part_num = args.eval_frequency # Ensure last part is correctly numbered if epoch size not divisible
-
-            checkpoint_name = f'checkpoint_epoch_{epoch}_part_{part_num}.pt'
-            checkpoint_path = output_path / checkpoint_name
-            torch.save({
-                'epoch': epoch,
-                'batch': i + 1,
-                'model_version': args.model_version, # ADDED model version
-                'model_state_dict': model.state_dict(),
-                'optimizer_state_dict': optimizer.state_dict(),
-                'scheduler_state_dict': scheduler.state_dict() if scheduler else None, # ADDED scheduler state
-                'val_loss': val_loss,
-                'val_mrr': val_mrr, # ADDED
-                'val_top_k_acc': val_top_k # ADDED
-            }, checkpoint_path)
-            logger.info(f"Saved checkpoint: {checkpoint_path}")
-            if file_handler: file_handler.flush()
+                # ADDED: Log validation metrics to W&B
+                if args.use_wandb:
+                    wandb_val_metrics = {
+                        "epoch": epoch,
+                        "val_loss": val_loss,
+                        "val_mrr": val_mrr,
+                        "val_time_s": val_time
+                    }
+                    for k, acc in val_top_k.items():
+                        wandb_val_metrics[f"val_top{k}_acc"] = acc
+                    wandb.log(wandb_val_metrics)
 
             batches_processed_since_eval = 0
-            model.train()
+            model.train() # Ensure model is back in training mode
 
     # --- End of Epoch ---
     avg_epoch_loss = total_loss / total_samples if total_samples > 0 else 0
     epoch_time = time.time() - epoch_start_time
-    # Return avg loss for the whole epoch, time, and the last validation MRR
-    return avg_epoch_loss, epoch_time, last_val_mrr
+    # Return avg loss for the whole epoch, time, and the validation results
+    return avg_epoch_loss, epoch_time, validation_results
 
 # --- Training Loop ---
-logger.info(f"Starting training loop from epoch {start_epoch}...") # MODIFIED Log
+logger.info(f"Starting training loop from epoch {start_epoch}...")
 total_start_time = time.time()
+best_val_mrr = -1 # Keep track of best validation MRR for saving the best model
 
 # MODIFIED: Start loop from start_epoch
 for epoch in range(start_epoch, args.epochs + 1):
     # --- Set Learning Rate for the Epoch ---
-    # The new scheduler handles this automatically. We just log the current LR.
-    # The old manual decay logic is removed.
     current_lr = optimizer.param_groups[0]['lr']
     logger.info(f"--- Epoch {epoch}/{args.epochs} | Learning Rate: {current_lr:.1e} ---")
     if file_handler: file_handler.flush()
 
-    # Pass val_loader and epoch to train_epoch for intra-epoch evaluation
-    train_loss, train_time, last_val_mrr = train_epoch(train_loader, val_loader, epoch)
-    # train_epoch now handles evaluation and checkpointing
+    # train_epoch now returns validation metrics if they were computed
+    train_loss, train_time, validation_results = train_epoch(train_loader, val_loader, epoch)
+    
+    val_mrr = validation_results.get('val_mrr')
 
-    # ADDED: Step the LR scheduler only if a new validation metric was produced this epoch
-    if scheduler and last_val_mrr is not None:
-        scheduler.step(last_val_mrr)
+    # Step the LR scheduler only if a validation metric was produced this epoch
+    if scheduler and val_mrr is not None:
+        scheduler.step(val_mrr)
 
     logger.info(f"Epoch {epoch} Completed | Avg Train Loss: {train_loss:.4f} | Total Epoch Time: {train_time:.2f}s")
+    
+    # --- Save Checkpoint After Every Epoch ---
+    checkpoint_name = f'checkpoint_epoch_{epoch}.pt'
+    checkpoint_path = output_path / checkpoint_name
+    torch.save({
+        'epoch': epoch,
+        'model_version': args.model_version,
+        'model_state_dict': model.state_dict(),
+        'optimizer_state_dict': optimizer.state_dict(),
+        'scheduler_state_dict': scheduler.state_dict() if scheduler else None,
+        'val_loss': validation_results.get('val_loss'),
+        'val_mrr': val_mrr,
+        'val_top_k_acc': validation_results.get('val_top_k')
+    }, checkpoint_path)
+    logger.info(f"Saved checkpoint: {checkpoint_path}")
+
+    # Save a 'best_model.pt' if this epoch's validation MRR is the best so far
+    if val_mrr is not None and val_mrr > best_val_mrr:
+        best_val_mrr = val_mrr
+        best_model_path = output_path / 'best_model.pt'
+        # Save the same data as the epoch checkpoint, but to a different file
+        torch.save({
+            'epoch': epoch,
+            'model_version': args.model_version,
+            'model_state_dict': model.state_dict(),
+            'optimizer_state_dict': optimizer.state_dict(),
+            'scheduler_state_dict': scheduler.state_dict() if scheduler else None,
+            'val_loss': validation_results.get('val_loss'),
+            'val_mrr': val_mrr,
+            'val_top_k_acc': validation_results.get('val_top_k')
+        }, best_model_path)
+        logger.info(f"Saved new best model with MRR {val_mrr:.4f} to {best_model_path}")
+    
     if file_handler: file_handler.flush()
+
 
 # --- Final Testing Modification ---
-# ... (loading checkpoint logic) ...
-logger.info("Attempting to load the last saved checkpoint for final testing...")
-if file_handler: file_handler.flush()
-# Find the last checkpoint file based on epoch and part number
-last_epoch = epoch # The last epoch completed
-last_part = args.eval_frequency # Assuming the last part was saved
-last_checkpoint_name = f'checkpoint_epoch_{last_epoch}_part_{last_part}.pt'
-last_checkpoint_path = output_path / last_checkpoint_name
+logger.info("Running final evaluation on the test set.")
 
-try:
-    if last_checkpoint_path.exists():
-        checkpoint = torch.load(last_checkpoint_path, map_location=device)
+# Prefer the best model if it exists, otherwise fall back to the last epoch's checkpoint
+best_model_path = output_path / 'best_model.pt'
+last_checkpoint_path = output_path / f'checkpoint_epoch_{args.epochs}.pt'
+checkpoint_to_load = None
+checkpoint_name_for_log = "N/A"
+
+if best_model_path.exists():
+    checkpoint_to_load = best_model_path
+    checkpoint_name_for_log = best_model_path.name
+    logger.info(f"Found 'best_model.pt', loading it for final testing.")
+elif last_checkpoint_path.exists():
+    checkpoint_to_load = last_checkpoint_path
+    checkpoint_name_for_log = last_checkpoint_path.name
+    logger.info(f"'best_model.pt' not found. Loading checkpoint from last epoch: {checkpoint_name_for_log}")
+else:
+    logger.warning("No best model or last epoch checkpoint found. Testing with the model state from the end of training.")
+    checkpoint_name_for_log = 'End of Training'
+
+if checkpoint_to_load:
+    try:
+        checkpoint = torch.load(checkpoint_to_load, map_location=device)
         model.load_state_dict(checkpoint['model_state_dict'])
-        logger.info(f"Loaded last checkpoint: {last_checkpoint_name} (Epoch {checkpoint.get('epoch', 'N/A')}, Batch {checkpoint.get('batch', 'N/A')})")
-    else:
-        logger.warning(f"Last checkpoint {last_checkpoint_name} not found. Testing with the final model state from end of training.")
+        logger.info(f"Successfully loaded model state from {checkpoint_name_for_log}")
+        if 'epoch' in checkpoint:
+            loaded_epoch = checkpoint['epoch']
+            loaded_mrr = checkpoint.get('val_mrr', 'N/A')
+            # Ensure loaded_mrr is formatted correctly, even if it's None
+            mrr_str = f"{loaded_mrr:.4f}" if isinstance(loaded_mrr, float) else loaded_mrr
+            logger.info(f"Checkpoint was saved at epoch {loaded_epoch} with Val MRR: {mrr_str}")
+    except Exception as e:
+        logger.error(f"Error loading checkpoint {checkpoint_to_load}: {e}. Testing with final model state from training.")
+        checkpoint_name_for_log = 'End of Training (load failed)'
 
-    if file_handler: file_handler.flush()
-except Exception as e:
-    logger.error(f"Error loading last checkpoint: {e}. Testing with final model state.")
-    if file_handler: file_handler.flush()
+if file_handler: file_handler.flush()
+
 
 # Evaluate on the full test set using the potentially loaded model
 logger.info("Running final evaluation on the full Test set...")
@@ -705,7 +743,7 @@ if file_handler: file_handler.flush()
 # Evaluate on ALL test batches and capture all metrics
 test_loss, test_mrr, test_top_k, test_time = evaluate(test_loader, max_batches=None)
 test_top_k_log_str = ", ".join([f"Top-{k}: {acc:.4f}" for k, acc in test_top_k.items()])
-logger.info(f"--- Test Results (Model from {last_checkpoint_name if last_checkpoint_path.exists() else 'End of Training'}) ---")
+logger.info(f"--- Test Results (Model from {checkpoint_name_for_log}) ---")
 if file_handler: file_handler.flush()
 logger.info(f"Test Loss: {test_loss:.4f}")
 logger.info(f"Test MRR: {test_mrr:.4f}") # ADDED
@@ -726,7 +764,7 @@ if args.use_wandb:
 
 # Save test results - include new metrics
 results = {
-    'last_checkpoint_loaded': str(last_checkpoint_path) if last_checkpoint_path.exists() else 'None (final state used)',
+    'last_checkpoint_loaded': checkpoint_name_for_log,
     'model_version': args.model_version, # ADDED model version
     'test_loss': test_loss,
     'test_mrr': test_mrr, # ADDED

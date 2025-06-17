@@ -25,7 +25,7 @@ parser.add_argument('--hpo_ids', type=str, required=True, nargs='+', help='List 
 parser.add_argument('--dataset_root', type=str, default='/home/gcolangelo/GraPhens/data/simulation/output/', help='Path to the root directory of the LMDB dataset used for training (for metadata).')
 
 # Model & Checkpoint Args
-parser.add_argument('--checkpoint_path', type=str, required=True, help='Path to the model checkpoint file (.pt).')
+parser.add_argument('--checkpoint_path', type=str, default='training_output/checkpoint_epoch_1.pt', help='Path to the model checkpoint file (.pt).')
 parser.add_argument('--embedding_path', type=str, default='data/embeddings/hpo_embeddings_gsarti_biobert-nli_20250317_162424.pkl', help='Path to the HPO lookup embeddings file (.pkl).')
 parser.add_argument('--hidden_channels', type=int, help='Number of hidden units in GNN layers. Loaded from checkpoint args.json if available.')
 parser.add_argument('--model_version', type=str, choices=['2.0', '2.5'], help='Model version to use. Loaded from checkpoint args.json if available.')
@@ -34,7 +34,7 @@ parser.add_argument('--embedding_dim', type=int, default=768, help='Dimension of
 
 # Inference Args
 parser.add_argument('--top_k', type=int, default=60, help='Number of top gene predictions to display.')
-parser.add_argument('--device', type=str, default='cuda' if torch.cuda.is_available() else 'cpu', help='Device to use (cuda or cpu).')
+parser.add_argument('--device', type=str, default='cpu' if torch.cuda.is_available() else 'cpu', help='Device to use (cuda or cpu).')
 parser.add_argument('--log_level', type=str, default='INFO', choices=['DEBUG', 'INFO', 'WARNING', 'ERROR'], help='Logging level.')
 
 args = parser.parse_args()
@@ -155,11 +155,14 @@ try:
     logger.info("Checkpoint loaded successfully and model set to evaluation mode.")
     # Log checkpoint metadata if available
     if 'epoch' in checkpoint: logger.info(f"  Checkpoint Epoch: {checkpoint['epoch']}")
-    if 'val_loss' in checkpoint: logger.info(f"  Checkpoint Val Loss: {checkpoint['val_loss']:.4f}")
-    if 'val_mrr' in checkpoint: logger.info(f"  Checkpoint Val MRR: {checkpoint['val_mrr']:.4f}")
-    if 'val_top_k_acc' in checkpoint:
-        top_k_str = ", ".join([f"Top-{k}: {acc:.4f}" for k, acc in checkpoint['val_top_k_acc'].items()])
-        logger.info(f"  Checkpoint Val Top-K: {top_k_str}")
+    if checkpoint.get('val_loss') is not None: logger.info(f"  Checkpoint Val Loss: {checkpoint['val_loss']:.4f}")
+    if checkpoint.get('val_mrr') is not None: logger.info(f"  Checkpoint Val MRR: {checkpoint['val_mrr']:.4f}")
+    if checkpoint.get('val_top_k_acc'):
+        # Filter out potential None values in the dictionary
+        valid_accs = {k: acc for k, acc in checkpoint['val_top_k_acc'].items() if acc is not None}
+        if valid_accs:
+            top_k_str = ", ".join([f"Top-{k}: {acc:.4f}" for k, acc in valid_accs.items()])
+            logger.info(f"  Checkpoint Val Top-K: {top_k_str}")
 
 except Exception as e:
     logger.error(f"Error loading checkpoint {checkpoint_path}: {e}")

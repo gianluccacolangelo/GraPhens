@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch_geometric.nn import GCNConv, global_mean_pool, global_add_pool, AttentionalAggregation
+from torch_geometric.nn import GCNConv, GINConv, global_mean_pool, global_add_pool, AttentionalAggregation
 from torch_geometric.nn import BatchNorm
 from torch.nn import Linear, ReLU, Sequential, Dropout
 from typing import Dict, Any, Optional, Tuple
@@ -234,5 +234,90 @@ class GenePhenAIv2_5(nn.Module):
 
         # Apply the final classifier
         out = self.classifier(pooled) # [batch_size, out_channels]
+
+        return out
+
+
+class GenePhenAIv3_0(nn.Module):
+    """
+    An expressive GNN using Graph Isomorphism Network (GIN) layers.
+
+    This model directly implements the concept of a multi-layer message-passing function.
+    Each GIN layer uses a small Multi-Layer Perceptron (MLP) to update node features,
+    making it more powerful than a standard GCN layer.
+    """
+    def __init__(self, in_channels: int, hidden_channels: int, out_channels: int, dropout_prob: float = 0.3):
+        """
+        Args:
+            in_channels: Dimensionality of input node features.
+            hidden_channels: Dimensionality of hidden layers.
+            out_channels: Number of output classes (genes).
+            dropout_prob: Probability for dropout layers.
+        """
+        super().__init__()
+        torch.manual_seed(42)
+        self.dropout_prob = dropout_prob
+
+        # --- GINConv Explanation ---
+        # GINConv uses an MLP as its message processing function.
+        # It follows the formula: X' = MLP((1 + ε) * X_i + aggregate(X_j for j in neighbors(i)))
+        # The `nn` argument takes the MLP module. This is a multi-layer message function.
+        gin_mlp1 = Sequential(
+            Linear(in_channels, hidden_channels),
+            ReLU(),
+            Linear(hidden_channels, hidden_channels),
+        )
+        self.conv1 = GINConv(gin_mlp1, train_eps=True)
+        self.bn1 = BatchNorm(hidden_channels)
+
+        gin_mlp2 = Sequential(
+            Linear(hidden_channels, hidden_channels),
+            ReLU(),
+            Linear(hidden_channels, hidden_channels),
+        )
+        self.conv2 = GINConv(gin_mlp2, train_eps=True)
+        self.bn2 = BatchNorm(hidden_channels)
+
+        gin_mlp3 = Sequential(
+            Linear(hidden_channels, hidden_channels),
+            ReLU(),
+            Linear(hidden_channels, hidden_channels),
+        )
+        self.conv3 = GINConv(gin_mlp3, train_eps=True)
+        self.bn3 = BatchNorm(hidden_channels)
+
+        self.dropout = Dropout(p=self.dropout_prob)
+
+        # Use the same attentional pooling as v2.0
+        gate_nn = Sequential(
+            Linear(hidden_channels, hidden_channels // 2),
+            ReLU(),
+            Linear(hidden_channels // 2, 1)
+        )
+        self.attention_pool = AttentionalAggregation(gate_nn=gate_nn)
+        self.classifier = Linear(hidden_channels, out_channels)
+
+    def forward(self, x: torch.Tensor, edge_index: torch.Tensor, batch: Optional[torch.Tensor] = None) -> torch.Tensor:
+        x = self.conv1(x, edge_index)
+        x = self.bn1(x)
+        x = F.relu(x)
+        x = self.dropout(x)
+
+        x = self.conv2(x, edge_index)
+        x = self.bn2(x)
+        x = F.relu(x)
+        x = self.dropout(x)
+
+        x = self.conv3(x, edge_index)
+        x = self.bn3(x)
+        x = F.relu(x)
+        x = self.dropout(x)
+
+        if batch is None:
+             batch = torch.zeros(x.size(0), dtype=torch.long, device=x.device)
+
+        x_pooled = self.attention_pool(x, batch)
+        x_pooled = self.dropout(x_pooled)
+        out = self.classifier(x_pooled)
 
         return out

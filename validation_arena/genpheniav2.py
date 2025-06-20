@@ -25,7 +25,7 @@ parser.add_argument('--hpo_ids', type=str, required=True, nargs='+', help='List 
 parser.add_argument('--dataset_root', type=str, default='/home/gcolangelo/GraPhens/data/simulation/output/', help='Path to the root directory of the LMDB dataset used for training (for metadata).')
 
 # Model & Checkpoint Args
-parser.add_argument('--checkpoint_path', type=str, default='training_output/checkpoint_epoch_1.pt', help='Path to the model checkpoint file (.pt).')
+parser.add_argument('--checkpoint_path', type=str, default='training_output/best_model.pt', help='Path to the model checkpoint file (.pt).')
 parser.add_argument('--embedding_path', type=str, default='data/embeddings/hpo_embeddings_gsarti_biobert-nli_20250317_162424.pkl', help='Path to the HPO lookup embeddings file (.pkl).')
 parser.add_argument('--hidden_channels', type=int, help='Number of hidden units in GNN layers. Loaded from checkpoint args.json if available.')
 parser.add_argument('--model_version', type=str, choices=['2.0', '2.5'], help='Model version to use. Loaded from checkpoint args.json if available.')

@@ -499,6 +499,30 @@ class HPOGraphProvider:
         parents = set(self.graph.successors(term_id))
         return parents
 
+    def get_direct_children(self, term_id: str) -> Set[str]:
+        """
+        Get the direct children (immediate descendants) of a given HPO term.
+
+        Args:
+            term_id: HPO term ID
+
+        Returns:
+            Set of HPO term IDs representing the direct children.
+        """
+        if not self.load():
+            return set()
+
+        # Normalize the input ID
+        term_id = self._normalize_hpo_id(term_id)
+
+        if term_id not in self.graph:
+            self.logger.warning(f"Term ID {term_id} not found in HPO graph")
+            return set()
+
+        # Since edges are child -> parent, predecessors are the direct children
+        children = set(self.graph.predecessors(term_id))
+        return children
+
     def get_descendants(self, term_id: str) -> Set[str]:
         """
         Get all descendants of a given HPO term.

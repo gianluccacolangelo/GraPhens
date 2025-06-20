@@ -15,7 +15,7 @@ import wandb # ADDED: For experiment tracking
 
 # Assuming the script is run from the workspace root
 from training.datasets.lmdb_hpo_dataset import LMDBHPOGraphDataset
-from training.models.models import GenePhenAIv2_0, GenePhenAIv2_5
+from training.models.models import GenePhenAIv2_0, GenePhenAIv2_5, GenePhenAIv3_0
 
 # --- Argument Parsing ---
 parser = argparse.ArgumentParser(description="Train Phenotype GNN Model using LMDB Dataset")
@@ -29,7 +29,7 @@ parser.add_argument('--test_split', type=float, default=0.15, help='Fraction of 
 parser.add_argument('--precomputed_split_dir', type=str, default=None, help='Directory containing precomputed split indices (train_indices.pt, val_indices.pt, test_indices.pt) relative to dataset_root.')
 
 # Model Args
-parser.add_argument('--model_version', type=str, default='2.0', choices=['2.0', '2.5'], help='Version of the GenePhenAI model to use (e.g., 2.0, 2.5).')
+parser.add_argument('--model_version', type=str, default='2.0', choices=['2.0', '2.5', '3.0'], help='Version of the GenePhenAI model to use (e.g., 2.0, 2.5, 3.0).')
 parser.add_argument('--hidden_channels', type=int, default=128, help='Number of hidden units in GNN layers.')
 parser.add_argument('--num_heads', type=int, default=4, help='Number of attention heads for MultiHeadAttention pooling (used only in v2.5).')
 # Add other model hyperparameters if needed (e.g., dropout, number of layers if model becomes flexible)
@@ -37,7 +37,7 @@ parser.add_argument('--num_heads', type=int, default=4, help='Number of attentio
 # Training Args
 parser.add_argument('--epochs', type=int, default=100, help='Number of training epochs.')
 parser.add_argument('--batch_size', type=int, default=64, help='Batch size for training and evaluation.')
-parser.add_argument('--learning_rate', type=float, default=0.01, help='Initial learning rate.')
+parser.add_argument('--learning_rate', type=float, default=None, help='Initial learning rate. Overrides checkpoint LR if resuming. Defaults to 0.01 if not provided.')
 parser.add_argument('--weight_decay', type=float, default=5e-4, help='Weight decay (L2 penalty).')
 parser.add_argument('--eval_batches', type=int, default=100, help='Number of batches to use for validation evaluation.')
 parser.add_argument('--eval_frequency', type=int, default=0, help='Number of evaluations per training epoch (0 to evaluate only at the end of an epoch).')
@@ -73,7 +73,8 @@ output_path.mkdir(parents=True, exist_ok=True)
 if args.use_wandb:
     try:
         # Generate a descriptive run name
-        run_name = f"v{args.model_version}_bs{args.batch_size}_lr{args.learning_rate}_{int(time.time())}"
+        lr_for_name = args.learning_rate if args.learning_rate is not None else 0.01
+        run_name = f"v{args.model_version}_bs{args.batch_size}_lr{lr_for_name}_{int(time.time())}"
         wandb.init(
             project=args.wandb_project,
             entity=args.wandb_entity,
@@ -243,6 +244,8 @@ try:
         model = GenePhenAIv2_0(**common_args).to(device)
     elif args.model_version == '2.5':
         model = GenePhenAIv2_5(**common_args, num_heads=args.num_heads).to(device)
+    elif args.model_version == '3.0':
+        model = GenePhenAIv3_0(**common_args).to(device)
     else:
         # This should not happen due to choices in argparse, but good practice
         logger.error(f"Unsupported model version: {args.model_version}")
@@ -273,7 +276,8 @@ else:
 class_weights = None
 
 criterion = torch.nn.CrossEntropyLoss(weight=class_weights) # Use weights if available
-optimizer = AdamW(model.parameters(), lr=args.learning_rate, weight_decay=args.weight_decay)
+optimizer_lr = args.learning_rate if args.learning_rate is not None else 0.01
+optimizer = AdamW(model.parameters(), lr=optimizer_lr, weight_decay=args.weight_decay)
 
 # ADDED: LR Scheduler
 scheduler = None
@@ -324,7 +328,16 @@ if args.resume_from_checkpoint:
             logger.info(f"Successfully loaded checkpoint. Resuming training from epoch {start_epoch}.")
             # Log the state of the loaded optimizer, specifically the learning rate
             loaded_lr = optimizer.param_groups[0]['lr']
-            logger.info(f"Optimizer state loaded. Current learning rate: {loaded_lr:.1e}")
+            logger.info(f"Optimizer state loaded. Current learning rate from checkpoint: {loaded_lr:.1e}")
+
+            # If user provided a learning rate, override the one from the checkpoint
+            if args.learning_rate is not None:
+                logger.info(f"Overriding checkpoint learning rate with provided --learning_rate: {args.learning_rate}")
+                for param_group in optimizer.param_groups:
+                    param_group['lr'] = args.learning_rate
+                new_lr = optimizer.param_groups[0]['lr']
+                logger.info(f"Optimizer learning rate has been set to: {new_lr:.1e}")
+
             # Adjust initial learning rate based on the resumed epoch?
             # The current loop already adjusts LR based on epoch number, so just starting
             # the loop at the correct epoch number should handle this.
@@ -334,7 +347,8 @@ if args.resume_from_checkpoint:
             start_epoch = 1
             if file_handler: file_handler.flush()
             # Reset optimizer if loading failed? Or exit? For now, we continue from scratch.
-            optimizer = AdamW(model.parameters(), lr=args.learning_rate, weight_decay=args.weight_decay) # Reinitialize optimizer
+            optimizer_lr = args.learning_rate if args.learning_rate is not None else 0.01
+            optimizer = AdamW(model.parameters(), lr=optimizer_lr, weight_decay=args.weight_decay) # Reinitialize optimizer
     else:
         logger.warning(f"Checkpoint file not found: {checkpoint_path}. Starting training from epoch 1.")
         start_epoch = 1

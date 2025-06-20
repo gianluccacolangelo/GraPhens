@@ -220,3 +220,182 @@ class HPOAugmentationService(AugmentationService):
             description=metadata.get('definition', None),
             metadata=metadata
         )
+
+class SiblingsAugmentationService(AugmentationService):
+    """
+    Augments phenotypes by adding their siblings from the HPO graph.
+
+    This service finds the siblings of each phenotype by first identifying
+    the direct parents and then finding all children of those parents.
+
+    Attributes:
+        hpo_graph: Provider for accessing the HPO directed acyclic graph.
+    """
+    def __init__(self, data_dir: str = "data/ontology"):
+        """
+        Initialize with HPO graph provider.
+
+        Args:
+            data_dir: Directory where HPO data files are stored.
+        """
+        self.hpo_graph = HPOGraphProvider.get_instance(data_dir=data_dir)
+        self.logger = logging.getLogger(__name__)
+
+    def augment(self, observed: List[Phenotype]) -> List[Phenotype]:
+        """
+        Augment the list of observed phenotypes by adding their siblings.
+
+        Args:
+            observed: List of phenotypes to augment.
+
+        Returns:
+            List of phenotypes including the original set plus their siblings.
+        """
+        if not self.hpo_graph.load():
+            self.logger.error("Failed to load HPO graph, returning original phenotypes")
+            return observed
+
+        observed_ids = {p.id for p in observed}
+        all_siblings = set()
+
+        # Collect all siblings for all observed phenotypes
+        for phenotype in observed:
+            parents = self.hpo_graph.get_direct_parents(phenotype.id)
+            for parent_id in parents:
+                children_of_parent = self.hpo_graph.get_direct_children(parent_id)
+                all_siblings.update(children_of_parent)
+        
+        # Determine which phenotypes to add
+        new_phenotype_ids = all_siblings - observed_ids
+        
+        # Create new phenotype objects
+        additional_phenotypes = []
+        for hpo_id in new_phenotype_ids:
+            try:
+                phenotype = self._create_phenotype(hpo_id)
+                additional_phenotypes.append(phenotype)
+            except Exception as e:
+                self.logger.warning(f"Error creating phenotype for {hpo_id}: {str(e)}")
+
+        return observed + additional_phenotypes
+
+    def _create_phenotype(self, hpo_id: str) -> Phenotype:
+        """
+        Create a phenotype object from an HPO ID.
+
+        Args:
+            hpo_id: HPO term ID.
+
+        Returns:
+            Phenotype object populated with data from the local graph.
+        """
+        metadata = self.hpo_graph.get_metadata(hpo_id)
+        return Phenotype(
+            id=hpo_id,
+            name=metadata.get('name', ''),
+            description=metadata.get('definition', None),
+            metadata=metadata
+        )
+
+class NHopAugmentationService(AugmentationService):
+    """
+    Augments phenotypes by finding all nodes within an N-hop distance in the HPO graph.
+
+    This service performs a bidirectional traversal (parents and children) from each
+    initial phenotype up to a specified number of hops (N).
+
+    Attributes:
+        hpo_graph: Provider for accessing the HPO directed acyclic graph.
+        n_hops: The maximum number of hops to traverse from the initial nodes.
+    """
+    def __init__(self, n_hops: int, data_dir: str = "data/ontology"):
+        """
+        Initialize with the number of hops and HPO graph provider.
+
+        Args:
+            n_hops: The number of hops to traverse.
+            data_dir: Directory where HPO data files are stored.
+        """
+        if n_hops < 1:
+            raise ValueError("n_hops must be a positive integer.")
+            
+        self.hpo_graph = HPOGraphProvider.get_instance(data_dir=data_dir)
+        self.n_hops = n_hops
+        self.logger = logging.getLogger(__name__)
+
+    def augment(self, observed: List[Phenotype]) -> List[Phenotype]:
+        """
+        Augment the list of observed phenotypes by finding all nodes within N-hops.
+
+        Args:
+            observed: List of phenotypes to augment.
+
+        Returns:
+            List of phenotypes including the original set and all nodes within N-hops.
+        """
+        if not self.hpo_graph.load():
+            self.logger.error("Failed to load HPO graph, returning original phenotypes")
+            return observed
+
+        observed_ids = {p.id for p in observed}
+        
+        # --- N-hop traversal using Breadth-First Search (BFS) ---
+        # Queue stores tuples of (hpo_id, current_distance)
+        queue = [(p.id, 0) for p in observed]
+        
+        # Visited set keeps track of nodes we've already processed to avoid cycles/redundancy
+        visited = set(observed_ids)
+        
+        # This will store all the new phenotype IDs we find
+        n_hop_ids = set()
+
+        while queue:
+            current_id, distance = queue.pop(0)
+
+            # If we've reached the N-hop limit for this path, we stop exploring further
+            if distance >= self.n_hops:
+                continue
+
+            # Get neighbors (both parents and children for a bidirectional search)
+            # Parents are successors because edges are child -> parent
+            parents = self.hpo_graph.graph.successors(current_id)
+            # Children are predecessors
+            children = self.hpo_graph.graph.predecessors(current_id)
+            
+            neighbors = set(parents) | set(children)
+
+            for neighbor_id in neighbors:
+                if neighbor_id not in visited:
+                    visited.add(neighbor_id)
+                    n_hop_ids.add(neighbor_id)
+                    queue.append((neighbor_id, distance + 1))
+        
+        # Create new phenotype objects for the IDs found
+        additional_phenotypes = []
+        # We only add phenotypes that were not in the original observed list
+        for hpo_id in n_hop_ids - observed_ids:
+            try:
+                phenotype = self._create_phenotype(hpo_id)
+                additional_phenotypes.append(phenotype)
+            except Exception as e:
+                self.logger.warning(f"Error creating phenotype for {hpo_id}: {str(e)}")
+
+        return observed + additional_phenotypes
+
+    def _create_phenotype(self, hpo_id: str) -> Phenotype:
+        """
+        Create a phenotype object from an HPO ID.
+
+        Args:
+            hpo_id: HPO term ID.
+
+        Returns:
+            Phenotype object populated with data from the local graph.
+        """
+        metadata = self.hpo_graph.get_metadata(hpo_id)
+        return Phenotype(
+            id=hpo_id,
+            name=metadata.get('name', ''),
+            description=metadata.get('definition', None),
+            metadata=metadata
+        )

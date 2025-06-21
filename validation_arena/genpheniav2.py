@@ -10,7 +10,7 @@ project_root = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(project_root))
 
 try:
-    from training.models.models import GenePhenAIv2_0, GenePhenAIv2_5
+    from training.models.models import GenePhenAIv2_0, GenePhenAIv2_5, GenePhenAIv3_0
     from src.graphens import GraPhens
 except ImportError as e:
     print(f"Error importing necessary modules: {e}")
@@ -28,7 +28,7 @@ parser.add_argument('--dataset_root', type=str, default='/home/gcolangelo/GraPhe
 parser.add_argument('--checkpoint_path', type=str, default='training_output/best_model.pt', help='Path to the model checkpoint file (.pt).')
 parser.add_argument('--embedding_path', type=str, default='data/embeddings/hpo_embeddings_gsarti_biobert-nli_20250317_162424.pkl', help='Path to the HPO lookup embeddings file (.pkl).')
 parser.add_argument('--hidden_channels', type=int, help='Number of hidden units in GNN layers. Loaded from checkpoint args.json if available.')
-parser.add_argument('--model_version', type=str, choices=['2.0', '2.5'], help='Model version to use. Loaded from checkpoint args.json if available.')
+parser.add_argument('--model_version', type=str, choices=['2.0', '2.5', '3.0'], help='Model version to use. Loaded from checkpoint args.json if available.')
 parser.add_argument('--num_heads', type=int, help='Number of attention heads for v2.5. Loaded from checkpoint args.json if available.')
 parser.add_argument('--embedding_dim', type=int, default=768, help='Dimension of the node embeddings (must match training and embedding model).')
 
@@ -123,6 +123,7 @@ model_params = {
     'out_channels': num_classes
 }
 
+model_class = None
 if args.model_version == '2.5':
     if not args.num_heads:
         logger.error("Number of heads (--num_heads) is required for model_version 2.5 and was not found in args.json.")
@@ -130,9 +131,17 @@ if args.model_version == '2.5':
     model_class = GenePhenAIv2_5
     model_params['num_heads'] = args.num_heads
     logger.info(f"Instantiating GenePhenAIv2_5 model with params: {model_params}")
-else: # Default to 2.0
+elif args.model_version == '3.0':
+    model_class = GenePhenAIv3_0
+    logger.info(f"Instantiating GenePhenAIv3_0 model with params: {model_params}")
+elif args.model_version == '2.0':
     model_class = GenePhenAIv2_0
     logger.info(f"Instantiating GenePhenAIv2_0 model with params: {model_params}")
+else:
+    # This path should ideally not be taken if choices are set correctly,
+    # but it's a safe fallback.
+    logger.error(f"Unsupported model version: {args.model_version}. Cannot instantiate model.")
+    sys.exit(1)
 
 try:
     model = model_class(**model_params).to(device)

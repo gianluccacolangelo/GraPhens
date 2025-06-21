@@ -16,7 +16,11 @@ def test_nhop_and_full_augmentation():
     """
     # 1. Define initial phenotype(s)
     initial_phenotypes = [
-        Phenotype(id="HP:0001251", name="Atonic seizure")
+        Phenotype(id="HP:0005288", name=""),
+        Phenotype(id="HP:0011426", name=""), 
+        Phenotype(id="HP:0000316", name=""),
+        Phenotype(id="HP:0010952", name=""),
+        Phenotype(id="HP:0000508", name="")
     ]
     logging.info(f"Initial phenotypes: {[p.name for p in initial_phenotypes]}")
     
@@ -65,6 +69,10 @@ def test_nhop_and_full_augmentation():
         initial_phenotypes=initial_phenotypes,
         title=f"2_Full_Hierarchy_from_{n_hops}-Hop_Result"
     )
+    # Print all HPO terms after augmentation
+    print("All HPO terms after augmentation:")
+    for phenotype in fully_augmented_phenotypes:
+        print(f"  {phenotype.id}: {phenotype.name}")
 
     if output_path_step2:
         logging.info(f"Full hierarchy visualization saved to: {output_path_step2}")

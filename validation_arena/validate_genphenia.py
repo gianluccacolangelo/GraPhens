@@ -13,9 +13,8 @@ import tqdm
 project_root = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(project_root))
 
-from training.models.models import GenePhenAIv2_0,GenePhenAIv2_5
+from training.models.models import GenePhenAIv2_0, GenePhenAIv2_5, GenePhenAIv3_0
 from src.graphens import GraPhens
-from training.datasets.lmdb_hpo_dataset import LMDBHPOGraphDataset
 
 def load_phenotypes_from_json(json_path):
     """Load gene-phenotype mappings from JSON file."""
@@ -72,28 +71,107 @@ def main():
                         help='Name of the embedding model to use.')
     parser.add_argument('--hidden_channels', type=int, default=756,
                         help='Number of hidden units in GNN layers.')
+    parser.add_argument('--model_version', type=str, choices=['2.0', '2.5', '3.0'],
+                        help='Model version to use. Loaded from checkpoint args.json if available.')
+    parser.add_argument('--num_heads', type=int, help='Number of attention heads for v2.5. Loaded from checkpoint args.json if available.')
     
     args = parser.parse_args()
     
+    # --- Load Training Arguments and Override ---
+    training_args = {}
+    checkpoint_dir = Path(args.checkpoint_path).parent
+    args_json_path = checkpoint_dir / 'args.json'
+
+    if args_json_path.is_file():
+        print(f"Found training arguments file: {args_json_path}")
+        with open(args_json_path, 'r') as f:
+            training_args = json.load(f)
+
+        # Override args with values from training_args
+        args.model_version = training_args.get('model_version', args.model_version)
+        args.hidden_channels = training_args.get('hidden_channels', args.hidden_channels)
+        args.num_heads = training_args.get('num_heads', args.num_heads)
+        
+        print(f"Loaded from args.json: model_version='{args.model_version}', hidden_channels={args.hidden_channels}, num_heads={args.num_heads}")
+    else:
+        print(f"Warning: Training arguments file not found at {args_json_path}. Will rely on command-line arguments for model hyperparameters.")
+
     # Set up device
     device = torch.device(args.device if args.device == 'cuda' and torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
     
     # Load metadata to get gene list and number of classes
     print(f"Loading metadata from dataset root: {args.dataset_root}")
-    dataset_meta = LMDBHPOGraphDataset(root_dir=args.dataset_root, readonly=True)
-    num_classes = dataset_meta.num_classes
-    gene_list = dataset_meta.metadata.get('genes', [])
-    idx_to_gene = {i: gene for i, gene in enumerate(gene_list)}
+    try:
+        metadata_path = Path(args.dataset_root) / 'metadata.json'
+        if not metadata_path.exists():
+            raise FileNotFoundError(f"Metadata file not found: {metadata_path}")
+
+        with open(metadata_path, 'r') as f:
+            metadata = json.load(f)
+
+        gene_list = metadata.get('genes', [])
+        if not gene_list:
+            print("Could not retrieve gene list from dataset metadata. Ensure 'genes' key exists in metadata.json.")
+            sys.exit(1)
+        
+        num_classes = len(gene_list)
+        idx_to_gene = {i: gene for i, gene in enumerate(gene_list)}
+        print(f"Successfully loaded metadata: Found {num_classes} classes (genes).")
+
+    except FileNotFoundError as e:
+        print(f"{e}. Please provide the correct path to the directory containing 'metadata.json'.")
+        sys.exit(1)
+    except json.JSONDecodeError:
+        print(f"Error decoding JSON from {metadata_path}. The file may be corrupt.")
+        sys.exit(1)
+    except Exception as e:
+        print(f"Error loading dataset metadata: {e}")
+        sys.exit(1)
     
-    # Load model
-    print(f"Loading model from checkpoint: {args.checkpoint_path}")
-    model = GenePhenAIv2_0(
-        in_channels=768,  # Changed from 256 to match checkpoint error message (shape [128, 768])
-        hidden_channels=756, # Changed from args.hidden_channels to match checkpoint error message (shape [128, ...])
-        out_channels=num_classes
-    ).to(device)
-    
+    # --- Instantiate Model ---
+    print("Instantiating model...")
+
+    # Check if necessary model parameters are available
+    if not args.model_version:
+        print("Model version not specified. Provide --model_version or a checkpoint with args.json.")
+        sys.exit(1)
+    if not args.hidden_channels:
+        print("Hidden channels not specified. Provide --hidden_channels or a checkpoint with args.json.")
+        sys.exit(1)
+
+    model_params = {
+        'in_channels': 768,
+        'hidden_channels': args.hidden_channels,
+        'out_channels': num_classes
+    }
+
+    model_class = None
+    if args.model_version == '2.5':
+        if not args.num_heads:
+            print("Number of heads (--num_heads) is required for model_version 2.5 and was not found in args.json.")
+            sys.exit(1)
+        model_class = GenePhenAIv2_5
+        model_params['num_heads'] = args.num_heads
+        print(f"Instantiating GenePhenAIv2_5 model with params: {model_params}")
+    elif args.model_version == '3.0':
+        model_class = GenePhenAIv3_0
+        print(f"Instantiating GenePhenAIv3_0 model with params: {model_params}")
+    elif args.model_version == '2.0':
+        model_class = GenePhenAIv2_0
+        print(f"Instantiating GenePhenAIv2_0 model with params: {model_params}")
+    else:
+        print(f"Unsupported model version: {args.model_version}. Cannot instantiate model.")
+        sys.exit(1)
+
+    try:
+        model = model_class(**model_params).to(device)
+    except Exception as e:
+        print(f"Error instantiating model: {e}")
+        sys.exit(1)
+
+    # --- Load Checkpoint ---
+    print(f"Loading checkpoint from: {args.checkpoint_path}")
     checkpoint = torch.load(args.checkpoint_path, map_location=device)
     model.load_state_dict(checkpoint['model_state_dict'])
     model.eval()

@@ -299,6 +299,7 @@ logger.info("Optimizer and Loss function defined.")
 
 # --- Checkpoint Loading (ADDED) ---
 start_epoch = 1
+best_val_mrr = -1 # Keep track of best validation MRR for saving the best model
 if args.resume_from_checkpoint:
     checkpoint_path = Path(args.resume_from_checkpoint)
     if checkpoint_path.exists():
@@ -309,6 +310,7 @@ if args.resume_from_checkpoint:
             optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
             # Determine the epoch to start from. The checkpoint saves the epoch it *completed*.
             start_epoch = checkpoint['epoch'] + 1
+            best_val_mrr = checkpoint.get('best_val_mrr', -1) # MODIFIED: Restore best_val_mrr
             
             # ADDED: Load scheduler state if it exists in the checkpoint
             if scheduler and 'scheduler_state_dict' in checkpoint and checkpoint['scheduler_state_dict']:
@@ -326,6 +328,8 @@ if args.resume_from_checkpoint:
             # ---------------------------------------------------------------
 
             logger.info(f"Successfully loaded checkpoint. Resuming training from epoch {start_epoch}.")
+            restored_mrr_log = f"{best_val_mrr:.4f}" if best_val_mrr > -1 else "N/A (or not found in ckpt)"
+            logger.info(f"Restored best validation MRR to: {restored_mrr_log}") # ADDED: Log restored MRR
             # Log the state of the loaded optimizer, specifically the learning rate
             loaded_lr = optimizer.param_groups[0]['lr']
             logger.info(f"Optimizer state loaded. Current learning rate from checkpoint: {loaded_lr:.1e}")
@@ -657,7 +661,7 @@ def train_epoch(loader, val_loader, epoch):
 # --- Training Loop ---
 logger.info(f"Starting training loop from epoch {start_epoch}...")
 total_start_time = time.time()
-best_val_mrr = -1 # Keep track of best validation MRR for saving the best model
+# best_val_mrr = -1 # Keep track of best validation MRR for saving the best model - MOVED to checkpoint loading section
 
 # MODIFIED: Start loop from start_epoch
 for epoch in range(start_epoch, args.epochs + 1):
@@ -688,7 +692,8 @@ for epoch in range(start_epoch, args.epochs + 1):
         'scheduler_state_dict': scheduler.state_dict() if scheduler else None,
         'val_loss': validation_results.get('val_loss'),
         'val_mrr': val_mrr,
-        'val_top_k_acc': validation_results.get('val_top_k')
+        'val_top_k_acc': validation_results.get('val_top_k'),
+        'best_val_mrr': best_val_mrr # ADDED: Save best_val_mrr
     }, checkpoint_path)
     logger.info(f"Saved checkpoint: {checkpoint_path}")
 
@@ -705,7 +710,8 @@ for epoch in range(start_epoch, args.epochs + 1):
             'scheduler_state_dict': scheduler.state_dict() if scheduler else None,
             'val_loss': validation_results.get('val_loss'),
             'val_mrr': val_mrr,
-            'val_top_k_acc': validation_results.get('val_top_k')
+            'val_top_k_acc': validation_results.get('val_top_k'),
+            'best_val_mrr': best_val_mrr # ADDED: Save best_val_mrr in best_model too
         }, best_model_path)
         logger.info(f"Saved new best model with MRR {val_mrr:.4f} to {best_model_path}")
     

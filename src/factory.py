@@ -4,7 +4,10 @@ from src.core.interfaces import (
     AdjacencyListBuilder, GraphAssembler, GlobalContextProvider,
     PipelineOrchestrator, PhenotypeVisualizer
 )
-from src.augmentation.hpo_augmentation import HPOAugmentationService, APIAugmentationService
+from src.augmentation.hpo_augmentation import (
+    HPOAugmentationService, APIAugmentationService, 
+    SiblingsAugmentationService, NHopAugmentationService
+)
 from src.embedding.strategies import (
     LLMEmbeddingStrategy, LookupEmbeddingStrategy, 
     HuggingFaceEmbeddingStrategy, SentenceTransformerEmbeddingStrategy,
@@ -36,6 +39,17 @@ class ComponentFactory:
         elif augmentation_type == 'api':
             return APIAugmentationService(
                 api_base_url=config.get('api_base_url', 'https://ontology.jax.org/api/hp')
+            )
+        elif augmentation_type == 'siblings':
+            return SiblingsAugmentationService(
+                data_dir=config.get('data_dir', 'data/ontology')
+            )
+        elif augmentation_type == 'n_hop':
+            if 'n_hops' not in config:
+                raise ValueError("n_hops parameter is required for n_hop augmentation strategy.")
+            return NHopAugmentationService(
+                data_dir=config.get('data_dir', 'data/ontology'),
+                n_hops=config['n_hops']
             )
         else:
             raise ValueError(f"Unknown augmentation service type: {augmentation_type}")

@@ -713,45 +713,59 @@ class GraPhens:
         return self
     
     def with_augmentation(self, 
-                         include_ancestors: bool = True, 
-                         include_descendants: bool = False, 
-                         use_api: bool = False, 
+                         strategy: str = "local", 
                          **kwargs) -> "GraPhens":
         """
         Configure the phenotype augmentation process.
         
         Args:
-            include_ancestors: Whether to include parent terms
-            include_descendants: Whether to include child terms
-            use_api: Whether to use the API-based augmentation (vs. local)
-            **kwargs: Additional configuration options
+            strategy: The augmentation strategy to use. 
+                      Options: 'local', 'api', 'siblings', 'n_hop'.
+                      Defaults to 'local'.
+            **kwargs: Additional configuration options for the chosen strategy.
+                      For 'local': include_ancestors (bool), include_descendants (bool).
+                      For 'api': api_base_url (str).
+                      For 'n_hop': n_hops (int).
+                      For backward compatibility, `use_api=True` is also accepted.
             
         Returns:
             Self for method chaining
             
         Examples:
-            # Include only ancestors (parents)
+            # Configure with ancestors (old way still works)
             graphens.with_augmentation(include_ancestors=True, include_descendants=False)
             
-            # Include both ancestors and descendants
-            graphens.with_augmentation(include_ancestors=True, include_descendants=True)
+            # Use siblings augmentation
+            graphens.with_augmentation(strategy="siblings")
+            
+            # Use N-hop augmentation
+            graphens.with_augmentation(strategy="n_hop", n_hops=2)
             
             # Use API-based augmentation
-            graphens.with_augmentation(use_api=True, api_base_url="https://example.org/api")
+            graphens.with_augmentation(strategy="api", api_base_url="https://example.org/api")
         """
-        if use_api:
-            self.config["augmentation"] = {
-                "type": "api",
-                **kwargs
-            }
+        # For backward compatibility with `use_api=True`
+        if kwargs.get("use_api"):
+            effective_strategy = "api"
         else:
-            self.config["augmentation"] = {
-                "type": "local",
-                "data_dir": self.config["augmentation"]["data_dir"],
-                "include_ancestors": include_ancestors,
-                "include_descendants": include_descendants,
-                **kwargs
-            }
+            effective_strategy = strategy
+            
+        # Get the existing data_dir or use the default
+        data_dir = self.config.get("augmentation", {}).get("data_dir", self.data_dir)
+        
+        # Build the new configuration
+        self.config["augmentation"] = {
+            "type": effective_strategy,
+            "data_dir": data_dir,
+            **kwargs
+        }
+        
+        # Preserve default behavior for 'local' strategy when called via old method signature
+        if effective_strategy == 'local':
+            if 'include_ancestors' not in self.config['augmentation']:
+                self.config['augmentation']['include_ancestors'] = True
+            if 'include_descendants' not in self.config['augmentation']:
+                self.config['augmentation']['include_descendants'] = False
         
         return self
     

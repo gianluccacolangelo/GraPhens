@@ -182,7 +182,10 @@ def main():
         graphens = (
             GraPhens()
             .with_lookup_embeddings("data/embeddings/hpo_embeddings_gsarti_biobert-nli_20250317_162424.pkl")
-            .with_augmentation(include_ancestors=True)
+            .with_augmentation(strategy=[
+                {"type": "siblings"},
+                {"type": "local", "include_ancestors": True, "include_descendants": False}
+            ])
             .with_adjacency_settings(include_reverse_edges=False)
         )
         print("GraPhens initialized with lookup embeddings, ancestor augmentation, and forward-only edges.")

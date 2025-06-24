@@ -1,4 +1,4 @@
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, List, Union
 from src.core.interfaces import (
     AugmentationService, EmbeddingStrategy,
     AdjacencyListBuilder, GraphAssembler, GlobalContextProvider,
@@ -6,7 +6,8 @@ from src.core.interfaces import (
 )
 from src.augmentation.hpo_augmentation import (
     HPOAugmentationService, APIAugmentationService, 
-    SiblingsAugmentationService, NHopAugmentationService
+    SiblingsAugmentationService, NHopAugmentationService,
+    CompositeAugmentationService
 )
 from src.embedding.strategies import (
     LLMEmbeddingStrategy, LookupEmbeddingStrategy, 
@@ -26,8 +27,13 @@ class ComponentFactory:
     """Factory for creating pipeline components."""
     
     @staticmethod
-    def create_augmentation_service(config: Dict[str, Any]) -> AugmentationService:
+    def create_augmentation_service(config: Union[Dict[str, Any], List[Dict[str, Any]]]) -> AugmentationService:
         """Create an augmentation service based on configuration."""
+        # If config is a list, create a composite service by recursively calling this factory method
+        if isinstance(config, list):
+            services = [ComponentFactory.create_augmentation_service(service_config) for service_config in config]
+            return CompositeAugmentationService(services)
+
         augmentation_type = config.get('type', 'local')
         
         if augmentation_type == 'local':

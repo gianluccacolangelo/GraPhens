@@ -35,7 +35,7 @@ Usage examples:
 
 import os
 import json
-from typing import List, Dict, Any, Optional, Union, Callable
+from typing import List, Dict, Any, Optional, Union
 import numpy as np
 from pathlib import Path
 import logging
@@ -713,37 +713,48 @@ class GraPhens:
         return self
     
     def with_augmentation(self, 
-                         strategy: str = "local", 
+                         strategy: Union[str, List[Dict[str, Any]]] = "local", 
                          **kwargs) -> "GraPhens":
         """
         Configure the phenotype augmentation process.
         
+        This method can be used in two ways:
+        1. Single strategy: Pass the strategy name and its parameters.
+        2. Chained strategies: Pass a list of configuration dictionaries.
+        
         Args:
             strategy: The augmentation strategy to use. 
-                      Options: 'local', 'api', 'siblings', 'n_hop'.
-                      Defaults to 'local'.
-            **kwargs: Additional configuration options for the chosen strategy.
-                      For 'local': include_ancestors (bool), include_descendants (bool).
-                      For 'api': api_base_url (str).
-                      For 'n_hop': n_hops (int).
+                      - As a string: 'local', 'api', 'siblings', 'n_hop'.
+                      - As a list: A list of configuration dicts, e.g., 
+                        [{"type": "siblings"}, {"type": "local", "include_ancestors": True}]
+            **kwargs: Additional configuration options for a single strategy.
+                      Ignored if 'strategy' is a list.
                       For backward compatibility, `use_api=True` is also accepted.
             
         Returns:
             Self for method chaining
             
         Examples:
-            # Configure with ancestors (old way still works)
-            graphens.with_augmentation(include_ancestors=True, include_descendants=False)
-            
-            # Use siblings augmentation
+            # Use a single strategy
             graphens.with_augmentation(strategy="siblings")
-            
-            # Use N-hop augmentation
             graphens.with_augmentation(strategy="n_hop", n_hops=2)
             
-            # Use API-based augmentation
-            graphens.with_augmentation(strategy="api", api_base_url="https://example.org/api")
+            # Chain multiple strategies
+            graphens.with_augmentation(strategy=[
+                {"type": "siblings"},
+                {"type": "local", "include_ancestors": True}
+            ])
+            
+            # Old way (backward compatible)
+            graphens.with_augmentation(include_ancestors=True)
         """
+        # If strategy is a list, we use it directly as the augmentation config
+        if isinstance(strategy, list):
+            self.config["augmentation"] = strategy
+            return self
+
+        # --- Handle single strategy configuration (backward compatible) ---
+
         # For backward compatibility with `use_api=True`
         if kwargs.get("use_api"):
             effective_strategy = "api"

@@ -399,3 +399,38 @@ class NHopAugmentationService(AugmentationService):
             description=metadata.get('definition', None),
             metadata=metadata
         )
+
+class CompositeAugmentationService(AugmentationService):
+    """
+    Applies a sequence of augmentation services.
+
+    This service allows for chaining multiple augmentation strategies together.
+    Each service is applied sequentially to the output of the previous one.
+    """
+    def __init__(self, services: List[AugmentationService]):
+        """
+        Initialize with a list of augmentation services.
+
+        Args:
+            services: A list of augmentation service instances to apply in order.
+        """
+        self.services = services
+        self.logger = logging.getLogger(__name__)
+
+    def augment(self, observed: List[Phenotype]) -> List[Phenotype]:
+        """
+        Augment phenotypes by applying each service in the chain.
+
+        Args:
+            observed: The initial list of phenotypes.
+
+        Returns:
+            The final list of phenotypes after all augmentations have been applied.
+        """
+        augmented_phenotypes = observed
+        for i, service in enumerate(self.services):
+            service_name = service.__class__.__name__
+            self.logger.info(f"Applying augmentation chain step {i+1}/{len(self.services)}: {service_name}")
+            augmented_phenotypes = service.augment(augmented_phenotypes)
+        
+        return augmented_phenotypes

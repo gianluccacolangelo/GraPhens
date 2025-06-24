@@ -385,8 +385,17 @@ class GraPhens:
             An initialized HPO graph provider
         """
         if self._hpo_provider is None:
+            # Determine the data directory from the augmentation config
+            aug_config = self.config["augmentation"]
+            if isinstance(aug_config, list) and aug_config:
+                # If it's a list of strategies, get data_dir from the first one
+                data_dir = aug_config[0].get("data_dir", self.data_dir)
+            else:
+                # Otherwise, get it from the dictionary config
+                data_dir = aug_config.get("data_dir", self.data_dir)
+
             self._hpo_provider = ComponentFactory.create_hpo_provider({
-                "data_dir": self.config["augmentation"]["data_dir"]
+                "data_dir": data_dir
             })
             self._hpo_provider.load()
         return self._hpo_provider

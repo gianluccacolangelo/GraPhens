@@ -34,6 +34,7 @@ parser.add_argument('--embedding_dim', type=int, default=768, help='Dimension of
 
 # Inference Args
 parser.add_argument('--top_k', type=int, default=60, help='Number of top gene predictions to display.')
+parser.add_argument('--output_file', type=str, default=None, help='Path to a JSON file to save the full prediction probability distribution.')
 parser.add_argument('--device', type=str, default='cpu' if torch.cuda.is_available() else 'cpu', help='Device to use (cuda or cpu).')
 parser.add_argument('--log_level', type=str, default='INFO', choices=['DEBUG', 'INFO', 'WARNING', 'ERROR'], help='Logging level.')
 
@@ -251,6 +252,31 @@ logger.info(f"Calculating top {args.top_k} predictions...")
 try:
     # Apply Softmax to get probabilities
     probabilities = torch.softmax(output_logits, dim=1)
+
+    # --- Save full distribution if requested ---
+    if args.output_file:
+        try:
+            # Squeeze to remove batch dimension, move to CPU, convert to numpy
+            all_probs_np = probabilities.squeeze().cpu().numpy()
+
+            # Create a dictionary of gene -> probability
+            gene_probabilities = {
+                idx_to_gene.get(i, f"Unknown Index {i}"): float(prob)
+                for i, prob in enumerate(all_probs_np)
+            }
+
+            # Sort by probability descending
+            sorted_gene_probabilities = dict(sorted(gene_probabilities.items(), key=lambda item: item[1], reverse=True))
+
+            # Save to JSON file
+            output_path = Path(args.output_file)
+            output_path.parent.mkdir(parents=True, exist_ok=True) # Ensure directory exists
+            with open(output_path, 'w') as f:
+                json.dump(sorted_gene_probabilities, f, indent=4)
+            logger.info(f"Full probability distribution saved to {output_path}")
+
+        except Exception as e:
+            logger.error(f"Failed to save output file: {e}")
 
     # Get top K probabilities and their indices
     top_p, top_idx = torch.topk(probabilities, args.top_k, dim=1)

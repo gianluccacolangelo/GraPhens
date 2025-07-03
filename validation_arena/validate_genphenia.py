@@ -56,7 +56,7 @@ def main():
     parser.add_argument('--output_csv', type=str, default='validation_results.csv',
                         help='Path to the output CSV file with validation results.')
     parser.add_argument('--checkpoint_path', type=str, 
-                        default='/home/gcolangelo/GraPhens/training_output/checkpoint_epoch_1_part_2.pt',
+                        default='/home/gcolangelo/GraPhens/training_output/best_model.pt',
                         help='Path to the model checkpoint.')
     parser.add_argument('--dataset_root', type=str, 
                         default='/home/gcolangelo/GraPhens/data/simulation/output/',
@@ -183,7 +183,6 @@ def main():
             GraPhens()
             .with_lookup_embeddings("data/embeddings/hpo_embeddings_gsarti_biobert-nli_20250317_162424.pkl")
             .with_augmentation(strategy=[
-                {"type": "siblings"},
                 {"type": "local", "include_ancestors": True, "include_descendants": False}
             ])
             .with_adjacency_settings(include_reverse_edges=False)

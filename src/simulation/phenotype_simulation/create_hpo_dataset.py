@@ -38,7 +38,7 @@ class HPOGraphDataset(Dataset):
         """
         # Store our own copy of the paths that we know are Path objects
         self.root_path = Path(root_dir)  
-        self.processed_path = self.root_path / "processed"
+        self.processed_path = self.root_path 
         self.index_path = self.processed_path / "index.pt"
         
         # Now initialize the Dataset parent class with the string version
@@ -114,7 +114,7 @@ def convert_to_dataset(
     # Create output directories
     start_time = time.time()
     output_dir = Path(output_dir)
-    processed_dir = output_dir / "processed"
+    processed_dir = output_dir 
     os.makedirs(processed_dir, exist_ok=True)
     logger.info(f"Directory setup took {time.time() - start_time:.2f} seconds")
     
@@ -130,7 +130,10 @@ def convert_to_dataset(
     logger.info("Initializing GraPhens...")
     graphens = (GraPhens()
                 .with_lookup_embeddings(embedding_lookup_path)
-                .with_augmentation(include_ancestors=include_ancestors)
+                .with_augmentation(strategy=[
+                    {"type": "siblings"},
+                    {"type": "local", "include_ancestors": True, "include_descendants": False}
+                ])
                 .with_adjacency_settings(include_reverse_edges=include_reverse_edges))
     logger.info(f"GraPhens initialization took {time.time() - start_time:.2f} seconds")
                 

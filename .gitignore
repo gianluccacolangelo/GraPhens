@@ -1,3 +1,10 @@
 data/simulation/output/hpo_lmdb/shard_0/data.mdb
 wandb/**
 .cursor/**
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.python-version
+.venv/
+

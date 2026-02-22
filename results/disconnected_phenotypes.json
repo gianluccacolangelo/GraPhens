@@ -13,10 +13,6 @@
       "Exposure to birds"
     ],
     [
-      "HP:0032974",
-      "Abnormal cellular composition of bronchoalveolar fluid"
-    ],
-    [
       "HP:0032316",
       "Family history"
     ],
@@ -37,24 +33,14 @@
       "Family history"
     ]
   ],
-  "ABCB4": [
-    [
-      "HP:0031685",
-      "Abnormal stool composition"
-    ],
-    [
-      "HP:0031685",
-      "Abnormal stool composition"
-    ]
-  ],
   "ABCG5": [
-    [
-      "HP:0031480",
-      "Abnormal mitral valve leaflet morphology"
-    ],
     [
       "HP:0031443",
       "Abnormal tricuspid valve leaflet morphology"
+    ],
+    [
+      "HP:0031480",
+      "Abnormal mitral valve leaflet morphology"
     ]
   ],
   "ACD": [
@@ -65,23 +51,15 @@
   ],
   "ACOX1": [
     [
-      "HP:0011145",
-      "Symptomatic seizures"
+      "HP:0030926",
+      "5-minute APGAR score of 6"
     ],
     [
       "HP:0030933",
       "1-minute APGAR score of 6"
-    ],
-    [
-      "HP:0030926",
-      "5-minute APGAR score of 6"
     ]
   ],
   "ACTA1": [
-    [
-      "HP:0009128",
-      "Aplasia/Hypoplasia involving the musculature of the extremities"
-    ],
     [
       "HP:0002118",
       "Abnormal cerebral ventricle morphology"
@@ -93,34 +71,14 @@
       "Bilateral"
     ],
     [
-      "HP:0002744",
-      "obsolete Bilateral cleft lip and palate"
-    ],
-    [
       "HP:0012483",
       "Abnormal alpha granules"
-    ]
-  ],
-  "ACTG1": [
-    [
-      "HP:0012781",
-      "Mid-frequency hearing loss"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
     ]
   ],
   "ACTL6A": [
     [
       "HP:0100202",
       "Absent epiphysis of the distal phalanx of the 5th toe"
-    ]
-  ],
-  "ACVR1": [
-    [
-      "HP:0004575",
-      "Fusion of midcervical facet joints"
     ]
   ],
   "ADAM9": [
@@ -149,28 +107,6 @@
       "Moderate hearing impairment"
     ]
   ],
-  "ADGRV1": [
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ]
-  ],
   "AFG3L2": [
     [
       "HP:0033249",
@@ -191,22 +127,10 @@
       "Abnormality of the metopic suture"
     ]
   ],
-  "AIFM1": [
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
-    ]
-  ],
   "AK2": [
     [
       "HP:0012848",
       "Small intestinal stenosis"
-    ]
-  ],
-  "ALDH18A1": [
-    [
-      "HP:0030750",
-      "Grade III preterm intraventricular hemorrhage"
     ]
   ],
   "ALG1": [
@@ -227,28 +151,10 @@
       "Simple renal cyst"
     ]
   ],
-  "ALG9": [
-    [
-      "HP:0012581",
-      "Simple renal cyst"
-    ]
-  ],
   "ALPK3": [
     [
       "HP:0040265",
       "Upper limb muscle hypertrophy"
-    ]
-  ],
-  "ALPL": [
-    [
-      "HP:0100717",
-      "Abnormal cementum morphology"
-    ]
-  ],
-  "AMACR": [
-    [
-      "HP:0006976",
-      "Necrotizing encephalopathy"
     ]
   ],
   "AMER1": [
@@ -271,14 +177,8 @@
   ],
   "AP5Z1": [
     [
-      "HP:0007868",
-      "obsolete Age-related macular degeneration"
-    ]
-  ],
-  "ARF1": [
-    [
-      "HP:0033745",
-      "Dysplasia of the superior cerebellar vermis"
+      "HP:0000608",
+      "Macular degeneration"
     ]
   ],
   "ARHGEF18": [
@@ -297,12 +197,6 @@
       "Irregular patellae"
     ]
   ],
-  "ARX": [
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
-    ]
-  ],
   "ASH1L": [
     [
       "HP:0030263",
@@ -319,22 +213,10 @@
       "Abnormality of hair growth rate"
     ]
   ],
-  "ATP7A": [
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
-    ]
-  ],
   "BCKDHB": [
     [
       "HP:0012088",
       "Abnormal urinary odor"
-    ]
-  ],
-  "BEST1": [
-    [
-      "HP:0030606",
-      "Abnormal OCT-measured macular thickness"
     ]
   ],
   "BIN1": [
@@ -379,20 +261,10 @@
       "Severe norovirus infection"
     ]
   ],
-  "BTD": [
-    [
-      "HP:0030462",
-      "Abnormal amplitude of flash visual evoked potentials"
-    ]
-  ],
   "C2CD3": [
     [
       "HP:0410034",
       "Bilateral alveolar cleft of maxilla"
-    ],
-    [
-      "HP:0005676",
-      "Rudimentary postaxial polydactyly of hands"
     ]
   ],
   "CA2": [
@@ -409,34 +281,6 @@
       "Fractured tibia"
     ]
   ],
-  "CABP2": [
-    [
-      "HP:0012781",
-      "Mid-frequency hearing loss"
-    ]
-  ],
-  "CACNA1B": [
-    [
-      "HP:0032795",
-      "Generalized myoclonic-tonic-clonic seizure"
-    ],
-    [
-      "HP:0032795",
-      "Generalized myoclonic-tonic-clonic seizure"
-    ]
-  ],
-  "CACNA1C": [
-    [
-      "HP:0010710",
-      "3-5 finger syndactyly"
-    ]
-  ],
-  "CAMTA1": [
-    [
-      "HP:0032795",
-      "Generalized myoclonic-tonic-clonic seizure"
-    ]
-  ],
   "CAPN5": [
     [
       "HP:0500081",
@@ -449,44 +293,8 @@
   ],
   "CARD11": [
     [
-      "HP:0030371",
-      "Increased proportion of naive B cells"
-    ],
-    [
-      "HP:0030371",
-      "Increased proportion of naive B cells"
-    ],
-    [
-      "HP:0410376",
-      "Increased proportion of naive CD8 T cells"
-    ],
-    [
-      "HP:0030372",
-      "Decreased proportion of naive B cells"
-    ],
-    [
       "HP:0031695",
       "Severe parainfluenza infection"
-    ],
-    [
-      "HP:0410376",
-      "Increased proportion of naive CD8 T cells"
-    ],
-    [
-      "HP:0030371",
-      "Increased proportion of naive B cells"
-    ],
-    [
-      "HP:0030371",
-      "Increased proportion of naive B cells"
-    ],
-    [
-      "HP:0410376",
-      "Increased proportion of naive CD8 T cells"
-    ],
-    [
-      "HP:0410376",
-      "Increased proportion of naive CD8 T cells"
     ]
   ],
   "CARMIL2": [
@@ -497,10 +305,6 @@
     [
       "HP:0030683",
       "Vaginitis"
-    ],
-    [
-      "HP:0100281",
-      "Chronic colitis"
     ],
     [
       "HP:0034549",
@@ -515,12 +319,6 @@
       "Increased proportion of naive CD8 T cells"
     ]
   ],
-  "CARS2": [
-    [
-      "HP:0032795",
-      "Generalized myoclonic-tonic-clonic seizure"
-    ]
-  ],
   "CASR": [
     [
       "HP:0011741",
@@ -533,22 +331,6 @@
       "Left hemiplegia"
     ]
   ],
-  "CCDC22": [
-    [
-      "HP:0041218",
-      "Fractured distal phalanx"
-    ]
-  ],
-  "CCDC39": [
-    [
-      "HP:0031592",
-      "Situs inversus with levocardia"
-    ],
-    [
-      "HP:0031592",
-      "Situs inversus with levocardia"
-    ]
-  ],
   "CCNO": [
     [
       "HP:0031416",
@@ -559,14 +341,6 @@
     [
       "HP:0020106",
       "Severe giardiasis"
-    ],
-    [
-      "HP:0032136",
-      "Decreased circulating IgG1 concentration"
-    ],
-    [
-      "HP:0032136",
-      "Decreased circulating IgG1 concentration"
     ]
   ],
   "CD247": [
@@ -617,20 +391,6 @@
       "Abnormal proportion of double-negative alpha-beta regulatory T cell"
     ]
   ],
-  "CDC42": [
-    [
-      "HP:0033835",
-      "Abnormal renal vascular morphology"
-    ],
-    [
-      "HP:0000535",
-      "obsolete Sparse and thin eyebrow"
-    ],
-    [
-      "HP:0000535",
-      "obsolete Sparse and thin eyebrow"
-    ]
-  ],
   "CDC45": [
     [
       "HP:0011218",
@@ -643,31 +403,15 @@
   ],
   "CDH11": [
     [
-      "HP:0041218",
-      "Fractured distal phalanx"
-    ],
-    [
       "HP:0030125",
       "Sacralization of the fifth lumbar vertebra"
+    ],
+    [
+      "HP:0041218",
+      "Fractured distal phalanx"
     ]
   ],
   "CDKN1B": [
-    [
-      "HP:0011763",
-      "Pituitary carcinoma"
-    ],
-    [
-      "HP:0011763",
-      "Pituitary carcinoma"
-    ],
-    [
-      "HP:0011763",
-      "Pituitary carcinoma"
-    ],
-    [
-      "HP:0011763",
-      "Pituitary carcinoma"
-    ],
     [
       "HP:0030077",
       "Bronchial neoplasm"
@@ -707,68 +451,8 @@
   ],
   "CHD3": [
     [
-      "HP:0000535",
-      "obsolete Sparse and thin eyebrow"
-    ]
-  ],
-  "CHD7": [
-    [
-      "HP:0011644",
-      "Coronary sinus diverticulum"
-    ]
-  ],
-  "CHN1": [
-    [
-      "HP:0000497",
-      "Globe retraction and deviation on abduction"
-    ],
-    [
-      "HP:0000497",
-      "Globe retraction and deviation on abduction"
-    ],
-    [
-      "HP:0000497",
-      "Globe retraction and deviation on abduction"
-    ],
-    [
-      "HP:0000497",
-      "Globe retraction and deviation on abduction"
-    ],
-    [
-      "HP:0000497",
-      "Globe retraction and deviation on abduction"
-    ],
-    [
-      "HP:0000497",
-      "Globe retraction and deviation on abduction"
-    ],
-    [
-      "HP:0000497",
-      "Globe retraction and deviation on abduction"
-    ],
-    [
-      "HP:0000497",
-      "Globe retraction and deviation on abduction"
-    ],
-    [
-      "HP:0000497",
-      "Globe retraction and deviation on abduction"
-    ],
-    [
-      "HP:0000497",
-      "Globe retraction and deviation on abduction"
-    ],
-    [
-      "HP:0000497",
-      "Globe retraction and deviation on abduction"
-    ],
-    [
-      "HP:0000497",
-      "Globe retraction and deviation on abduction"
-    ],
-    [
-      "HP:0000497",
-      "Globe retraction and deviation on abduction"
+      "HP:0045075",
+      "Sparse eyebrow"
     ]
   ],
   "CIITA": [
@@ -783,12 +467,6 @@
       "Refractory"
     ]
   ],
-  "CLN6": [
-    [
-      "HP:0032795",
-      "Generalized myoclonic-tonic-clonic seizure"
-    ]
-  ],
   "CNOT3": [
     [
       "HP:5200125",
@@ -801,10 +479,6 @@
       "Torn meniscus"
     ],
     [
-      "HP:0041143",
-      "Fractured tibia"
-    ],
-    [
       "HP:0031512",
       "Abnormal cutaneous collagen fibril morphology"
     ]
@@ -813,42 +487,6 @@
     [
       "HP:0041082",
       "Fractured skull"
-    ]
-  ],
-  "COL2A1": [
-    [
-      "HP:0008820",
-      "Absent ossification of capital femoral epiphysis"
-    ],
-    [
-      "HP:0005752",
-      "Flattened moderately deformed vertebrae"
-    ],
-    [
-      "HP:0008820",
-      "Absent ossification of capital femoral epiphysis"
-    ],
-    [
-      "HP:0008820",
-      "Absent ossification of capital femoral epiphysis"
-    ],
-    [
-      "HP:0100367",
-      "Short phalanx of the 4th toe"
-    ],
-    [
-      "HP:0025537",
-      "Plantar edema"
-    ],
-    [
-      "HP:0008490",
-      "Sacral segmentation defect"
-    ]
-  ],
-  "COL3A1": [
-    [
-      "HP:0002636",
-      "Dilatation of an abdominal artery"
     ]
   ],
   "COPG1": [
@@ -879,18 +517,6 @@
       "Abnormal CSF lactate concentration"
     ]
   ],
-  "CPAMD8": [
-    [
-      "HP:0011486",
-      "Abnormal corneal thickness"
-    ]
-  ],
-  "CPOX": [
-    [
-      "HP:0033400",
-      "Acute abdomen"
-    ]
-  ],
   "CPT2": [
     [
       "HP:0025212",
@@ -909,24 +535,8 @@
   ],
   "CSF2RB": [
     [
-      "HP:6000245",
-      "Elevated circulating granulocyte-macrophage colony-stimulating factor concentration"
-    ],
-    [
       "HP:0430133",
       "Tobacco use history"
-    ],
-    [
-      "HP:6000245",
-      "Elevated circulating granulocyte-macrophage colony-stimulating factor concentration"
-    ],
-    [
-      "HP:4000214",
-      "Diminished breath sounds"
-    ],
-    [
-      "HP:0032969",
-      "Traction bronchiectasis"
     ],
     [
       "HP:0011718",
@@ -935,18 +545,20 @@
     [
       "HP:0035010",
       "Occupational exposure history"
+    ],
+    [
+      "HP:0032969",
+      "Traction bronchiectasis"
+    ],
+    [
+      "HP:4000214",
+      "Diminished breath sounds"
     ]
   ],
   "CSNK2B": [
     [
       "HP:0032668",
       "Myoclonic status epilepticus without coma"
-    ]
-  ],
-  "CSPP1": [
-    [
-      "HP:0012575",
-      "Abnormal nephron morphology"
     ]
   ],
   "CTLA4": [
@@ -973,122 +585,38 @@
   ],
   "CTSK": [
     [
+      "HP:0041143",
+      "Fractured tibia"
+    ],
+    [
       "HP:0100039",
       "Thickened cortex of bones"
     ],
     [
       "HP:0041143",
       "Fractured tibia"
-    ],
-    [
-      "HP:0041143",
-      "Fractured tibia"
-    ]
-  ],
-  "CXCR4": [
-    [
-      "HP:0025625",
-      "Elevated proportion of CD4+ effector memory T cells"
-    ]
-  ],
-  "CYLD": [
-    [
-      "HP:0031024",
-      "Cylindroma"
-    ],
-    [
-      "HP:0025367",
-      "Trichoepithelioma"
-    ],
-    [
-      "HP:0031024",
-      "Cylindroma"
-    ],
-    [
-      "HP:0031024",
-      "Cylindroma"
-    ],
-    [
-      "HP:0031024",
-      "Cylindroma"
-    ],
-    [
-      "HP:0031024",
-      "Cylindroma"
-    ],
-    [
-      "HP:0031024",
-      "Cylindroma"
-    ],
-    [
-      "HP:0031024",
-      "Cylindroma"
-    ],
-    [
-      "HP:0031024",
-      "Cylindroma"
-    ],
-    [
-      "HP:0025367",
-      "Trichoepithelioma"
-    ],
-    [
-      "HP:0025367",
-      "Trichoepithelioma"
-    ]
-  ],
-  "CYP27A1": [
-    [
-      "HP:6000527",
-      "Elevated circulating cholestanol concentration"
-    ],
-    [
-      "HP:6000527",
-      "Elevated circulating cholestanol concentration"
-    ],
-    [
-      "HP:6000527",
-      "Elevated circulating cholestanol concentration"
-    ],
-    [
-      "HP:6000527",
-      "Elevated circulating cholestanol concentration"
-    ],
-    [
-      "HP:6000527",
-      "Elevated circulating cholestanol concentration"
     ]
   ],
   "DIAPH1": [
     [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
       "HP:0012713",
       "Moderate hearing impairment"
-    ],
-    [
-      "HP:0025725",
-      "Type 1 congenital pulmonary airway malformation"
     ],
     [
       "HP:0020103",
       "Invasive pulmonary aspergillosis"
     ],
     [
-      "HP:0410393",
-      "Increased proportion of central memory CD4-positive, alpha-beta T cells"
+      "HP:0025725",
+      "Type 1 congenital pulmonary airway malformation"
     ],
     [
       "HP:0410396",
       "Increased proportion of central memory CD8-positive, alpha-beta T cells"
-    ]
-  ],
-  "DISP1": [
+    ],
     [
-      "HP:0002744",
-      "obsolete Bilateral cleft lip and palate"
+      "HP:0410393",
+      "Increased proportion of central memory CD4-positive, alpha-beta T cells"
     ]
   ],
   "DKC1": [
@@ -1147,14 +675,6 @@
     [
       "HP:0034239",
       "Renal vein thrombosis"
-    ],
-    [
-      "HP:0033555",
-      "Anti-Ro/SS-A antibody positivity"
-    ],
-    [
-      "HP:0033555",
-      "Anti-Ro/SS-A antibody positivity"
     ]
   ],
   "DNM1L": [
@@ -1261,6 +781,14 @@
       "Severe giardiasis"
     ],
     [
+      "HP:0410324",
+      "Dust mite allergy"
+    ],
+    [
+      "HP:0032336",
+      "Increased circulating specific IgE antibody concentration"
+    ],
+    [
       "HP:0500094",
       "Latex allergy"
     ],
@@ -1269,16 +797,8 @@
       "Increased circulating specific IgE antibody concentration"
     ],
     [
-      "HP:0410324",
-      "Dust mite allergy"
-    ],
-    [
       "HP:0012395",
       "Seasonal allergy"
-    ],
-    [
-      "HP:0032336",
-      "Increased circulating specific IgE antibody concentration"
     ],
     [
       "HP:0033000",
@@ -1317,35 +837,11 @@
   ],
   "ECHS1": [
     [
-      "HP:0032668",
-      "Myoclonic status epilepticus without coma"
-    ],
-    [
       "HP:0500184",
       "Abnormal CSF amino acid concentration"
     ]
   ],
-  "EDN3": [
-    [
-      "HP:0012714",
-      "Severe hearing impairment"
-    ]
-  ],
-  "EED": [
-    [
-      "HP:0003888",
-      "Flattened humeral heads"
-    ],
-    [
-      "HP:0045008",
-      "Abnormal shape of the radius"
-    ]
-  ],
   "EFEMP2": [
-    [
-      "HP:0004952",
-      "Pulmonary arteriovenous fistulas"
-    ],
     [
       "HP:0031668",
       "Diastolic heart murmur"
@@ -1363,12 +859,6 @@
     [
       "HP:0004132",
       "Dimple on nasal tip"
-    ]
-  ],
-  "EGFR": [
-    [
-      "HP:0030359",
-      "Squamous cell lung carcinoma"
     ]
   ],
   "ELAC2": [
@@ -1391,12 +881,6 @@
     [
       "HP:0033588",
       "Labial adhesion"
-    ]
-  ],
-  "EPS8L2": [
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
     ]
   ],
   "ESRRB": [
@@ -1433,20 +917,14 @@
       "Abnormal location of ears"
     ]
   ],
-  "EYA4": [
-    [
-      "HP:0012781",
-      "Mid-frequency hearing loss"
-    ]
-  ],
   "FAAP24": [
-    [
-      "HP:0033185",
-      "Triggered by EBV infection"
-    ],
     [
       "HP:0034685",
       "Abnormal liver enzyme activity or concentration"
+    ],
+    [
+      "HP:0033185",
+      "Triggered by EBV infection"
     ]
   ],
   "FAM111B": [
@@ -1457,19 +935,13 @@
     [
       "HP:0006494",
       "Aplasia/Hypoplasia involving bones of the feet"
-    ]
-  ],
-  "FANCB": [
+    ],
     [
-      "HP:0011751",
-      "Abnormal posterior pituitary morphogenesis"
+      "HP:0005944",
+      "Bilateral lung agenesis"
     ]
   ],
   "FANCD2": [
-    [
-      "HP:0020047",
-      "Abnormal myeloid cell morphology"
-    ],
     [
       "HP:0032189",
       "Cellular hypersensitivity to diepoxybutane"
@@ -1573,62 +1045,16 @@
       "Cerebral granulomatosis"
     ]
   ],
-  "FERMT3": [
-    [
-      "HP:0031130",
-      "Impaired calcium ionophore-induced platelet aggregation"
-    ],
-    [
-      "HP:0031129",
-      "Impaired phorbol myristate acetate-induced platelet aggregation"
-    ]
-  ],
   "FGB": [
     [
       "HP:0011901",
       "Dysfibrinogenemia"
     ]
   ],
-  "FGFR1": [
-    [
-      "HP:0002744",
-      "obsolete Bilateral cleft lip and palate"
-    ],
-    [
-      "HP:0025382",
-      "Hypodipsia"
-    ],
-    [
-      "HP:0011346",
-      "Mild expressive language delay"
-    ]
-  ],
-  "FGFR2": [
-    [
-      "HP:0009288",
-      "Curved proximal phalanx of the 4th finger"
-    ],
-    [
-      "HP:0008519",
-      "Abnormal coccyx morphology"
-    ]
-  ],
   "FGFR3": [
-    [
-      "HP:0034772",
-      "Decreased skull base length"
-    ],
     [
       "HP:0010878",
       "Fetal cystic hygroma"
-    ],
-    [
-      "HP:0009447",
-      "Aplasia/Hypoplasia of the phalanges of the 3rd finger"
-    ],
-    [
-      "HP:0006413",
-      "Broad tibial metaphyses"
     ]
   ],
   "FLT4": [
@@ -1643,22 +1069,8 @@
       "Intradural spinal lipoma"
     ],
     [
-      "HP:0025666",
-      "Very preterm birth"
-    ],
-    [
-      "HP:0025666",
-      "Very preterm birth"
-    ],
-    [
       "HP:0033495",
       "Segmental glomerulosclerosis"
-    ]
-  ],
-  "FOXG1": [
-    [
-      "HP:5200019",
-      "Stereotypic whole-body movements"
     ]
   ],
   "FOXN1": [
@@ -1671,24 +1083,6 @@
     [
       "HP:0012482",
       "Frontal venous angioma"
-    ]
-  ],
-  "FRAS1": [
-    [
-      "HP:0009930",
-      "Asymmetry of the nares"
-    ]
-  ],
-  "GABBR2": [
-    [
-      "HP:5200019",
-      "Stereotypic whole-body movements"
-    ]
-  ],
-  "GABRG2": [
-    [
-      "HP:0033718",
-      "EEG with central epileptiform discharges"
     ]
   ],
   "GALE": [
@@ -1707,40 +1101,20 @@
       "Congenital portosystemic venous shunt"
     ]
   ],
-  "GATA3": [
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ]
-  ],
-  "GATA6": [
-    [
-      "HP:0011543",
-      "Superior-inferior ventricles without criss-cross atrioventricular valves"
-    ]
-  ],
   "GATAD2B": [
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
-    ],
     [
       "HP:0010182",
       "Abnormality of the distal phalanges of the toes"
-    ],
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
     ]
   ],
   "GCSH": [
     [
       "HP:0025219",
       "Triggered by vaccination"
+    ],
+    [
+      "HP:0000270",
+      "Delayed cranial suture closure"
     ]
   ],
   "GFM1": [
@@ -1769,18 +1143,6 @@
       "Sural nerve atrophy"
     ]
   ],
-  "GJB3": [
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ]
-  ],
-  "GJB6": [
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ]
-  ],
   "GLUD1": [
     [
       "HP:0010892",
@@ -1789,30 +1151,6 @@
   ],
   "GP1BA": [
     [
-      "HP:0030136",
-      "Enhanced ristocetin cofactor assay activity"
-    ],
-    [
-      "HP:0030132",
-      "Absence of large von Willebrand factor multimers"
-    ],
-    [
-      "HP:0030136",
-      "Enhanced ristocetin cofactor assay activity"
-    ],
-    [
-      "HP:0030132",
-      "Absence of large von Willebrand factor multimers"
-    ],
-    [
-      "HP:0030136",
-      "Enhanced ristocetin cofactor assay activity"
-    ],
-    [
-      "HP:0030136",
-      "Enhanced ristocetin cofactor assay activity"
-    ],
-    [
       "HP:0030132",
       "Absence of large von Willebrand factor multimers"
     ],
@@ -1835,6 +1173,42 @@
     [
       "HP:0030132",
       "Absence of large von Willebrand factor multimers"
+    ],
+    [
+      "HP:0030136",
+      "Enhanced ristocetin cofactor assay activity"
+    ],
+    [
+      "HP:0030136",
+      "Enhanced ristocetin cofactor assay activity"
+    ],
+    [
+      "HP:0030132",
+      "Absence of large von Willebrand factor multimers"
+    ],
+    [
+      "HP:0030136",
+      "Enhanced ristocetin cofactor assay activity"
+    ],
+    [
+      "HP:0030403",
+      "Spontaneous platelet aggregation"
+    ],
+    [
+      "HP:0030132",
+      "Absence of large von Willebrand factor multimers"
+    ],
+    [
+      "HP:0030136",
+      "Enhanced ristocetin cofactor assay activity"
+    ],
+    [
+      "HP:0030132",
+      "Absence of large von Willebrand factor multimers"
+    ],
+    [
+      "HP:0030136",
+      "Enhanced ristocetin cofactor assay activity"
     ],
     [
       "HP:0030403",
@@ -1853,38 +1227,6 @@
       "Enhanced ristocetin cofactor assay activity"
     ],
     [
-      "HP:0030403",
-      "Spontaneous platelet aggregation"
-    ],
-    [
-      "HP:0030136",
-      "Enhanced ristocetin cofactor assay activity"
-    ],
-    [
-      "HP:0030132",
-      "Absence of large von Willebrand factor multimers"
-    ],
-    [
-      "HP:0030136",
-      "Enhanced ristocetin cofactor assay activity"
-    ],
-    [
-      "HP:0030132",
-      "Absence of large von Willebrand factor multimers"
-    ],
-    [
-      "HP:0030136",
-      "Enhanced ristocetin cofactor assay activity"
-    ],
-    [
-      "HP:0030136",
-      "Enhanced ristocetin cofactor assay activity"
-    ],
-    [
-      "HP:0030132",
-      "Absence of large von Willebrand factor multimers"
-    ],
-    [
       "HP:0030132",
       "Absence of large von Willebrand factor multimers"
     ],
@@ -1913,18 +1255,6 @@
       "Enhanced ristocetin cofactor assay activity"
     ],
     [
-      "HP:0030132",
-      "Absence of large von Willebrand factor multimers"
-    ],
-    [
-      "HP:0030136",
-      "Enhanced ristocetin cofactor assay activity"
-    ],
-    [
-      "HP:0030132",
-      "Absence of large von Willebrand factor multimers"
-    ],
-    [
       "HP:0030136",
       "Enhanced ristocetin cofactor assay activity"
     ],
@@ -1941,6 +1271,10 @@
       "Enhanced ristocetin cofactor assay activity"
     ],
     [
+      "HP:0030132",
+      "Absence of large von Willebrand factor multimers"
+    ],
+    [
       "HP:0030136",
       "Enhanced ristocetin cofactor assay activity"
     ],
@@ -1951,6 +1285,34 @@
     [
       "HP:0030132",
       "Absence of large von Willebrand factor multimers"
+    ],
+    [
+      "HP:0030132",
+      "Absence of large von Willebrand factor multimers"
+    ],
+    [
+      "HP:0030136",
+      "Enhanced ristocetin cofactor assay activity"
+    ],
+    [
+      "HP:0030132",
+      "Absence of large von Willebrand factor multimers"
+    ],
+    [
+      "HP:0030136",
+      "Enhanced ristocetin cofactor assay activity"
+    ],
+    [
+      "HP:0030136",
+      "Enhanced ristocetin cofactor assay activity"
+    ],
+    [
+      "HP:0030132",
+      "Absence of large von Willebrand factor multimers"
+    ],
+    [
+      "HP:0030136",
+      "Enhanced ristocetin cofactor assay activity"
     ]
   ],
   "GPT2": [
@@ -1961,32 +1323,12 @@
   ],
   "GYG1": [
     [
-      "HP:0034519",
-      "Muscle fiber fuchsinophilic inclusion bodies"
-    ],
-    [
-      "HP:0034519",
-      "Muscle fiber fuchsinophilic inclusion bodies"
-    ],
-    [
-      "HP:0034519",
-      "Muscle fiber fuchsinophilic inclusion bodies"
-    ],
-    [
-      "HP:0034519",
-      "Muscle fiber fuchsinophilic inclusion bodies"
-    ],
-    [
-      "HP:0034519",
-      "Muscle fiber fuchsinophilic inclusion bodies"
+      "HP:0001457",
+      "Abnormality of the musculature of the upper arm"
     ],
     [
       "HP:0410167",
       "Abnormal morphology of the chest musculature"
-    ],
-    [
-      "HP:0001457",
-      "Abnormality of the musculature of the upper arm"
     ]
   ],
   "GYS2": [
@@ -2003,21 +1345,9 @@
     [
       "HP:0030650",
       "Focal"
-    ],
-    [
-      "HP:0000535",
-      "obsolete Sparse and thin eyebrow"
     ]
   ],
   "HBA2": [
-    [
-      "HP:0005507",
-      "Hemoglobin Barts"
-    ],
-    [
-      "HP:0005507",
-      "Hemoglobin Barts"
-    ],
     [
       "HP:0034609",
       "Polychromasia"
@@ -2033,20 +1363,12 @@
       "Polychromasia"
     ],
     [
-      "HP:0025322",
-      "Venous occlusion"
-    ],
-    [
       "HP:0034609",
       "Polychromasia"
     ],
     [
       "HP:0034609",
       "Polychromasia"
-    ],
-    [
-      "HP:6000228",
-      "Failure to increase oxygen saturation on hyperoxia test"
     ],
     [
       "HP:0034609",
@@ -2061,12 +1383,6 @@
     [
       "HP:0012714",
       "Severe hearing impairment"
-    ]
-  ],
-  "HDAC8": [
-    [
-      "HP:0030959",
-      "Muscular ventricular septal aneurysm"
     ]
   ],
   "HEY2": [
@@ -2089,12 +1405,6 @@
     [
       "HP:0025215",
       "Triggered by febrile illness"
-    ]
-  ],
-  "HMBS": [
-    [
-      "HP:0100017",
-      "Capsular cataract"
     ]
   ],
   "HMOX1": [
@@ -2123,10 +1433,6 @@
     [
       "HP:0004132",
       "Dimple on nasal tip"
-    ],
-    [
-      "HP:0000535",
-      "obsolete Sparse and thin eyebrow"
     ]
   ],
   "HOGA1": [
@@ -2161,10 +1467,6 @@
     [
       "HP:0005556",
       "Abnormality of the metopic suture"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
     ]
   ],
   "HTRA2": [
@@ -2211,18 +1513,6 @@
     [
       "HP:0030683",
       "Vaginitis"
-    ],
-    [
-      "HP:0100281",
-      "Chronic colitis"
-    ],
-    [
-      "HP:0031949",
-      "Recurrent bacterial upper respiratory tract infections"
-    ],
-    [
-      "HP:0031949",
-      "Recurrent bacterial upper respiratory tract infections"
     ]
   ],
   "ICOSLG": [
@@ -2233,31 +1523,15 @@
   ],
   "IFT140": [
     [
-      "HP:0030526",
-      "Severe constriction of peripheral visual field"
-    ],
-    [
       "HP:0011798",
       "Renal oncocytoma"
     ],
     [
-      "HP:0004713",
-      "Reversible renal failure"
-    ],
-    [
       "HP:0011798",
       "Renal oncocytoma"
-    ],
-    [
-      "HP:0004713",
-      "Reversible renal failure"
     ]
   ],
   "IGF2": [
-    [
-      "HP:0100600",
-      "Penoscrotal transposition"
-    ],
     [
       "HP:0012714",
       "Severe hearing impairment"
@@ -2293,44 +1567,12 @@
     [
       "HP:0032557",
       "History of bone marrow transplant"
-    ],
-    [
-      "HP:0012648",
-      "Decreased inflammatory response"
     ]
   ],
   "IKZF1": [
     [
       "HP:0032162",
       "Unusual skin infection"
-    ],
-    [
-      "HP:0020064",
-      "Abnormal eosinophil count"
-    ],
-    [
-      "HP:0020064",
-      "Abnormal eosinophil count"
-    ],
-    [
-      "HP:0020064",
-      "Abnormal eosinophil count"
-    ],
-    [
-      "HP:0020064",
-      "Abnormal eosinophil count"
-    ],
-    [
-      "HP:0020064",
-      "Abnormal eosinophil count"
-    ],
-    [
-      "HP:0020064",
-      "Abnormal eosinophil count"
-    ],
-    [
-      "HP:0020064",
-      "Abnormal eosinophil count"
     ]
   ],
   "IKZF2": [
@@ -2359,28 +1601,12 @@
       "Neutrophilia in presence of infection"
     ],
     [
-      "HP:0410257",
-      "Neutrophilia in presence of infection"
-    ],
-    [
       "HP:0032336",
       "Increased circulating specific IgE antibody concentration"
-    ]
-  ],
-  "IMPG2": [
-    [
-      "HP:0030564",
-      "Best corrected visual acuity 1.1 LogMAR"
     ],
     [
-      "HP:0030557",
-      "Best corrected visual acuity 0.4 LogMAR"
-    ]
-  ],
-  "IQSEC2": [
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
+      "HP:0410257",
+      "Neutrophilia in presence of infection"
     ]
   ],
   "IRF2BPL": [
@@ -2397,8 +1623,8 @@
   ],
   "ISCA2": [
     [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
+      "HP:0001319",
+      "Neonatal hypotonia"
     ]
   ],
   "ITGA2B": [
@@ -2407,16 +1633,10 @@
       "Decreased platelet glycoprotein VI"
     ]
   ],
-  "ITGB3": [
-    [
-      "HP:0030747",
-      "Preterm intraventricular hemorrhage"
-    ]
-  ],
   "KAT6B": [
     [
-      "HP:0000535",
-      "obsolete Sparse and thin eyebrow"
+      "HP:0045075",
+      "Sparse eyebrow"
     ]
   ],
   "KATNIP": [
@@ -2429,20 +1649,6 @@
     [
       "HP:0012481",
       "Cerebral venous angioma"
-    ]
-  ],
-  "KCNH5": [
-    [
-      "HP:0032715",
-      "Focal bilateral motor seizure"
-    ],
-    [
-      "HP:0032715",
-      "Focal bilateral motor seizure"
-    ],
-    [
-      "HP:0032715",
-      "Focal bilateral motor seizure"
     ]
   ],
   "KCNQ4": [
@@ -2473,36 +1679,10 @@
       "Cardiac polyglucosan accumulation"
     ]
   ],
-  "KMT2A": [
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
-    ],
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
-    ]
-  ],
   "KYNU": [
-    [
-      "HP:0010745",
-      "Aplasia of the phalanges of the toes"
-    ],
-    [
-      "HP:0004207",
-      "Abnormal 5th finger morphology"
-    ],
-    [
-      "HP:0010710",
-      "3-5 finger syndactyly"
-    ],
     [
       "HP:0040107",
       "Abnormal posterior semicircular canal morphology"
-    ],
-    [
-      "HP:0008490",
-      "Sacral segmentation defect"
     ]
   ],
   "LIG4": [
@@ -2523,23 +1703,7 @@
       "Diffuse peripheral demyelination"
     ]
   ],
-  "LMX1B": [
-    [
-      "HP:0010590",
-      "Abnormality of the distal femoral epiphysis"
-    ]
-  ],
-  "LRP4": [
-    [
-      "HP:0006264",
-      "Aplasia/Hypoplasia of the 2nd finger"
-    ]
-  ],
   "LRPPRC": [
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
-    ],
     [
       "HP:0012714",
       "Severe hearing impairment"
@@ -2559,20 +1723,14 @@
       "Abnormal T cell proliferation"
     ]
   ],
-  "MAN1B1": [
-    [
-      "HP:0000535",
-      "obsolete Sparse and thin eyebrow"
-    ]
-  ],
   "MAN2B2": [
-    [
-      "HP:0410354",
-      "Increased sialylated N-glycan level"
-    ],
     [
       "HP:4000201",
       "Abnormal circulating alpha mannosidase activity"
+    ],
+    [
+      "HP:0410354",
+      "Increased sialylated N-glycan level"
     ],
     [
       "HP:0410354",
@@ -2611,12 +1769,12 @@
   ],
   "MFF": [
     [
-      "HP:0025456",
-      "Abnormal CSF protein concentration"
-    ],
-    [
       "HP:0025737",
       "Abnormal subthalamic nucleus morphology"
+    ],
+    [
+      "HP:0025456",
+      "Abnormal CSF protein concentration"
     ]
   ],
   "MGME1": [
@@ -2625,30 +1783,10 @@
       "Recurrent external ophthalmoplegia"
     ]
   ],
-  "MPL": [
-    [
-      "HP:0020060",
-      "Decreased red blood cell count"
-    ],
-    [
-      "HP:0032309",
-      "Abnormal granulocyte count"
-    ]
-  ],
   "MSH6": [
     [
       "HP:0100706",
       "Abnormal oligodendroglia morphology"
-    ]
-  ],
-  "MT-ND3": [
-    [
-      "HP:0032668",
-      "Myoclonic status epilepticus without coma"
-    ],
-    [
-      "HP:0032668",
-      "Myoclonic status epilepticus without coma"
     ]
   ],
   "MT-ND5": [
@@ -2657,30 +1795,14 @@
       "Abnormal subthalamic nucleus morphology"
     ],
     [
-      "HP:0033249",
-      "Focal substantia nigra T2 hyperintensity"
-    ],
-    [
       "HP:0025737",
       "Abnormal subthalamic nucleus morphology"
-    ],
-    [
-      "HP:0033249",
-      "Focal substantia nigra T2 hyperintensity"
     ]
   ],
   "MT-ND6": [
     [
       "HP:0004881",
       "Episodic hypoventilation"
-    ],
-    [
-      "HP:6001084",
-      "T2-hyperintense putaminal rim"
-    ],
-    [
-      "HP:6001084",
-      "T2-hyperintense putaminal rim"
     ],
     [
       "HP:0004881",
@@ -2691,16 +1813,6 @@
     [
       "HP:0007769",
       "Peripheral retinal degeneration"
-    ],
-    [
-      "HP:5200125",
-      "Aggression towards others"
-    ]
-  ],
-  "MT-TF": [
-    [
-      "HP:0040292",
-      "Left hemiplegia"
     ]
   ],
   "MT-TI": [
@@ -2729,12 +1841,6 @@
       "Static ophthalmoparesis"
     ]
   ],
-  "MT-TS1": [
-    [
-      "HP:0032855",
-      "Photosensitive myoclonic-tonic-clonic seizure"
-    ]
-  ],
   "MT-TT": [
     [
       "HP:0012832",
@@ -2751,12 +1857,6 @@
       "Dysmetric horizontal saccades"
     ]
   ],
-  "MTM1": [
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
-    ]
-  ],
   "MTO1": [
     [
       "HP:0012828",
@@ -2768,10 +1868,6 @@
     ]
   ],
   "MTRFR": [
-    [
-      "HP:0007747",
-      "Monocular horizontal nystagmus"
-    ],
     [
       "HP:0030085",
       "Abnormal CSF lactate concentration"
@@ -2787,26 +1883,6 @@
     [
       "HP:0008504",
       "Moderate sensorineural hearing impairment"
-    ]
-  ],
-  "MYO7A": [
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ]
-  ],
-  "MYOC": [
-    [
-      "HP:0012630",
-      "Abnormal trabecular meshwork morphology"
-    ],
-    [
-      "HP:0012634",
-      "Iris pigment dispersion"
     ]
   ],
   "MYSM1": [
@@ -2875,43 +1951,13 @@
       "Paroxysmal tachycardia"
     ]
   ],
-  "NDUFS8": [
-    [
-      "HP:0007747",
-      "Monocular horizontal nystagmus"
-    ],
-    [
-      "HP:0007747",
-      "Monocular horizontal nystagmus"
-    ],
-    [
-      "HP:0004881",
-      "Episodic hypoventilation"
-    ]
-  ],
   "NDUFV1": [
     [
       "HP:0004881",
       "Episodic hypoventilation"
     ]
   ],
-  "NDUFV2": [
-    [
-      "HP:0006859",
-      "Posterior leukoencephalopathy"
-    ]
-  ],
-  "NEB": [
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
-    ]
-  ],
   "NFKB2": [
-    [
-      "HP:0032157",
-      "Recurrent genital herpes"
-    ],
     [
       "HP:0020106",
       "Severe giardiasis"
@@ -2931,32 +1977,10 @@
       "Prominent proximal interphalangeal joints"
     ]
   ],
-  "NOG": [
-    [
-      "HP:0012714",
-      "Severe hearing impairment"
-    ],
-    [
-      "HP:0004610",
-      "Lumbar spinal canal stenosis"
-    ],
-    [
-      "HP:0004214",
-      "Curved phalanges of the 5th finger"
-    ]
-  ],
   "NPRL3": [
     [
       "HP:0040292",
       "Left hemiplegia"
-    ],
-    [
-      "HP:0011294",
-      "EEG with frontal sharp waves"
-    ],
-    [
-      "HP:0011294",
-      "EEG with frontal sharp waves"
     ]
   ],
   "NRP1": [
@@ -2971,12 +1995,12 @@
       "Eosinophilic pneumonia"
     ],
     [
-      "HP:0033006",
-      "Diffuse alveolar damage"
-    ],
-    [
       "HP:0032336",
       "Increased circulating specific IgE antibody concentration"
+    ],
+    [
+      "HP:0033006",
+      "Diffuse alveolar damage"
     ]
   ],
   "NTHL1": [
@@ -2987,26 +2011,14 @@
   ],
   "NUBPL": [
     [
-      "HP:6000416",
-      "T2 hyperintense cerebellar lesion"
-    ],
-    [
       "HP:0010951",
       "Abnormal third ventricle morphology"
-    ],
-    [
-      "HP:6000416",
-      "T2 hyperintense cerebellar lesion"
     ]
   ],
   "NUP133": [
     [
       "HP:0033130",
       "Abnormal renal echogenicity"
-    ],
-    [
-      "HP:0012568",
-      "Lower eyelid edema"
     ],
     [
       "HP:0020133",
@@ -3045,40 +2057,8 @@
       "Bulging fontanelle"
     ],
     [
-      "HP:0030173",
-      "Peripheral hypermyelination"
-    ],
-    [
       "HP:0041055",
       "Fractured humerus"
-    ]
-  ],
-  "OTOA": [
-    [
-      "HP:0012713",
-      "Moderate hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ]
-  ],
-  "OTOGL": [
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
     ]
   ],
   "P2RY12": [
@@ -3103,10 +2083,6 @@
     [
       "HP:0006157",
       "Prominent palmar flexion creases"
-    ],
-    [
-      "HP:0011346",
-      "Mild expressive language delay"
     ]
   ],
   "PAK3": [
@@ -3152,10 +2128,6 @@
     ]
   ],
   "PBX1": [
-    [
-      "HP:0011659",
-      "Tetralogy of Fallot with absent pulmonary valve"
-    ],
     [
       "HP:0001991",
       "Aplasia/Hypoplasia of toe"
@@ -3213,10 +2185,6 @@
     [
       "HP:0012709",
       "Abnormal brain choline/creatine ratio by MRS"
-    ],
-    [
-      "HP:0012714",
-      "Severe hearing impairment"
     ]
   ],
   "PIGL": [
@@ -3229,12 +2197,6 @@
     [
       "HP:0033130",
       "Abnormal renal echogenicity"
-    ]
-  ],
-  "PIGU": [
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
     ]
   ],
   "PIK3CD": [
@@ -3281,26 +2243,10 @@
       "T-wave inversion in the right precordial leads"
     ]
   ],
-  "PLG": [
-    [
-      "HP:0030831",
-      "Rhonchi"
-    ]
-  ],
   "PLN": [
     [
       "HP:0031651",
       "Abnormal tricuspid valve physiology"
-    ]
-  ],
-  "PLP1": [
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
-    ],
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
     ]
   ],
   "PMM2": [
@@ -3319,22 +2265,6 @@
     [
       "HP:0030086",
       "Reduced CSF lactate"
-    ]
-  ],
-  "POLR3A": [
-    [
-      "HP:0033784",
-      "Dentin dysplasia"
-    ]
-  ],
-  "POR": [
-    [
-      "HP:0410218",
-      "Hypoplasia of maxilla relative to mandible"
-    ],
-    [
-      "HP:0034772",
-      "Decreased skull base length"
     ]
   ],
   "POU2AF1": [
@@ -3367,16 +2297,6 @@
       "Central thinning of the outer nuclear layer of the retina"
     ]
   ],
-  "PRPS1": [
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
-      "HP:0012713",
-      "Moderate hearing impairment"
-    ]
-  ],
   "PRR12": [
     [
       "HP:0030504",
@@ -3385,38 +2305,22 @@
   ],
   "PUS1": [
     [
-      "HP:0012827",
-      "Borderline"
-    ],
-    [
       "HP:0012829",
       "Profound"
     ],
     [
       "HP:0012828",
       "Severe"
+    ],
+    [
+      "HP:0012827",
+      "Borderline"
     ]
   ],
   "PXDN": [
     [
       "HP:0030855",
       "Anterior staphyloma"
-    ]
-  ],
-  "PYCR1": [
-    [
-      "HP:0030458",
-      "Abnormal timing of pattern onset/offset visual evoked potentials"
-    ]
-  ],
-  "RAB23": [
-    [
-      "HP:0000236",
-      "Abnormal anterior fontanelle morphology"
-    ],
-    [
-      "HP:0005486",
-      "Small fontanelle"
     ]
   ],
   "RAB40AL": [
@@ -3426,10 +2330,6 @@
     ]
   ],
   "RAC2": [
-    [
-      "HP:0410294",
-      "Decreased specific antibody response to protein vaccine"
-    ],
     [
       "HP:0025625",
       "Elevated proportion of CD4+ effector memory T cells"
@@ -3465,18 +2365,6 @@
     [
       "HP:0012714",
       "Severe hearing impairment"
-    ]
-  ],
-  "RECQL4": [
-    [
-      "HP:0012193",
-      "Anaplastic large-cell lymphoma"
-    ]
-  ],
-  "REEP6": [
-    [
-      "HP:0030554",
-      "Best corrected visual acuity 0.1 LogMAR"
     ]
   ],
   "RELA": [
@@ -3593,24 +2481,6 @@
       "Dilatation of large choroidal vessels"
     ]
   ],
-  "RPS19": [
-    [
-      "HP:0025633",
-      "Abnormal ureter morphology"
-    ]
-  ],
-  "RPS20": [
-    [
-      "HP:0030420",
-      "Vulvar adenocarcinoma"
-    ]
-  ],
-  "RYR1": [
-    [
-      "HP:0009537",
-      "Flexion contracture of the 2nd finger"
-    ]
-  ],
   "SAMHD1": [
     [
       "HP:0032547",
@@ -3619,26 +2489,16 @@
   ],
   "SARS2": [
     [
-      "HP:0031375",
-      "Refractory"
-    ],
-    [
       "HP:0012825",
       "Mild"
     ],
     [
       "HP:0012828",
       "Severe"
-    ]
-  ],
-  "SCN1A": [
-    [
-      "HP:0010858",
-      "EEG with hyperventilation-induced epileptiform discharges"
     ],
     [
-      "HP:0011200",
-      "EEG with generalized polymorphic epileptiform discharges"
+      "HP:0031375",
+      "Refractory"
     ]
   ],
   "SCN3A": [
@@ -3651,10 +2511,6 @@
     [
       "HP:0030926",
       "5-minute APGAR score of 6"
-    ],
-    [
-      "HP:0032893",
-      "Gastroenteritis-related afebrile seizure"
     ]
   ],
   "SEC61A1": [
@@ -3729,10 +2585,6 @@
       "Exposure history"
     ],
     [
-      "HP:4000110",
-      "Exposure history"
-    ],
-    [
       "HP:0025223",
       "Triggered by smoking"
     ],
@@ -3767,12 +2619,10 @@
     [
       "HP:4000110",
       "Exposure history"
-    ]
-  ],
-  "SFTPB": [
+    ],
     [
-      "HP:0030864",
-      "Intercostal retractions"
+      "HP:4000110",
+      "Exposure history"
     ]
   ],
   "SGCD": [
@@ -3781,12 +2631,12 @@
       "Absent muscle fiber alpha sarcoglycan"
     ],
     [
-      "HP:0030110",
-      "Absent muscle fiber delta sarcoglycan"
-    ],
-    [
       "HP:0030106",
       "Absent muscle fiber beta sarcoglycan"
+    ],
+    [
+      "HP:0030110",
+      "Absent muscle fiber delta sarcoglycan"
     ],
     [
       "HP:0030101",
@@ -3797,22 +2647,22 @@
       "Absent muscle fiber gamma sarcoglycan"
     ],
     [
-      "HP:0030110",
-      "Absent muscle fiber delta sarcoglycan"
-    ],
-    [
       "HP:0030106",
       "Absent muscle fiber beta sarcoglycan"
     ],
     [
-      "HP:0030101",
-      "Absent muscle fiber alpha sarcoglycan"
+      "HP:0030110",
+      "Absent muscle fiber delta sarcoglycan"
     ],
     [
       "HP:0030108",
       "Reduced muscle fiber gamma sarcoglycan"
     ],
     [
+      "HP:0030101",
+      "Absent muscle fiber alpha sarcoglycan"
+    ],
+    [
       "HP:0030106",
       "Absent muscle fiber beta sarcoglycan"
     ],
@@ -3825,12 +2675,12 @@
       "Absent muscle fiber gamma sarcoglycan"
     ],
     [
-      "HP:0030107",
-      "Reduced muscle fiber beta sarcoglycan"
-    ],
-    [
       "HP:0030101",
       "Absent muscle fiber alpha sarcoglycan"
+    ],
+    [
+      "HP:0030107",
+      "Reduced muscle fiber beta sarcoglycan"
     ],
     [
       "HP:0030109",
@@ -3841,12 +2691,12 @@
       "Absent muscle fiber delta sarcoglycan"
     ],
     [
-      "HP:0030107",
-      "Reduced muscle fiber beta sarcoglycan"
-    ],
-    [
       "HP:0030101",
       "Absent muscle fiber alpha sarcoglycan"
+    ],
+    [
+      "HP:0030107",
+      "Reduced muscle fiber beta sarcoglycan"
     ],
     [
       "HP:0030109",
@@ -3857,12 +2707,12 @@
       "Absent muscle fiber alpha sarcoglycan"
     ],
     [
-      "HP:0031299",
-      "Elevated left atrial pressure"
-    ],
-    [
       "HP:0025265",
       "Stiff toe"
+    ],
+    [
+      "HP:0031299",
+      "Elevated left atrial pressure"
     ],
     [
       "HP:0030101",
@@ -3879,22 +2729,6 @@
       "Aplasia/Hypoplasia of the distal phalanx of the 5th finger"
     ]
   ],
-  "SIX5": [
-    [
-      "HP:0012714",
-      "Severe hearing impairment"
-    ],
-    [
-      "HP:0012713",
-      "Moderate hearing impairment"
-    ]
-  ],
-  "SLC16A2": [
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
-    ]
-  ],
   "SLC18A2": [
     [
       "HP:0034554",
@@ -3903,26 +2737,8 @@
   ],
   "SLC1A2": [
     [
-      "HP:0032816",
-      "Neonatal multifocal myoclonic seizure"
-    ],
-    [
-      "HP:0032842",
-      "Generalized-onset epileptic spasm"
-    ],
-    [
       "HP:0012820",
       "Bilateral vocal cord paralysis"
-    ]
-  ],
-  "SLC1A3": [
-    [
-      "HP:0040292",
-      "Left hemiplegia"
-    ],
-    [
-      "HP:0011288",
-      "EEG with parietal sharp slow waves"
     ]
   ],
   "SLC29A3": [
@@ -3935,16 +2751,8 @@
       "Abnormality of the maxillary sinus"
     ],
     [
-      "HP:0025619",
-      "Elevated plasma cell count"
-    ],
-    [
       "HP:0034920",
       "Nasal mucosa vasculitis"
-    ],
-    [
-      "HP:0020064",
-      "Abnormal eosinophil count"
     ],
     [
       "HP:0100039",
@@ -3953,10 +2761,6 @@
     [
       "HP:0033211",
       "Decreased total iron binding capacity"
-    ],
-    [
-      "HP:0012716",
-      "Moderate conductive hearing impairment"
     ]
   ],
   "SLC2A1": [
@@ -3967,10 +2771,6 @@
     [
       "HP:0025377",
       "Triggered by exertion"
-    ],
-    [
-      "HP:0030086",
-      "Reduced CSF lactate"
     ],
     [
       "HP:0030933",
@@ -3985,20 +2785,8 @@
       "Stiff finger"
     ],
     [
-      "HP:0005524",
-      "Macrocytic hemolytic disease"
-    ],
-    [
       "HP:0025377",
       "Triggered by exertion"
-    ],
-    [
-      "HP:0030086",
-      "Reduced CSF lactate"
-    ],
-    [
-      "HP:0030086",
-      "Reduced CSF lactate"
     ]
   ],
   "SLFN14": [
@@ -4017,32 +2805,22 @@
   ],
   "SLX4": [
     [
-      "HP:0030770",
-      "Craniorachischisis"
-    ],
-    [
       "HP:0011454",
       "Abnormal malleus morphology"
     ]
   ],
   "SMCHD1": [
     [
-      "HP:0011052",
-      "Agenesis of maxillary premolar"
-    ],
-    [
       "HP:3000040",
       "Abnormality of ethmoid sinus"
     ],
     [
+      "HP:0011052",
+      "Agenesis of maxillary premolar"
+    ],
+    [
       "HP:0011431",
       "Fetal fifth finger clinodactyly"
-    ]
-  ],
-  "SMS": [
-    [
-      "HP:0000535",
-      "obsolete Sparse and thin eyebrow"
     ]
   ],
   "SNX10": [
@@ -4079,34 +2857,12 @@
   ],
   "SPEN": [
     [
-      "HP:0031666",
-      "Late systolic murmur"
-    ],
-    [
       "HP:0011431",
       "Fetal fifth finger clinodactyly"
-    ]
-  ],
-  "SPTBN4": [
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
     ],
     [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
-    ],
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
-    ],
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
-    ],
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
+      "HP:0031666",
+      "Late systolic murmur"
     ]
   ],
   "SSBP1": [
@@ -4115,74 +2871,10 @@
       "Abnormality of foveal pigmentation"
     ]
   ],
-  "STAT3": [
-    [
-      "HP:4000029",
-      "Antigliadin antibody positivity"
-    ],
-    [
-      "HP:0032336",
-      "Increased circulating specific IgE antibody concentration"
-    ],
-    [
-      "HP:0032336",
-      "Increased circulating specific IgE antibody concentration"
-    ],
-    [
-      "HP:0032336",
-      "Increased circulating specific IgE antibody concentration"
-    ],
-    [
-      "HP:0032336",
-      "Increased circulating specific IgE antibody concentration"
-    ],
-    [
-      "HP:0032336",
-      "Increased circulating specific IgE antibody concentration"
-    ],
-    [
-      "HP:0032336",
-      "Increased circulating specific IgE antibody concentration"
-    ],
-    [
-      "HP:0032336",
-      "Increased circulating specific IgE antibody concentration"
-    ],
-    [
-      "HP:0032336",
-      "Increased circulating specific IgE antibody concentration"
-    ],
-    [
-      "HP:0032336",
-      "Increased circulating specific IgE antibody concentration"
-    ],
-    [
-      "HP:0032336",
-      "Increased circulating specific IgE antibody concentration"
-    ],
-    [
-      "HP:0032336",
-      "Increased circulating specific IgE antibody concentration"
-    ],
-    [
-      "HP:0032336",
-      "Increased circulating specific IgE antibody concentration"
-    ],
-    [
-      "HP:0032336",
-      "Increased circulating specific IgE antibody concentration"
-    ]
-  ],
   "STAT6": [
     [
       "HP:0032336",
       "Increased circulating specific IgE antibody concentration"
-    ]
-  ],
-  "STIM1": [
-    [
-      "HP:0031133",
-      "Increased annexin V binding to platelet phosphatidylserine"
     ]
   ],
   "STXBP2": [
@@ -4207,8 +2899,8 @@
       "Focal"
     ],
     [
-      "HP:0007868",
-      "obsolete Age-related macular degeneration"
+      "HP:0000608",
+      "Macular degeneration"
     ]
   ],
   "TBL1XR1": [
@@ -4239,12 +2931,6 @@
       "Abnormal talus morphology"
     ]
   ],
-  "TBX5": [
-    [
-      "HP:0001454",
-      "Abnormality of the upper arm"
-    ]
-  ],
   "TCF12": [
     [
       "HP:0000236",
@@ -4259,12 +2945,12 @@
   ],
   "TCF7L2": [
     [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
-    ],
-    [
       "HP:0007425",
       "Hyperextensible skin of face"
+    ],
+    [
+      "HP:0001319",
+      "Neonatal hypotonia"
     ]
   ],
   "TCIRG1": [
@@ -4285,18 +2971,10 @@
     [
       "HP:0012714",
       "Severe hearing impairment"
-    ],
-    [
-      "HP:0008773",
-      "Aplasia/Hypoplasia of the middle ear"
     ]
   ],
   "TECTA": [
     [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
       "HP:0012713",
       "Moderate hearing impairment"
     ],
@@ -4307,18 +2985,6 @@
     [
       "HP:0012713",
       "Moderate hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
     ]
   ],
   "TELO2": [
@@ -4343,18 +3009,14 @@
   ],
   "TET3": [
     [
-      "HP:0012716",
-      "Moderate conductive hearing impairment"
-    ],
-    [
       "HP:5200295",
       "Periodic limb movements"
     ]
   ],
   "TFE3": [
     [
-      "HP:0007893",
-      "obsolete Progressive retinal degeneration"
+      "HP:0000546",
+      "Retinal degeneration"
     ]
   ],
   "TGFB1": [
@@ -4363,21 +3025,7 @@
       "Posterior leukoencephalopathy"
     ]
   ],
-  "TGFBR1": [
-    [
-      "HP:0002636",
-      "Dilatation of an abdominal artery"
-    ]
-  ],
   "THPO": [
-    [
-      "HP:0011301",
-      "Absent foot"
-    ],
-    [
-      "HP:0003953",
-      "Absent forearm bone"
-    ],
     [
       "HP:0034600",
       "Elevated circulating thrombopoietin concentration"
@@ -4401,16 +3049,8 @@
       "Peripheral retinal degeneration"
     ],
     [
-      "HP:0007777",
-      "Chorioretinal scar"
-    ],
-    [
       "HP:0025243",
       "Subretinal hemorrhage"
-    ],
-    [
-      "HP:0007777",
-      "Chorioretinal scar"
     ]
   ],
   "TMEM237": [
@@ -4477,16 +3117,6 @@
     [
       "HP:0012894",
       "Paraspinal muscle hypertrophy"
-    ],
-    [
-      "HP:6000655",
-      "Femoral neck fracture"
-    ]
-  ],
-  "TRAC": [
-    [
-      "HP:0033563",
-      "Anti-tissue transglutaminase antibody positivity"
     ]
   ],
   "TRAF3": [
@@ -4495,12 +3125,12 @@
       "Follicular bronchiolitis"
     ],
     [
-      "HP:0030831",
-      "Rhonchi"
-    ],
-    [
       "HP:0040090",
       "Abnormal tympanic membrane morphology"
+    ],
+    [
+      "HP:0030831",
+      "Rhonchi"
     ],
     [
       "HP:0032130",
@@ -4509,32 +3139,12 @@
   ],
   "TRAF7": [
     [
-      "HP:0100498",
-      "Deviation of toes"
-    ],
-    [
-      "HP:5200110",
-      "Infrequent social engagement with peers"
-    ],
-    [
-      "HP:0006167",
-      "Prominent proximal interphalangeal joints"
-    ],
-    [
       "HP:0011572",
       "Supramitral ring"
     ],
     [
-      "HP:6000112",
-      "Hockey-stick palmar crease"
-    ],
-    [
       "HP:0011426",
       "Fetal choroid plexus cysts"
-    ],
-    [
-      "HP:4000083",
-      "Lack of interest in peers"
     ]
   ],
   "TRMT5": [
@@ -4561,48 +3171,22 @@
   ],
   "TUBA1A": [
     [
-      "HP:0033745",
-      "Dysplasia of the superior cerebellar vermis"
-    ],
-    [
-      "HP:0012832",
-      "Bilateral"
-    ],
-    [
       "HP:0040292",
       "Left hemiplegia"
     ],
     [
       "HP:0012832",
       "Bilateral"
-    ]
-  ],
-  "TUBB2A": [
+    ],
     [
-      "HP:0033745",
-      "Dysplasia of the superior cerebellar vermis"
+      "HP:0012832",
+      "Bilateral"
     ]
   ],
   "TUBB3": [
     [
       "HP:0011191",
       "Unilateral multifocal epileptiform discharges"
-    ],
-    [
-      "HP:0033744",
-      "Global cerebellar dysplasia"
-    ],
-    [
-      "HP:0033744",
-      "Global cerebellar dysplasia"
-    ],
-    [
-      "HP:0033745",
-      "Dysplasia of the superior cerebellar vermis"
-    ],
-    [
-      "HP:0010950",
-      "Abnormal fourth ventricle morphology"
     ]
   ],
   "TULP3": [
@@ -4621,26 +3205,6 @@
     [
       "HP:5200058",
       "Sensory hypersensitivity"
-    ],
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
-    ],
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
-    ],
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
-    ],
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
-    ],
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
     ]
   ],
   "USP7": [
@@ -4655,12 +3219,6 @@
     [
       "HP:0500016",
       "Abnormal cardiac MRI"
-    ]
-  ],
-  "USP9X": [
-    [
-      "HP:0012716",
-      "Moderate conductive hearing impairment"
     ]
   ],
   "VARS1": [
@@ -4685,12 +3243,12 @@
       "Impaired ristocetin cofactor assay activity"
     ],
     [
-      "HP:0030130",
-      "Impaired von Willebrand factor collagen binding activity"
-    ],
-    [
       "HP:0030131",
       "Abnormal von Willebrand factor multimer distribution"
+    ],
+    [
+      "HP:0030130",
+      "Impaired von Willebrand factor collagen binding activity"
     ],
     [
       "HP:0030129",
@@ -4729,28 +3287,24 @@
       "Impaired ristocetin cofactor assay activity"
     ],
     [
-      "HP:0030130",
-      "Impaired von Willebrand factor collagen binding activity"
-    ],
-    [
       "HP:0030131",
       "Abnormal von Willebrand factor multimer distribution"
-    ],
-    [
-      "HP:0030129",
-      "Impaired ristocetin cofactor assay activity"
     ],
     [
       "HP:0030130",
       "Impaired von Willebrand factor collagen binding activity"
     ],
     [
+      "HP:0030129",
+      "Impaired ristocetin cofactor assay activity"
+    ],
+    [
       "HP:0030131",
       "Abnormal von Willebrand factor multimer distribution"
     ],
     [
-      "HP:0030129",
-      "Impaired ristocetin cofactor assay activity"
+      "HP:0030130",
+      "Impaired von Willebrand factor collagen binding activity"
     ],
     [
       "HP:0030134",
@@ -4761,24 +3315,28 @@
       "Impaired ristocetin cofactor assay activity"
     ],
     [
-      "HP:0030130",
-      "Impaired von Willebrand factor collagen binding activity"
+      "HP:0030129",
+      "Impaired ristocetin cofactor assay activity"
     ],
     [
       "HP:0030131",
       "Abnormal von Willebrand factor multimer distribution"
+    ],
+    [
+      "HP:0030130",
+      "Impaired von Willebrand factor collagen binding activity"
     ],
     [
       "HP:0030129",
       "Impaired ristocetin cofactor assay activity"
     ],
     [
-      "HP:0030130",
-      "Impaired von Willebrand factor collagen binding activity"
-    ],
-    [
       "HP:0030131",
       "Abnormal von Willebrand factor multimer distribution"
+    ],
+    [
+      "HP:0030130",
+      "Impaired von Willebrand factor collagen binding activity"
     ],
     [
       "HP:0030132",
@@ -4803,10 +3361,6 @@
     [
       "HP:0030132",
       "Absence of large von Willebrand factor multimers"
-    ],
-    [
-      "HP:0040241",
-      "Increased RIPA"
     ],
     [
       "HP:0040241",
@@ -4817,38 +3371,6 @@
       "Decrease in high molecular weight von Willebrand factor Multimers"
     ],
     [
-      "HP:0030132",
-      "Absence of large von Willebrand factor multimers"
-    ],
-    [
-      "HP:0040241",
-      "Increased RIPA"
-    ],
-    [
-      "HP:0030132",
-      "Absence of large von Willebrand factor multimers"
-    ],
-    [
-      "HP:0040241",
-      "Increased RIPA"
-    ],
-    [
-      "HP:0030132",
-      "Absence of large von Willebrand factor multimers"
-    ],
-    [
-      "HP:0040241",
-      "Increased RIPA"
-    ],
-    [
-      "HP:0030129",
-      "Impaired ristocetin cofactor assay activity"
-    ],
-    [
-      "HP:0030132",
-      "Absence of large von Willebrand factor multimers"
-    ],
-    [
       "HP:0040241",
       "Increased RIPA"
     ],
@@ -4897,16 +3419,52 @@
       "Increased RIPA"
     ],
     [
+      "HP:0030132",
+      "Absence of large von Willebrand factor multimers"
+    ],
+    [
+      "HP:0040241",
+      "Increased RIPA"
+    ],
+    [
+      "HP:0030132",
+      "Absence of large von Willebrand factor multimers"
+    ],
+    [
+      "HP:0040241",
+      "Increased RIPA"
+    ],
+    [
       "HP:0030129",
       "Impaired ristocetin cofactor assay activity"
     ],
     [
       "HP:0030132",
       "Absence of large von Willebrand factor multimers"
+    ],
+    [
+      "HP:0040241",
+      "Increased RIPA"
+    ],
+    [
+      "HP:0030132",
+      "Absence of large von Willebrand factor multimers"
+    ],
+    [
+      "HP:0040241",
+      "Increased RIPA"
+    ],
+    [
+      "HP:0030129",
+      "Impaired ristocetin cofactor assay activity"
     ],
     [
       "HP:0030403",
       "Spontaneous platelet aggregation"
+    ],
+    [
+      "HP:0030132",
+      "Absence of large von Willebrand factor multimers"
     ]
   ],
   "WDR19": [
@@ -4947,16 +3505,6 @@
       "Generalized distal tubular acidosis"
     ]
   ],
-  "WFS1": [
-    [
-      "HP:0012713",
-      "Moderate hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ]
-  ],
   "WIPF1": [
     [
       "HP:0033700",
@@ -4967,52 +3515,12 @@
     [
       "HP:0010604",
       "Cyst of the eyelid"
-    ],
-    [
-      "HP:0000535",
-      "obsolete Sparse and thin eyebrow"
-    ]
-  ],
-  "YIF1B": [
-    [
-      "HP:0032795",
-      "Generalized myoclonic-tonic-clonic seizure"
-    ]
-  ],
-  "ZBTB20": [
-    [
-      "HP:0012714",
-      "Severe hearing impairment"
-    ]
-  ],
-  "ZEB2": [
-    [
-      "HP:0002744",
-      "obsolete Bilateral cleft lip and palate"
-    ],
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
     ]
   ],
   "ZIC1": [
     [
       "HP:0034238",
       "Closed neural tube defect"
-    ],
-    [
-      "HP:0011319",
-      "Bilambdoid synostosis"
-    ]
-  ],
-  "ZMYND10": [
-    [
-      "HP:0004880",
-      "Respiratory infections in early life"
-    ],
-    [
-      "HP:0004880",
-      "Respiratory infections in early life"
     ]
   ],
   "ZMYND11": [
@@ -5039,12 +3547,12 @@
       "Increased circulating specific IgE antibody concentration"
     ],
     [
-      "HP:0032336",
-      "Increased circulating specific IgE antibody concentration"
-    ],
-    [
       "HP:0410385",
       "Decreased proportion of CD8-positive, alpha-beta memory T cells"
+    ],
+    [
+      "HP:0032336",
+      "Increased circulating specific IgE antibody concentration"
     ],
     [
       "HP:0032336",
@@ -5059,40 +3567,12 @@
     [
       "HP:0011606",
       "obsolete Transposition of the great arteries with intact ventricular septum"
-    ],
-    [
-      "HP:0040092",
-      "Asymmetry of the shape of the ears"
     ]
   ],
   "SFTPC": [
     [
-      "HP:0025173",
-      "Nodular septal thickening on pulmonary HRCT"
-    ],
-    [
-      "HP:0025173",
-      "Nodular septal thickening on pulmonary HRCT"
-    ],
-    [
-      "HP:0025173",
-      "Nodular septal thickening on pulmonary HRCT"
-    ],
-    [
       "HP:0034981",
       "Exposure to birds"
-    ],
-    [
-      "HP:0030864",
-      "Intercostal retractions"
-    ],
-    [
-      "HP:0025173",
-      "Nodular septal thickening on pulmonary HRCT"
-    ],
-    [
-      "HP:0030864",
-      "Intercostal retractions"
     ],
     [
       "HP:0034092",
@@ -5103,16 +3583,8 @@
       "Severe parainfluenza infection"
     ],
     [
-      "HP:0032071",
-      "Eosinophilic pneumonia"
-    ],
-    [
       "HP:0032992",
       "Abnormal pulmonary fissure architecture"
-    ],
-    [
-      "HP:0030864",
-      "Intercostal retractions"
     ],
     [
       "HP:0032969",
@@ -5133,10 +3605,6 @@
     [
       "HP:0003168",
       "Dibasicaminoaciduria"
-    ],
-    [
-      "HP:0000535",
-      "obsolete Sparse and thin eyebrow"
     ]
   ],
   "ALDH6A1": [
@@ -5145,12 +3613,12 @@
       "Hyperbeta-alaninemia"
     ],
     [
-      "HP:0012556",
-      "Hyperbeta-alaninemia"
-    ],
-    [
       "HP:0003571",
       "Propionic acidemia"
+    ],
+    [
+      "HP:0012556",
+      "Hyperbeta-alaninemia"
     ],
     [
       "HP:0003571",
@@ -5167,48 +3635,6 @@
       "Severe hearing impairment"
     ]
   ],
-  "ASNS": [
-    [
-      "HP:0010854",
-      "EEG with generalized low amplitude activity"
-    ]
-  ],
-  "BRAF": [
-    [
-      "HP:0031481",
-      "Abnormal mitral valve physiology"
-    ],
-    [
-      "HP:0002054",
-      "Heavy supraorbital ridges"
-    ],
-    [
-      "HP:0002054",
-      "Heavy supraorbital ridges"
-    ],
-    [
-      "HP:0002054",
-      "Heavy supraorbital ridges"
-    ],
-    [
-      "HP:0002054",
-      "Heavy supraorbital ridges"
-    ]
-  ],
-  "COL11A2": [
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ]
-  ],
   "GATA2": [
     [
       "HP:0011450",
@@ -5223,43 +3649,13 @@
       "Unusual CNS infection"
     ]
   ],
-  "GRIN2D": [
-    [
-      "HP:0006830",
-      "obsolete Severe neonatal hypotonia in males"
-    ]
-  ],
   "HRAS": [
     [
       "HP:0031670",
       "Continuous heart murmur"
-    ],
-    [
-      "HP:0006688",
-      "Paroxysmal tachycardia"
     ]
   ],
   "KRAS": [
-    [
-      "HP:0002054",
-      "Heavy supraorbital ridges"
-    ],
-    [
-      "HP:0002054",
-      "Heavy supraorbital ridges"
-    ],
-    [
-      "HP:0002054",
-      "Heavy supraorbital ridges"
-    ],
-    [
-      "HP:0000535",
-      "obsolete Sparse and thin eyebrow"
-    ],
-    [
-      "HP:0031670",
-      "Continuous heart murmur"
-    ],
     [
       "HP:0009131",
       "Abnormality of the musculature of the thorax"
@@ -5275,62 +3671,12 @@
     [
       "HP:0010742",
       "Edema of the upper limbs"
-    ],
-    [
-      "HP:0031481",
-      "Abnormal mitral valve physiology"
-    ],
-    [
-      "HP:0012716",
-      "Moderate conductive hearing impairment"
-    ]
-  ],
-  "MAP2K1": [
-    [
-      "HP:0000535",
-      "obsolete Sparse and thin eyebrow"
-    ],
-    [
-      "HP:0000535",
-      "obsolete Sparse and thin eyebrow"
-    ],
-    [
-      "HP:0000535",
-      "obsolete Sparse and thin eyebrow"
-    ],
-    [
-      "HP:0000535",
-      "obsolete Sparse and thin eyebrow"
-    ],
-    [
-      "HP:0000535",
-      "obsolete Sparse and thin eyebrow"
-    ]
-  ],
-  "MAP2K2": [
-    [
-      "HP:0000535",
-      "obsolete Sparse and thin eyebrow"
-    ],
-    [
-      "HP:0006290",
-      "Discolored lateral incisors"
     ]
   ],
   "MRAS": [
     [
-      "HP:0030957",
-      "Ventricular septal aneurysm"
-    ],
-    [
       "HP:0005185",
       "Global systolic dysfunction"
-    ]
-  ],
-  "MYH14": [
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
     ]
   ],
   "MYOM1": [
@@ -5367,52 +3713,24 @@
       "Abnormality of the musculature of the thorax"
     ],
     [
-      "HP:0000535",
-      "obsolete Sparse and thin eyebrow"
+      "HP:0045075",
+      "Sparse eyebrow"
     ]
   ],
   "PMS2": [
     [
-      "HP:0100706",
-      "Abnormal oligodendroglia morphology"
-    ],
-    [
       "HP:0012482",
       "Frontal venous angioma"
-    ]
-  ],
-  "PSAT1": [
-    [
-      "HP:0010742",
-      "Edema of the upper limbs"
-    ]
-  ],
-  "PTPN11": [
-    [
-      "HP:0012713",
-      "Moderate hearing impairment"
-    ]
-  ],
-  "RAF1": [
-    [
-      "HP:0006688",
-      "Paroxysmal tachycardia"
     ],
     [
-      "HP:0000535",
-      "obsolete Sparse and thin eyebrow"
+      "HP:0100706",
+      "Abnormal oligodendroglia morphology"
     ]
   ],
   "RIT1": [
     [
-      "HP:0000535",
-      "obsolete Sparse and thin eyebrow"
-    ]
-  ],
-  "SERPINB6": [
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
+      "HP:0045075",
+      "Sparse eyebrow"
     ]
   ],
   "SHOC2": [
@@ -5441,12 +3759,6 @@
       "Recent blood transfusion"
     ]
   ],
-  "SLC52A2": [
-    [
-      "HP:0012714",
-      "Severe hearing impairment"
-    ]
-  ],
   "SLC52A3": [
     [
       "HP:0007747",
@@ -5465,10 +3777,6 @@
     [
       "HP:0007439",
       "Generalized keratosis follicularis"
-    ],
-    [
-      "HP:0000535",
-      "obsolete Sparse and thin eyebrow"
     ]
   ],
   "STAC3": [
@@ -5479,12 +3787,12 @@
   ],
   "ACBD5": [
     [
-      "HP:0011411",
-      "Forceps delivery"
-    ],
-    [
       "HP:0010859",
       "Frank breech presentation"
+    ],
+    [
+      "HP:0011411",
+      "Forceps delivery"
     ]
   ],
   "ACOX2": [
@@ -5541,42 +3849,14 @@
   ],
   "BBS7": [
     [
-      "HP:5200120",
-      "Abnormal social emotional interactions"
-    ],
-    [
       "HP:0034685",
       "Abnormal liver enzyme activity or concentration"
-    ]
-  ],
-  "CACNA1D": [
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
     ]
   ],
   "CCDC32": [
     [
       "HP:0010805",
       "Upturned corners of mouth"
-    ]
-  ],
-  "CCDC50": [
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
     ]
   ],
   "CDAN1": [
@@ -5619,10 +3899,6 @@
       "Cardiac shunt"
     ],
     [
-      "HP:0030285",
-      "Splayed superior cerebellar peduncle"
-    ],
-    [
       "HP:0030093",
       "Abnormal muscle fiber laminin beta 1"
     ],
@@ -5645,14 +3921,6 @@
     [
       "HP:0030398",
       "Abnormal platelet ATP dense granule secretion"
-    ],
-    [
-      "HP:0012483",
-      "Abnormal alpha granules"
-    ],
-    [
-      "HP:0012483",
-      "Abnormal alpha granules"
     ],
     [
       "HP:0030398",
@@ -5717,20 +3985,6 @@
       "Asymmetrical distribution of flash visual evoked potentials"
     ]
   ],
-  "IMPG1": [
-    [
-      "HP:0030635",
-      "Retinal dystrophy with early macular involvement"
-    ],
-    [
-      "HP:0030643",
-      "Vitelliform-like retinal lesions"
-    ],
-    [
-      "HP:0007769",
-      "Peripheral retinal degeneration"
-    ]
-  ],
   "KCNA1": [
     [
       "HP:0032245",
@@ -5745,34 +3999,8 @@
   ],
   "KIZ": [
     [
-      "HP:0008036",
-      "obsolete Rod-cone dystrophy"
-    ],
-    [
-      "HP:0008036",
-      "obsolete Rod-cone dystrophy"
-    ],
-    [
       "HP:0006688",
       "Paroxysmal tachycardia"
-    ],
-    [
-      "HP:0008036",
-      "obsolete Rod-cone dystrophy"
-    ],
-    [
-      "HP:0008036",
-      "obsolete Rod-cone dystrophy"
-    ]
-  ],
-  "KMT2D": [
-    [
-      "HP:0040052",
-      "Abnormality of lower eyelashes"
-    ],
-    [
-      "HP:0410298",
-      "Partial absence of specific antibody response to hepatitis B vaccine"
     ]
   ],
   "LARS2": [
@@ -5781,23 +4009,11 @@
       "Fetal anemia"
     ],
     [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
       "HP:4000092",
       "Poor conversational reciprocity"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
     ]
   ],
   "MATR3": [
-    [
-      "HP:6000490",
-      "Impaired heel-walking ability"
-    ],
     [
       "HP:0033202",
       "Brachioradialis hyporeflexia"
@@ -5817,60 +4033,16 @@
       "Abnormality of the anterior pituitary"
     ]
   ],
-  "MYO1F": [
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ],
-    [
-      "HP:0008504",
-      "Moderate sensorineural hearing impairment"
-    ]
-  ],
-  "PDE6A": [
-    [
-      "HP:0030526",
-      "Severe constriction of peripheral visual field"
-    ]
-  ],
-  "PGAP3": [
-    [
-      "HP:0032795",
-      "Generalized myoclonic-tonic-clonic seizure"
-    ],
-    [
-      "HP:0032795",
-      "Generalized myoclonic-tonic-clonic seizure"
-    ],
-    [
-      "HP:0032795",
-      "Generalized myoclonic-tonic-clonic seizure"
-    ],
-    [
-      "HP:0032795",
-      "Generalized myoclonic-tonic-clonic seizure"
-    ],
-    [
-      "HP:0032795",
-      "Generalized myoclonic-tonic-clonic seizure"
-    ],
-    [
-      "HP:0032795",
-      "Generalized myoclonic-tonic-clonic seizure"
-    ]
-  ],
   "PHYKPL": [
     [
       "HP:0010908",
       "Abnormal circulating lysine concentration"
+    ]
+  ],
+  "POGLUT1": [
+    [
+      "HP:0004319",
+      "Decreased circulating aldosterone concentration"
     ]
   ],
   "POLR2A": [
@@ -5887,28 +4059,18 @@
   ],
   "POMT2": [
     [
-      "HP:0031481",
-      "Abnormal mitral valve physiology"
-    ],
-    [
       "HP:0031651",
       "Abnormal tricuspid valve physiology"
     ],
     [
-      "HP:0040265",
-      "Upper limb muscle hypertrophy"
+      "HP:0031481",
+      "Abnormal mitral valve physiology"
     ]
   ],
   "POPDC3": [
     [
       "HP:0031542",
       "Myelin-like whorls in vacuolated fibers"
-    ]
-  ],
-  "PRPH2": [
-    [
-      "HP:0030472",
-      "Abnormal light-adapted single flash electroretinogram"
     ]
   ],
   "RNF31": [
@@ -5923,36 +4085,28 @@
   ],
   "SGCG": [
     [
-      "HP:0030107",
-      "Reduced muscle fiber beta sarcoglycan"
-    ],
-    [
       "HP:0030102",
       "Reduced muscle fiber alpha sarcoglycan"
     ],
     [
+      "HP:0030107",
+      "Reduced muscle fiber beta sarcoglycan"
+    ],
+    [
       "HP:0030109",
       "Absent muscle fiber gamma sarcoglycan"
     ],
     [
       "HP:0030109",
       "Absent muscle fiber gamma sarcoglycan"
+    ],
+    [
+      "HP:0030102",
+      "Reduced muscle fiber alpha sarcoglycan"
     ],
     [
       "HP:0031542",
       "Myelin-like whorls in vacuolated fibers"
-    ],
-    [
-      "HP:0030107",
-      "Reduced muscle fiber beta sarcoglycan"
-    ],
-    [
-      "HP:0030102",
-      "Reduced muscle fiber alpha sarcoglycan"
-    ],
-    [
-      "HP:0030109",
-      "Absent muscle fiber gamma sarcoglycan"
     ],
     [
       "HP:0100305",
@@ -5963,48 +4117,56 @@
       "Reduced muscle fiber beta sarcoglycan"
     ],
     [
+      "HP:0030109",
+      "Absent muscle fiber gamma sarcoglycan"
+    ],
+    [
       "HP:0030102",
       "Reduced muscle fiber alpha sarcoglycan"
     ],
     [
+      "HP:0030107",
+      "Reduced muscle fiber beta sarcoglycan"
+    ],
+    [
       "HP:0030109",
       "Absent muscle fiber gamma sarcoglycan"
+    ],
+    [
+      "HP:0030102",
+      "Reduced muscle fiber alpha sarcoglycan"
+    ],
+    [
+      "HP:0030107",
+      "Reduced muscle fiber beta sarcoglycan"
     ],
     [
       "HP:0031322",
       "Myocardial lymphocytic infiltration"
     ],
     [
+      "HP:0030109",
+      "Absent muscle fiber gamma sarcoglycan"
+    ],
+    [
+      "HP:0030102",
+      "Reduced muscle fiber alpha sarcoglycan"
+    ],
+    [
+      "HP:0030109",
+      "Absent muscle fiber gamma sarcoglycan"
+    ],
+    [
+      "HP:0030102",
+      "Reduced muscle fiber alpha sarcoglycan"
+    ],
+    [
       "HP:0030107",
       "Reduced muscle fiber beta sarcoglycan"
     ],
     [
-      "HP:0030102",
-      "Reduced muscle fiber alpha sarcoglycan"
-    ],
-    [
       "HP:0030109",
       "Absent muscle fiber gamma sarcoglycan"
-    ],
-    [
-      "HP:0030102",
-      "Reduced muscle fiber alpha sarcoglycan"
-    ],
-    [
-      "HP:0030109",
-      "Absent muscle fiber gamma sarcoglycan"
-    ],
-    [
-      "HP:0030102",
-      "Reduced muscle fiber alpha sarcoglycan"
-    ],
-    [
-      "HP:0030109",
-      "Absent muscle fiber gamma sarcoglycan"
-    ],
-    [
-      "HP:0030107",
-      "Reduced muscle fiber beta sarcoglycan"
     ],
     [
       "HP:0030109",
@@ -6017,78 +4179,16 @@
       "Abnormality of blood circulation"
     ]
   ],
-  "SYN1": [
-    [
-      "HP:0020207",
-      "Reflex seizure"
-    ],
-    [
-      "HP:0020207",
-      "Reflex seizure"
-    ],
-    [
-      "HP:0020207",
-      "Reflex seizure"
-    ],
-    [
-      "HP:0020207",
-      "Reflex seizure"
-    ]
-  ],
   "TFAP2B": [
     [
       "HP:0011431",
       "Fetal fifth finger clinodactyly"
     ]
   ],
-  "THBD": [
-    [
-      "HP:0040224",
-      "Abnormality of fibrinolysis"
-    ],
-    [
-      "HP:0040224",
-      "Abnormality of fibrinolysis"
-    ],
-    [
-      "HP:0040224",
-      "Abnormality of fibrinolysis"
-    ]
-  ],
-  "TOPORS": [
-    [
-      "HP:0030565",
-      "Best corrected visual acuity 1.2 LogMAR"
-    ],
-    [
-      "HP:0030565",
-      "Best corrected visual acuity 1.2 LogMAR"
-    ],
-    [
-      "HP:0030565",
-      "Best corrected visual acuity 1.2 LogMAR"
-    ]
-  ],
-  "TP53": [
-    [
-      "HP:0012034",
-      "Liposarcoma"
-    ]
-  ],
   "TRIM32": [
-    [
-      "HP:0011038",
-      "Abnormal renal tubular resorption"
-    ],
     [
       "HP:0031542",
       "Myelin-like whorls in vacuolated fibers"
-    ]
-  ],
-  "TSPEAR": [
-    [
-      "HP:0012781",
-      "Mid-frequency hearing loss"
     ]
   ],
   "UROC1": [
@@ -6113,12 +4213,6 @@
       "Transient psychotic episodes"
     ]
   ],
-  "TP63": [
-    [
-      "HP:0031731",
-      "Increased tear production"
-    ]
-  ],
   "B3GALT6": [
     [
       "HP:0033710",
@@ -6139,12 +4233,6 @@
     [
       "HP:0500073",
       "Abnormal ocular alignment"
-    ]
-  ],
-  "ADGRG1": [
-    [
-      "HP:0020209",
-      "Hot water-induced seizure"
     ]
   ],
   "SPI1": [
@@ -6171,6 +4259,12 @@
     [
       "HP:0034777",
       "Purulent sputum"
+    ]
+  ],
+  "BCL11B": [
+    [
+      "HP:0009778",
+      "Short thumb"
     ]
   ],
   "IL2RA": [
@@ -6203,10 +4297,6 @@
     [
       "HP:0012832",
       "Bilateral"
-    ],
-    [
-      "HP:0200011",
-      "Abnormal length of corpus callosum"
     ]
   ],
   "ASPM": [
@@ -6237,10 +4327,6 @@
       "Positive stool Giardia antigen test"
     ],
     [
-      "HP:0032973",
-      "Abnormal bronchoalveolar lavage fluid morphology"
-    ],
-    [
       "HP:0031396",
       "Abnormal proportion of naive T cells"
     ],
@@ -6259,16 +4345,6 @@
     [
       "HP:0034030",
       "Lip cyanosis"
-    ]
-  ],
-  "SAT1": [
-    [
-      "HP:0033555",
-      "Anti-Ro/SS-A antibody positivity"
-    ],
-    [
-      "HP:0031197",
-      "Cellular urinary casts"
     ]
   ],
   "SGPL1": [

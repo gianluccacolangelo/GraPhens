@@ -58,8 +58,7 @@ class PhenotypeAnalyzer:
         
         # Load case data
         logger.info(f"Loading phenotype cases from {fenotipos_file}")
-        with open(fenotipos_file, 'r') as f:
-            self.case_data = json.load(f)
+        self.case_data = self._load_case_data(fenotipos_file)
             
         # Create GraPhens components
         self.facade = GenePhenotypeFacade(data_dir=gene_phenotype_dir)
@@ -75,6 +74,89 @@ class PhenotypeAnalyzer:
         self.specific_proportions = []
         self.phenotype_distances = []
         
+    def _load_case_data(self, file_path: str) -> Dict[str, List[List[str]]]:
+        """
+        Load case data from JSON or CSV file.
+        
+        Args:
+            file_path: Path to the data file
+            
+        Returns:
+            Dictionary mapping gene symbols to lists of phenotype lists
+        """
+        if file_path.endswith('.json'):
+            with open(file_path, 'r') as f:
+                return json.load(f)
+        
+        elif file_path.endswith('.csv'):
+            try:
+                df = pd.read_csv(file_path)
+                
+                # Check required columns
+                if 'gene' not in df.columns or 'phenotypes' not in df.columns:
+                    raise ValueError("CSV must contain 'gene' and 'phenotypes' columns")
+                
+                output_data = {}
+                for _, row in df.iterrows():
+                    gene = row['gene']
+                    phenotypes_str = str(row['phenotypes']) if pd.notna(row['phenotypes']) else ""
+                    
+                    # Split space-separated phenotypes
+                    phenotypes = [p.strip() for p in phenotypes_str.split() if p.strip()]
+                    
+                    if not phenotypes:
+                        continue
+                    
+                    if gene not in output_data:
+                        output_data[gene] = []
+                    
+                    output_data[gene].append(phenotypes)
+                
+                logger.info(f"Loaded {len(output_data)} genes from CSV")
+                return output_data
+                
+            except Exception as e:
+                logger.error(f"Error loading CSV data: {str(e)}")
+                raise
+        
+        elif file_path.endswith('.tsv'):
+            try:
+                df = pd.read_csv(file_path, sep='\t')
+                
+                # Check required columns - allow flexible casing for Gene/Phenotype
+                cols = {c.lower(): c for c in df.columns}
+                if 'gene' not in cols or 'phenotype' not in cols:
+                    raise ValueError("TSV must contain 'Gene' and 'Phenotype' columns")
+                
+                gene_col = cols['gene']
+                phen_col = cols['phenotype']
+                
+                output_data = {}
+                for _, row in df.iterrows():
+                    gene = row[gene_col]
+                    phenotypes_str = str(row[phen_col]) if pd.notna(row[phen_col]) else ""
+                    
+                    # Split comma-separated phenotypes
+                    phenotypes = [p.strip() for p in phenotypes_str.split(',') if p.strip()]
+                    
+                    if not phenotypes:
+                        continue
+                    
+                    if gene not in output_data:
+                        output_data[gene] = []
+                    
+                    output_data[gene].append(phenotypes)
+                
+                logger.info(f"Loaded {len(output_data)} genes from TSV")
+                return output_data
+                
+            except Exception as e:
+                logger.error(f"Error loading TSV data: {str(e)}")
+                raise
+        
+        else:
+            raise ValueError(f"Unsupported file format: {file_path}")
+
     def analyze_phenotype_distributions(self):
         """
         Analyze the distribution of phenotypes across cases.
@@ -637,7 +719,7 @@ def main():
     """Main entry point for the script."""
     parser = argparse.ArgumentParser(description="Analyze phenotype distributions")
     parser.add_argument("--fenotipos-file", default="src/simulation/fenotipos_cleaned_processed.json", 
-                        help="Path to the processed phenotypes JSON file")
+                        help="Path to the processed phenotypes file (JSON, CSV, or TSV)")
     parser.add_argument("--gene-phenotype-dir", default="data/", 
                         help="Directory containing gene-phenotype database files")
     parser.add_argument("--ontology-dir", default="data/ontology", 

@@ -119,7 +119,6 @@ def find_similar_phenotypes(
         raise ValueError(f"Query ID {query_id} not found in embedding dictionary")
     
     query_embedding = embedding_dict[query_id]
-    query_metadata = hpo_provider.get_metadata(query_id)
     
     # Calculate similarity to all other phenotypes
     similarities = []

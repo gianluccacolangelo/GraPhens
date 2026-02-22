@@ -9,7 +9,6 @@ from torch_geometric.loader import DataLoader as PyGDataLoader
 from torch.optim import Adam, AdamW
 from pathlib import Path
 import time
-import math
 import numpy as np
 import wandb # ADDED: For experiment tracking
 
@@ -471,8 +470,6 @@ def evaluate(loader, max_batches=None, k_vals=[1, 5, 10, 20]):
 
             # Log per-batch results (including Top-1 for quick check)
             batch_eval_time = time.time() - batch_start_time
-            current_batch_top1 = batch_top_k_acc[1] # Get Top-1 count up to this batch
-            current_batch_mrr = batch_mrr # Get batch MRR
             # These are cumulative, maybe log batch-specific instead? Let's log batch-specific loss/acc
             # For simplicity, let's keep the debug log as is (batch loss/acc) for now
             # Or add batch-specific ranks? Let's add avg rank for the batch

@@ -8,7 +8,7 @@ import gc
 import torch
 
 from src.core.types import Phenotype
-from src.simulation.translation import find_phenotype_matches, load_embedding_resources, SimilarityMatch, cosine_similarity
+from src.simulation.translation import load_embedding_resources, SimilarityMatch, cosine_similarity
 
 """
 This script:

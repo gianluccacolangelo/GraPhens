@@ -1,0 +1,42 @@
+{
+  "CTCF": [
+    [
+      "HP:0100859",
+      "Dilatation of superior mesenteric artery"
+    ]
+  ],
+  "UBA1": [
+    [
+      "HP:0012199",
+      "Cluster headache"
+    ],
+    [
+      "HP:0011113",
+      "Abnormality of cytokine secretion"
+    ]
+  ],
+  "SMAD4": [
+    [
+      "HP:0000429",
+      "Abnormal morphology of the nasal alae"
+    ]
+  ],
+  "ARSB": [
+    [
+      "HP:0003881",
+      "Humeral sclerosis"
+    ]
+  ],
+  "ZC4H2": [
+    [
+      "HP:0100498",
+      "Deviation of toes"
+    ]
+  ],
+  "BRPF1": [
+    [
+      "HP:0011310",
+      "Bridged palmar crease"
+    ]
+  ]
+}

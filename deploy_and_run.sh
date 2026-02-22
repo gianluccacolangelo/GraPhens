@@ -73,7 +73,7 @@ echo "Partition: $PARTITION, CPUs: $CPU_COUNT, GPU option: $GPU_OPTION"
 
 LOGDIR="$HOME/cluster_run_logs"
 mkdir -p "$LOGDIR"
-echo "$(date +'%F %T') node=$BEST_NODE gpus=$GPU_COUNT cpus=$CPU_COUNT cmd=$RUN_COMMAND" \\
+echo "$(date +'%F %T') node=$BEST_NODE gpus=$GPU_COUNT cpus=$CPU_COUNT cmd=$RUN_COMMAND" \
      >> "$LOGDIR/history.log"
 
 # The srun command below forces allocation on BEST_NODE via --nodelist.

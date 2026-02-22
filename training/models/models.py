@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch_geometric.nn import GCNConv, GINConv, global_mean_pool, global_add_pool, AttentionalAggregation
+from torch_geometric.nn import GCNConv, GINConv, global_mean_pool, AttentionalAggregation
 from torch_geometric.nn import BatchNorm
 from torch.nn import Linear, ReLU, Sequential, Dropout
 from typing import Dict, Any, Optional, Tuple

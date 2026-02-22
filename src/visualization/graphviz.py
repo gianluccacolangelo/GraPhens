@@ -69,7 +69,11 @@ class GraphvizVisualizer(PhenotypeVisualizer):
             provider.load()
             
         # Create a new directed graph
-        dot = graphviz.Digraph(title, filename=os.path.join(self.output_dir, title.replace(' ', '_').lower()))
+        dot = graphviz.Digraph(
+            title, 
+            filename=os.path.join(self.output_dir, title.replace(' ', '_').lower()),
+            graph_attr={'bgcolor': 'transparent'}
+        )
         dot.attr(rankdir='BT')  # Bottom to Top direction
         
         # Get set of initial phenotype IDs for highlighting
@@ -84,7 +88,7 @@ class GraphvizVisualizer(PhenotypeVisualizer):
         for i, phenotype in enumerate(phenotypes):
             # Highlight initial phenotypes in a different color
             is_initial = phenotype.id in initial_ids
-            color = 'lightpink' if is_initial else 'lightblue2'
+            color = '#FF7300' if is_initial else '#f4f4f4'
             
             # Create label with both name and ID
             label = f"{phenotype.name}\\n({phenotype.id})"
@@ -146,7 +150,11 @@ class GraphvizVisualizer(PhenotypeVisualizer):
             return None
         
         # Create a new directed graph
-        dot = graphviz.Digraph(title, filename=os.path.join(self.output_dir, title.replace(' ', '_').lower()))
+        dot = graphviz.Digraph(
+            title, 
+            filename=os.path.join(self.output_dir, title.replace(' ', '_').lower()),
+            graph_attr={'bgcolor': 'transparent'}
+        )
         dot.attr(rankdir='BT')  # Bottom to Top direction
         
         # Get the original node mapping from the graph
@@ -164,7 +172,7 @@ class GraphvizVisualizer(PhenotypeVisualizer):
             
             # Check if this is an initial phenotype
             is_initial = phenotype.id in initial_ids
-            color = 'lightpink' if is_initial else 'lightblue2'
+            color = 'lightpink' if is_initial else '#22577A'
             
             dot.node(str(i), label, style='filled', color=color, shape='box')
         

@@ -12,7 +12,6 @@ import random
 import matplotlib.pyplot as plt
 from typing import List, Dict, Tuple, Optional, Any
 from tqdm import tqdm
-from scipy.spatial.distance import pdist
 from sklearn.metrics.pairwise import cosine_similarity
 import pandas as pd
 from datetime import datetime

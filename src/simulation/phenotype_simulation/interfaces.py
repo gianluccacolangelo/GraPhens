@@ -1,6 +1,6 @@
 """Interfaces for phenotype simulation components."""
 from abc import ABC, abstractmethod
-from typing import Dict, List, Tuple, Any, Optional, Callable, Union
+from typing import Dict, List, Tuple, Any, Optional, Union
 import numpy as np
 
 from src.core.types import Phenotype

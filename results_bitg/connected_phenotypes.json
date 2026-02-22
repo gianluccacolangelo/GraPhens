@@ -1,0 +1,1098 @@
+{
+  "BRCA1": [
+    {
+      "phenotype_id": "HP:0002862",
+      "phenotype_name": "Bladder carcinoma",
+      "connected_to": "HP:0002664",
+      "connected_name": "Neoplasm",
+      "distance": 5,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0002891",
+      "phenotype_name": "Uterine leiomyosarcoma",
+      "connected_to": "HP:0000130",
+      "connected_name": "Abnormality of the uterus",
+      "distance": 3,
+      "direction": "ancestor"
+    }
+  ],
+  "NFKB1": [
+    {
+      "phenotype_id": "HP:0002960",
+      "phenotype_name": "Autoimmunity",
+      "connected_to": "HP:0001890",
+      "connected_name": "Autoimmune hemolytic anemia",
+      "distance": 1,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0002240",
+      "phenotype_name": "Hepatomegaly",
+      "connected_to": "HP:0001392",
+      "connected_name": "Abnormality of the liver",
+      "distance": 2,
+      "direction": "ancestor"
+    }
+  ],
+  "ADA2": [
+    {
+      "phenotype_id": "HP:0002664",
+      "phenotype_name": "Neoplasm",
+      "connected_to": "HP:0002863",
+      "connected_name": "Myelodysplasia",
+      "distance": 3,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0000613",
+      "phenotype_name": "Photophobia",
+      "connected_to": "HP:0000708",
+      "connected_name": "Atypical behavior",
+      "distance": 3,
+      "direction": "ancestor"
+    }
+  ],
+  "ANO5": [
+    {
+      "phenotype_id": "HP:0001324",
+      "phenotype_name": "Muscle weakness",
+      "connected_to": "HP:0003701",
+      "connected_name": "Proximal muscle weakness",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "AOPEP": [
+    {
+      "phenotype_id": "HP:0001332",
+      "phenotype_name": "Dystonia",
+      "connected_to": "HP:0007325",
+      "connected_name": "Generalized dystonia",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "PIK3CA": [
+    {
+      "phenotype_id": "HP:0000752",
+      "phenotype_name": "Hyperactivity",
+      "connected_to": "HP:0007018",
+      "connected_name": "Attention deficit hyperactivity disorder",
+      "distance": 1,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0000729",
+      "phenotype_name": "Autistic behavior",
+      "connected_to": "HP:0000717",
+      "connected_name": "Autism",
+      "distance": 1,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0006574",
+      "phenotype_name": "Hepatic arteriovenous malformation",
+      "connected_to": "HP:0100026",
+      "connected_name": "Arteriovenous malformation",
+      "distance": 1,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0000750",
+      "phenotype_name": "Delayed speech and language development",
+      "connected_to": "HP:0002167",
+      "connected_name": "Abnormal speech pattern",
+      "distance": 1,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0012758",
+      "phenotype_name": "Neurodevelopmental delay",
+      "connected_to": "HP:0001263",
+      "connected_name": "Global developmental delay",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "ALDH18A1": [
+    {
+      "phenotype_id": "HP:0001251",
+      "phenotype_name": "Ataxia",
+      "connected_to": "HP:0002066",
+      "connected_name": "Gait ataxia",
+      "distance": 1,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0007333",
+      "phenotype_name": "Hypoplasia of the frontal lobes",
+      "connected_to": "HP:0012443",
+      "connected_name": "Abnormal brain morphology",
+      "distance": 4,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0007343",
+      "phenotype_name": "Abnormal morphology of the limbic system",
+      "connected_to": "HP:0012443",
+      "connected_name": "Abnormal brain morphology",
+      "distance": 2,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0012638",
+      "phenotype_name": "Abnormal nervous system physiology",
+      "connected_to": "HP:0001250",
+      "connected_name": "Seizure",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "ATP7B": [
+    {
+      "phenotype_id": "HP:0004305",
+      "phenotype_name": "Involuntary movements",
+      "connected_to": "HP:0002072",
+      "connected_name": "Chorea",
+      "distance": 1,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0001410",
+      "phenotype_name": "Decreased liver function",
+      "connected_to": "HP:0001399",
+      "connected_name": "Hepatic failure",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "BRIP1": [
+    {
+      "phenotype_id": "HP:0008069",
+      "phenotype_name": "Neoplasm of the skin",
+      "connected_to": "HP:0002664",
+      "connected_name": "Neoplasm",
+      "distance": 2,
+      "direction": "ancestor"
+    }
+  ],
+  "CAPN1": [
+    {
+      "phenotype_id": "HP:0002313",
+      "phenotype_name": "Spastic paraparesis",
+      "connected_to": "HP:0002061",
+      "connected_name": "Lower limb spasticity",
+      "distance": 1,
+      "direction": "ancestor"
+    }
+  ],
+  "TBCK": [
+    {
+      "phenotype_id": "HP:0011787",
+      "phenotype_name": "Central hypothyroidism",
+      "connected_to": "HP:0000821",
+      "connected_name": "Hypothyroidism",
+      "distance": 1,
+      "direction": "ancestor"
+    }
+  ],
+  "CDH2": [
+    {
+      "phenotype_id": "HP:0002463",
+      "phenotype_name": "Language impairment",
+      "connected_to": "HP:0000750",
+      "connected_name": "Delayed speech and language development",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "COL1A2": [
+    {
+      "phenotype_id": "HP:0001999",
+      "phenotype_name": "Abnormal facial shape",
+      "connected_to": "HP:0000274",
+      "connected_name": "Small face",
+      "distance": 1,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0004942",
+      "phenotype_name": "Aortic aneurysm",
+      "connected_to": "HP:0002616",
+      "connected_name": "Aortic root aneurysm",
+      "distance": 2,
+      "direction": "descendant"
+    }
+  ],
+  "COL5A1": [
+    {
+      "phenotype_id": "HP:0001482",
+      "phenotype_name": "Subcutaneous nodule",
+      "connected_to": "HP:0025014",
+      "connected_name": "Subcutaneous spheroids",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "COL6A1": [
+    {
+      "phenotype_id": "HP:0003547",
+      "phenotype_name": "Shoulder girdle muscle weakness",
+      "connected_to": "HP:0003325",
+      "connected_name": "Limb-girdle muscle weakness",
+      "distance": 1,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0002317",
+      "phenotype_name": "Unsteady gait",
+      "connected_to": "HP:0001288",
+      "connected_name": "Gait disturbance",
+      "distance": 1,
+      "direction": "ancestor"
+    }
+  ],
+  "FOCAD": [
+    {
+      "phenotype_id": "HP:0001945",
+      "phenotype_name": "Fever",
+      "connected_to": "HP:0001954",
+      "connected_name": "Recurrent fever",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "KCNJ11": [
+    {
+      "phenotype_id": "HP:0001677",
+      "phenotype_name": "Coronary artery atherosclerosis",
+      "connected_to": "HP:0002634",
+      "connected_name": "Arteriosclerosis",
+      "distance": 2,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0012385",
+      "phenotype_name": "Camptodactyly",
+      "connected_to": "HP:0001371",
+      "connected_name": "Flexion contracture",
+      "distance": 2,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0005684",
+      "phenotype_name": "Distal arthrogryposis",
+      "connected_to": "HP:0001371",
+      "connected_name": "Flexion contracture",
+      "distance": 2,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0012210",
+      "phenotype_name": "Abnormal renal morphology",
+      "connected_to": "HP:0000077",
+      "connected_name": "Abnormality of the kidney",
+      "distance": 1,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0000716",
+      "phenotype_name": "Depression",
+      "connected_to": "HP:0000707",
+      "connected_name": "Abnormality of the nervous system",
+      "distance": 5,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0012332",
+      "phenotype_name": "Abnormal autonomic nervous system physiology",
+      "connected_to": "HP:0000707",
+      "connected_name": "Abnormality of the nervous system",
+      "distance": 3,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0012535",
+      "phenotype_name": "Abnormal synaptic transmission",
+      "connected_to": "HP:0000707",
+      "connected_name": "Abnormality of the nervous system",
+      "distance": 2,
+      "direction": "ancestor"
+    }
+  ],
+  "EDA": [
+    {
+      "phenotype_id": "HP:0000968",
+      "phenotype_name": "Ectodermal dysplasia",
+      "connected_to": "HP:0007607",
+      "connected_name": "Hypohidrotic ectodermal dysplasia",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "NRAS": [
+    {
+      "phenotype_id": "HP:0004482",
+      "phenotype_name": "Relative macrocephaly",
+      "connected_to": "HP:0000256",
+      "connected_name": "Macrocephaly",
+      "distance": 1,
+      "direction": "ancestor"
+    }
+  ],
+  "FBN1": [
+    {
+      "phenotype_id": "HP:0002617",
+      "phenotype_name": "Vascular dilatation",
+      "connected_to": "HP:0004944",
+      "connected_name": "Dilatation of the cerebral artery",
+      "distance": 1,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0100699",
+      "phenotype_name": "Scarring",
+      "connected_to": "HP:0003549",
+      "connected_name": "Abnormality of connective tissue",
+      "distance": 1,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0001627",
+      "phenotype_name": "Abnormal heart morphology",
+      "connected_to": "HP:0030680",
+      "connected_name": "Abnormal cardiovascular system morphology",
+      "distance": 1,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0001999",
+      "phenotype_name": "Abnormal facial shape",
+      "connected_to": "HP:0000325",
+      "connected_name": "Triangular face",
+      "distance": 1,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0001263",
+      "phenotype_name": "Global developmental delay",
+      "connected_to": "HP:0012759",
+      "connected_name": "Neurodevelopmental abnormality",
+      "distance": 2,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0010562",
+      "phenotype_name": "Keloids",
+      "connected_to": "HP:0003549",
+      "connected_name": "Abnormality of connective tissue",
+      "distance": 3,
+      "direction": "ancestor"
+    }
+  ],
+  "FGFR2": [
+    {
+      "phenotype_id": "HP:0001085",
+      "phenotype_name": "Papilledema",
+      "connected_to": "HP:0000478",
+      "connected_name": "Abnormality of the eye",
+      "distance": 6,
+      "direction": "ancestor"
+    }
+  ],
+  "FGFR3": [
+    {
+      "phenotype_id": "HP:0000924",
+      "phenotype_name": "Abnormality of the skeletal system",
+      "connected_to": "HP:0000682",
+      "connected_name": "Abnormal dental enamel morphology",
+      "distance": 2,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0001177",
+      "phenotype_name": "Preaxial hand polydactyly",
+      "connected_to": "HP:0001172",
+      "connected_name": "Abnormal thumb morphology",
+      "distance": 1,
+      "direction": "ancestor"
+    }
+  ],
+  "FLCN": [
+    {
+      "phenotype_id": "HP:0000822",
+      "phenotype_name": "Hypertension",
+      "connected_to": "HP:0001626",
+      "connected_name": "Abnormality of the cardiovascular system",
+      "distance": 4,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0010958",
+      "phenotype_name": "Bilateral renal agenesis",
+      "connected_to": "HP:0012210",
+      "connected_name": "Abnormal renal morphology",
+      "distance": 3,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0005562",
+      "phenotype_name": "Multiple renal cysts",
+      "connected_to": "HP:0000107",
+      "connected_name": "Renal cyst",
+      "distance": 1,
+      "direction": "ancestor"
+    }
+  ],
+  "TPM2": [
+    {
+      "phenotype_id": "HP:0008780",
+      "phenotype_name": "Congenital bilateral hip dislocation",
+      "connected_to": "HP:0001374",
+      "connected_name": "Congenital hip dislocation",
+      "distance": 1,
+      "direction": "ancestor"
+    }
+  ],
+  "GDF1": [
+    {
+      "phenotype_id": "HP:0001627",
+      "phenotype_name": "Abnormal heart morphology",
+      "connected_to": "HP:0001719",
+      "connected_name": "Double outlet right ventricle",
+      "distance": 2,
+      "direction": "descendant"
+    }
+  ],
+  "MYH7": [
+    {
+      "phenotype_id": "HP:0006682",
+      "phenotype_name": "Premature ventricular contraction",
+      "connected_to": "HP:0004308",
+      "connected_name": "Ventricular arrhythmia",
+      "distance": 1,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0001627",
+      "phenotype_name": "Abnormal heart morphology",
+      "connected_to": "HP:0001671",
+      "connected_name": "Abnormal cardiac septum morphology",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "SUGCT": [
+    {
+      "phenotype_id": "HP:0000951",
+      "phenotype_name": "Abnormality of the skin",
+      "connected_to": "HP:0000980",
+      "connected_name": "Pallor",
+      "distance": 2,
+      "direction": "descendant"
+    }
+  ],
+  "RNU4ATAC": [
+    {
+      "phenotype_id": "HP:0000233",
+      "phenotype_name": "Thin vermilion border",
+      "connected_to": "HP:0000219",
+      "connected_name": "Thin upper lip vermilion",
+      "distance": 1,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0009381",
+      "phenotype_name": "Short finger",
+      "connected_to": "HP:0011927",
+      "connected_name": "Short digit",
+      "distance": 1,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0000426",
+      "phenotype_name": "Prominent nasal bridge",
+      "connected_to": "HP:0000366",
+      "connected_name": "Abnormality of the nose",
+      "distance": 3,
+      "direction": "ancestor"
+    }
+  ],
+  "IL36RN": [
+    {
+      "phenotype_id": "HP:0001954",
+      "phenotype_name": "Recurrent fever",
+      "connected_to": "HP:0001945",
+      "connected_name": "Fever",
+      "distance": 1,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0003326",
+      "phenotype_name": "Myalgia",
+      "connected_to": "HP:0012531",
+      "connected_name": "Pain",
+      "distance": 1,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0032180",
+      "phenotype_name": "Abnormal circulating metabolite concentration",
+      "connected_to": "HP:0011227",
+      "connected_name": "Elevated circulating C-reactive protein concentration",
+      "distance": 3,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0012649",
+      "phenotype_name": "Increased inflammatory response",
+      "connected_to": "HP:0030151",
+      "connected_name": "Cholangitis",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "KCNH2": [
+    {
+      "phenotype_id": "HP:0011703",
+      "phenotype_name": "Sinus tachycardia",
+      "connected_to": "HP:0011675",
+      "connected_name": "Arrhythmia",
+      "distance": 2,
+      "direction": "ancestor"
+    }
+  ],
+  "KCNJ2": [
+    {
+      "phenotype_id": "HP:0001649",
+      "phenotype_name": "Tachycardia",
+      "connected_to": "HP:0004756",
+      "connected_name": "Ventricular tachycardia",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "LMX1B": [
+    {
+      "phenotype_id": "HP:0000592",
+      "phenotype_name": "Blue sclerae",
+      "connected_to": "HP:0000478",
+      "connected_name": "Abnormality of the eye",
+      "distance": 3,
+      "direction": "ancestor"
+    }
+  ],
+  "LYST": [
+    {
+      "phenotype_id": "HP:0007443",
+      "phenotype_name": "Partial albinism",
+      "connected_to": "HP:0001010",
+      "connected_name": "Hypopigmentation of the skin",
+      "distance": 1,
+      "direction": "ancestor"
+    }
+  ],
+  "LZTR1": [
+    {
+      "phenotype_id": "HP:0000708",
+      "phenotype_name": "Atypical behavior",
+      "connected_to": "HP:0000729",
+      "connected_name": "Autistic behavior",
+      "distance": 2,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0001627",
+      "phenotype_name": "Abnormal heart morphology",
+      "connected_to": "HP:0030680",
+      "connected_name": "Abnormal cardiovascular system morphology",
+      "distance": 1,
+      "direction": "ancestor"
+    }
+  ],
+  "MECP2": [
+    {
+      "phenotype_id": "HP:0001270",
+      "phenotype_name": "Motor delay",
+      "connected_to": "HP:0002194",
+      "connected_name": "Delayed gross motor development",
+      "distance": 1,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0001276",
+      "phenotype_name": "Hypertonia",
+      "connected_to": "HP:0001257",
+      "connected_name": "Spasticity",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "CARMIL2": [
+    {
+      "phenotype_id": "HP:0002721",
+      "phenotype_name": "Immunodeficiency",
+      "connected_to": "HP:0005387",
+      "connected_name": "Combined immunodeficiency",
+      "distance": 1,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0005406",
+      "phenotype_name": "Recurrent bacterial skin infections",
+      "connected_to": "HP:0100838",
+      "connected_name": "Recurrent cutaneous abscess formation",
+      "distance": 1,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0006579",
+      "phenotype_name": "Prolonged neonatal jaundice",
+      "connected_to": "HP:0000951",
+      "connected_name": "Abnormality of the skin",
+      "distance": 5,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0004429",
+      "phenotype_name": "Recurrent viral infections",
+      "connected_to": "HP:0002719",
+      "connected_name": "Recurrent infections",
+      "distance": 1,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0012393",
+      "phenotype_name": "Allergy",
+      "connected_to": "HP:0500093",
+      "connected_name": "Food allergy",
+      "distance": 1,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0000958",
+      "phenotype_name": "Dry skin",
+      "connected_to": "HP:0000951",
+      "connected_name": "Abnormality of the skin",
+      "distance": 2,
+      "direction": "ancestor"
+    }
+  ],
+  "MYBPC3": [
+    {
+      "phenotype_id": "HP:0001638",
+      "phenotype_name": "Cardiomyopathy",
+      "connected_to": "HP:0001644",
+      "connected_name": "Dilated cardiomyopathy",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "NEFL": [
+    {
+      "phenotype_id": "HP:0001762",
+      "phenotype_name": "Talipes equinovarus",
+      "connected_to": "HP:0001760",
+      "connected_name": "Abnormal foot morphology",
+      "distance": 3,
+      "direction": "ancestor"
+    }
+  ],
+  "CHD4": [
+    {
+      "phenotype_id": "HP:0008689",
+      "phenotype_name": "Bilateral cryptorchidism",
+      "connected_to": "HP:0000028",
+      "connected_name": "Cryptorchidism",
+      "distance": 1,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0008607",
+      "phenotype_name": "Progressive conductive hearing impairment",
+      "connected_to": "HP:0000365",
+      "connected_name": "Hearing impairment",
+      "distance": 2,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0001488",
+      "phenotype_name": "Bilateral ptosis",
+      "connected_to": "HP:0000508",
+      "connected_name": "Ptosis",
+      "distance": 1,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0001510",
+      "phenotype_name": "Growth delay",
+      "connected_to": "HP:0004322",
+      "connected_name": "Short stature",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "NOTCH3": [
+    {
+      "phenotype_id": "HP:0001268",
+      "phenotype_name": "Mental deterioration",
+      "connected_to": "HP:0002333",
+      "connected_name": "Motor deterioration",
+      "distance": 1,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0002315",
+      "phenotype_name": "Headache",
+      "connected_to": "HP:0002076",
+      "connected_name": "Migraine",
+      "distance": 1,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0002138",
+      "phenotype_name": "Subarachnoid hemorrhage",
+      "connected_to": "HP:0002170",
+      "connected_name": "Intracranial hemorrhage",
+      "distance": 1,
+      "direction": "ancestor"
+    }
+  ],
+  "NSD1": [
+    {
+      "phenotype_id": "HP:0001999",
+      "phenotype_name": "Abnormal facial shape",
+      "connected_to": "HP:0000325",
+      "connected_name": "Triangular face",
+      "distance": 1,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0001520",
+      "phenotype_name": "Large for gestational age",
+      "connected_to": "HP:0004324",
+      "connected_name": "Increased body weight",
+      "distance": 1,
+      "direction": "ancestor"
+    }
+  ],
+  "ACY1": [
+    {
+      "phenotype_id": "HP:0000708",
+      "phenotype_name": "Atypical behavior",
+      "connected_to": "HP:0000729",
+      "connected_name": "Autistic behavior",
+      "distance": 2,
+      "direction": "descendant"
+    }
+  ],
+  "PROM1": [
+    {
+      "phenotype_id": "HP:0000556",
+      "phenotype_name": "Retinal dystrophy",
+      "connected_to": "HP:0007754",
+      "connected_name": "Macular dystrophy",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "PTPN11": [
+    {
+      "phenotype_id": "HP:0000811",
+      "phenotype_name": "Abnormal external genitalia morphology",
+      "connected_to": "HP:0000078",
+      "connected_name": "Abnormality of the genital system",
+      "distance": 2,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0008689",
+      "phenotype_name": "Bilateral cryptorchidism",
+      "connected_to": "HP:0000028",
+      "connected_name": "Cryptorchidism",
+      "distance": 1,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0000126",
+      "phenotype_name": "Hydronephrosis",
+      "connected_to": "HP:0010946",
+      "connected_name": "Dilatation of the renal pelvis",
+      "distance": 1,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0001638",
+      "phenotype_name": "Cardiomyopathy",
+      "connected_to": "HP:0001639",
+      "connected_name": "Hypertrophic cardiomyopathy",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "TRAF7": [
+    {
+      "phenotype_id": "HP:0006184",
+      "phenotype_name": "Decreased palmar creases",
+      "connected_to": "HP:0010490",
+      "connected_name": "Abnormality of the palmar creases",
+      "distance": 2,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0001773",
+      "phenotype_name": "Short foot",
+      "connected_to": "HP:0011842",
+      "connected_name": "Abnormal skeletal morphology",
+      "distance": 6,
+      "direction": "ancestor"
+    }
+  ],
+  "RUNX2": [
+    {
+      "phenotype_id": "HP:0002657",
+      "phenotype_name": "Spondylometaphyseal dysplasia",
+      "connected_to": "HP:0002652",
+      "connected_name": "Skeletal dysplasia",
+      "distance": 1,
+      "direction": "ancestor"
+    }
+  ],
+  "CACNA1C": [
+    {
+      "phenotype_id": "HP:0000708",
+      "phenotype_name": "Atypical behavior",
+      "connected_to": "HP:0000729",
+      "connected_name": "Autistic behavior",
+      "distance": 2,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0031936",
+      "phenotype_name": "Delayed ability to walk",
+      "connected_to": "HP:0002194",
+      "connected_name": "Delayed gross motor development",
+      "distance": 1,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0001324",
+      "phenotype_name": "Muscle weakness",
+      "connected_to": "HP:0007340",
+      "connected_name": "Lower limb muscle weakness",
+      "distance": 2,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0001290",
+      "phenotype_name": "Generalized hypotonia",
+      "connected_to": "HP:0001252",
+      "connected_name": "Hypotonia",
+      "distance": 1,
+      "direction": "ancestor"
+    }
+  ],
+  "BTK": [
+    {
+      "phenotype_id": "HP:0410252",
+      "phenotype_name": "Persistently decreased total neutrophil count",
+      "connected_to": "HP:0001875",
+      "connected_name": "Decreased total neutrophil count",
+      "distance": 1,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0002488",
+      "phenotype_name": "Acute leukemia",
+      "connected_to": "HP:0002664",
+      "connected_name": "Neoplasm",
+      "distance": 4,
+      "direction": "ancestor"
+    }
+  ],
+  "SETD1B": [
+    {
+      "phenotype_id": "HP:0001290",
+      "phenotype_name": "Generalized hypotonia",
+      "connected_to": "HP:0001252",
+      "connected_name": "Hypotonia",
+      "distance": 1,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0002121",
+      "phenotype_name": "Generalized non-motor (absence) seizure",
+      "connected_to": "HP:0011150",
+      "connected_name": "Myoclonic absence seizure",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "POLR1A": [
+    {
+      "phenotype_id": "HP:0001684",
+      "phenotype_name": "Secundum atrial septal defect",
+      "connected_to": "HP:0001671",
+      "connected_name": "Abnormal cardiac septum morphology",
+      "distance": 3,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0001770",
+      "phenotype_name": "Toe syndactyly",
+      "connected_to": "HP:0040064",
+      "connected_name": "Abnormality of limbs",
+      "distance": 4,
+      "direction": "ancestor"
+    }
+  ],
+  "POLR3GL": [
+    {
+      "phenotype_id": "HP:0100712",
+      "phenotype_name": "Abnormal lumbar spine morphology",
+      "connected_to": "HP:0008454",
+      "connected_name": "Lumbar kyphosis",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "STXBP1": [
+    {
+      "phenotype_id": "HP:0002353",
+      "phenotype_name": "EEG abnormality",
+      "connected_to": "HP:0011203",
+      "connected_name": "EEG with abnormally slow frequencies",
+      "distance": 1,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0002120",
+      "phenotype_name": "Cerebral cortical atrophy",
+      "connected_to": "HP:0002059",
+      "connected_name": "Cerebral atrophy",
+      "distance": 1,
+      "direction": "ancestor"
+    }
+  ],
+  "THAP1": [
+    {
+      "phenotype_id": "HP:0002530",
+      "phenotype_name": "Axial dystonia",
+      "connected_to": "HP:0001332",
+      "connected_name": "Dystonia",
+      "distance": 1,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0011006",
+      "phenotype_name": "Abnormal morphology of the musculature of the neck",
+      "connected_to": "HP:0000473",
+      "connected_name": "Torticollis",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "SRP19": [
+    {
+      "phenotype_id": "HP:0002960",
+      "phenotype_name": "Autoimmunity",
+      "connected_to": "HP:0003453",
+      "connected_name": "Antineutrophil antibody positivity",
+      "distance": 2,
+      "direction": "descendant"
+    },
+    {
+      "phenotype_id": "HP:0030057",
+      "phenotype_name": "Autoimmune antibody positivity",
+      "connected_to": "HP:0003453",
+      "connected_name": "Antineutrophil antibody positivity",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "TNNT2": [
+    {
+      "phenotype_id": "HP:0002098",
+      "phenotype_name": "Respiratory distress",
+      "connected_to": "HP:0002094",
+      "connected_name": "Dyspnea",
+      "distance": 1,
+      "direction": "ancestor"
+    }
+  ],
+  "TTN": [
+    {
+      "phenotype_id": "HP:0100540",
+      "phenotype_name": "Palpebral edema",
+      "connected_to": "HP:0000969",
+      "connected_name": "Edema",
+      "distance": 3,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0003473",
+      "phenotype_name": "Fatigable weakness",
+      "connected_to": "HP:0001324",
+      "connected_name": "Muscle weakness",
+      "distance": 1,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0003693",
+      "phenotype_name": "Distal amyotrophy",
+      "connected_to": "HP:0008944",
+      "connected_name": "Distal lower limb amyotrophy",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "TTPA": [
+    {
+      "phenotype_id": "HP:0002066",
+      "phenotype_name": "Gait ataxia",
+      "connected_to": "HP:0001251",
+      "connected_name": "Ataxia",
+      "distance": 1,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0002070",
+      "phenotype_name": "Limb ataxia",
+      "connected_to": "HP:0001251",
+      "connected_name": "Ataxia",
+      "distance": 1,
+      "direction": "ancestor"
+    }
+  ],
+  "TYR": [
+    {
+      "phenotype_id": "HP:0001000",
+      "phenotype_name": "Abnormality of skin pigmentation",
+      "connected_to": "HP:0001480",
+      "connected_name": "Freckling",
+      "distance": 1,
+      "direction": "descendant"
+    }
+  ],
+  "VWF": [
+    {
+      "phenotype_id": "HP:0003256",
+      "phenotype_name": "Abnormality of the coagulation cascade",
+      "connected_to": "HP:0012147",
+      "connected_name": "Reduced quantity of Von Willebrand factor",
+      "distance": 2,
+      "direction": "descendant"
+    }
+  ],
+  "WFS1": [
+    {
+      "phenotype_id": "HP:0008619",
+      "phenotype_name": "Bilateral sensorineural hearing impairment",
+      "connected_to": "HP:0000407",
+      "connected_name": "Sensorineural hearing impairment",
+      "distance": 1,
+      "direction": "ancestor"
+    }
+  ]
+}

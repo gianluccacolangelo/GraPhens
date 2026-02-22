@@ -1,6 +1,6 @@
 """Main phenotype simulator implementation."""
 import logging
-from typing import Dict, List, Optional, Union, Callable
+from typing import Dict, List, Optional, Union
 import numpy as np
 from tqdm import tqdm
 import time  # Import time module
@@ -102,7 +102,6 @@ class StandardPhenotypeSimulator(PhenotypeSimulator):
         start_time = time.time()
         result = {}
         total_patients_to_simulate = sum(gene_to_count.values())
-        patients_generated = 0
 
         pbar = None
         if use_tqdm:
@@ -122,7 +121,6 @@ class StandardPhenotypeSimulator(PhenotypeSimulator):
                 # Generate patients for this gene with progress tracking
                 for i in range(count):
                     gene_patients.append(self.generate_patient(gene))
-                    patients_generated += 1
                     if pbar:
                         pbar.update(1)
 

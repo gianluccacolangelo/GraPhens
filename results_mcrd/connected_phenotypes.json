@@ -1,0 +1,20 @@
+{
+  "GNPTAB": [
+    {
+      "phenotype_id": "HP:0011912",
+      "phenotype_name": "Abnormality of the glenoid fossa",
+      "connected_to": "HP:0000924",
+      "connected_name": "Abnormality of the skeletal system",
+      "distance": 4,
+      "direction": "ancestor"
+    },
+    {
+      "phenotype_id": "HP:0003888",
+      "phenotype_name": "Flattened humeral heads",
+      "connected_to": "HP:0011314",
+      "connected_name": "Abnormal long bone morphology",
+      "distance": 3,
+      "direction": "ancestor"
+    }
+  ]
+}

@@ -210,7 +210,6 @@ class HPOGraphProvider:
             # In most ontology representations, edges should point from child to parent for is_a relationships
             
             # First pass: check for the relationship type pattern
-            is_child_to_parent = True  # Default assumption
             edges_count = 0
             subclass_pred = None
             

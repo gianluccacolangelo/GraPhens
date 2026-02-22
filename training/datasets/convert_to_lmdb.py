@@ -39,9 +39,6 @@ logger = logging.getLogger(__name__)
 # Import the serialization worker function
 from training.datasets.lmdb_hpo_dataset import _worker_serialize_batch
 
-# Add a constant for samples per batch file (adjust if needed)
-EXPECTED_SAMPLES_PER_BATCH = 5000
-
 def get_arg_parser():
     """Parse command line arguments."""
     parser = argparse.ArgumentParser(description='Convert HPO dataset to LMDB format')

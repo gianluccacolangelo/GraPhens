@@ -1,0 +1,21 @@
+Total disconnected phenotypes: 7
+
+Gene: CTCF (1 disconnected phenotypes)
+  - HP:0100859: Dilatation of superior mesenteric artery
+
+Gene: UBA1 (2 disconnected phenotypes)
+  - HP:0012199: Cluster headache
+  - HP:0011113: Abnormality of cytokine secretion
+
+Gene: SMAD4 (1 disconnected phenotypes)
+  - HP:0000429: Abnormal morphology of the nasal alae
+
+Gene: ARSB (1 disconnected phenotypes)
+  - HP:0003881: Humeral sclerosis
+
+Gene: ZC4H2 (1 disconnected phenotypes)
+  - HP:0100498: Deviation of toes
+
+Gene: BRPF1 (1 disconnected phenotypes)
+  - HP:0011310: Bridged palmar crease
+

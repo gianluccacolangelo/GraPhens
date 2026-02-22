@@ -175,4 +175,130 @@ class EmpiricalDistribution(DistributionStrategy):
             "max": np.max(self._distance_values),
             "mean": np.sum(self._distance_values * self._distance_probabilities),
             "median": np.median(self._distance_values)
-        } 
+        }
+
+
+class UniformCountDistribution(EmpiricalDistribution):
+    """Distribution strategy that samples phenotype count from a uniform distribution.
+    
+    This strategy overrides the phenotype count sampling to use a uniform
+    distribution between a specified min and max.
+    
+    It still inherits from EmpiricalDistribution to use its method for sampling
+    phenotype distances from an empirical dataset. Therefore, it must be fitted
+    on data containing 'distance_values'.
+    """
+    
+    def __init__(self, min_count: int = 1, max_count: int = 10):
+        """Initialize the uniform count distribution strategy.
+        
+        Args:
+            min_count: The minimum number of phenotypes (inclusive).
+            max_count: The maximum number of phenotypes (inclusive).
+        """
+        super().__init__()
+        if min_count > max_count:
+            raise ValueError("min_count cannot be greater than max_count")
+        self.min_count = min_count
+        self.max_count = max_count
+        
+    def sample_phenotype_count(self) -> int:
+        """Sample the number of phenotypes from a uniform distribution.
+        
+        Returns:
+            A random integer between min_count and max_count.
+        """
+        start_time = time.time()
+        
+        if not self._fitted:
+            raise RuntimeError("Distribution must be fitted before sampling")
+        
+        result = np.random.randint(self.min_count, self.max_count + 1)
+        
+        total_time = time.time() - start_time
+        logger.debug(f"UniformCountDistribution.sample_phenotype_count completed in {total_time:.4f} seconds")
+        
+        return int(result)
+
+
+class GaussianCountDistribution(EmpiricalDistribution):
+    """Distribution strategy that samples phenotype count from a Gaussian distribution.
+    
+    This strategy overrides the phenotype count sampling to use a Gaussian
+    (normal) distribution with a specified mean and standard deviation.
+    
+    It still inherits from EmpiricalDistribution to use its method for sampling
+    phenotype distances from an empirical dataset. Therefore, it must be fitted
+    on data containing 'distance_values'.
+    """
+    
+    def __init__(self, mean: float = 5.0, std: float = 2.0):
+        """Initialize the Gaussian count distribution strategy.
+        
+        Args:
+            mean: The mean of the Gaussian distribution.
+            std: The standard deviation of the Gaussian distribution.
+        """
+        super().__init__()
+        self.mean = mean
+        self.std = std
+        
+    def sample_phenotype_count(self) -> int:
+        """Sample the number of phenotypes from a Gaussian distribution.
+        
+        The result is clipped to ensure at least one phenotype is returned.
+        
+        Returns:
+            A random integer sampled from the specified Gaussian distribution.
+        """
+        start_time = time.time()
+        
+        if not self._fitted:
+            raise RuntimeError("Distribution must be fitted before sampling")
+        
+        count = np.random.normal(self.mean, self.std)
+        result = max(1, int(round(count))) # Ensure at least 1 phenotype
+        
+        total_time = time.time() - start_time
+        logger.debug(f"GaussianCountDistribution.sample_phenotype_count completed in {total_time:.4f} seconds")
+        
+        return result
+
+
+class UniformCountSpecificPhenotypesDistribution(UniformCountDistribution):
+    """Samples phenotype count uniformly and always returns distance 0.
+    
+    This ensures that only the most specific phenotypes for a gene are selected.
+    This strategy does not need to be fitted on any data because it does not
+    sample distances from an empirical distribution.
+    """
+
+    def __init__(self, min_count: int = 1, max_count: int = 10):
+        """Initialize the strategy.
+        
+        Args:
+            min_count: The minimum number of phenotypes (inclusive).
+            max_count: The maximum number of phenotypes (inclusive).
+        """
+        super().__init__(min_count, max_count)
+        self._fitted = True  # Ready to use without fitting
+
+    def fit(self, data: Dict[str, np.ndarray]) -> None:
+        """This strategy does not require fitting. This method is a no-op."""
+        logger.info("UniformCountSpecificPhenotypesDistribution does not require fitting. Skipping.")
+        pass
+
+    def sample_distances(self, count: int) -> List[int]:
+        """Return a list of zeros, corresponding to specific phenotypes.
+        
+        Args:
+            count: Number of distances to return.
+            
+        Returns:
+            A list containing 'count' zeros.
+        """
+        start_time = time.time()
+        result = [0] * count
+        total_time = time.time() - start_time
+        logger.debug(f"UniformCountSpecificPhenotypesDistribution.sample_distances (count={count}) completed in {total_time:.4f} seconds")
+        return result 

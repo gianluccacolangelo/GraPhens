@@ -10,10 +10,6 @@ from torch_geometric.data import Dataset, Data
 from typing import List, Tuple, Optional, Dict, Any, Union
 import io
 
-# Added: Define or import the constant used in convert_to_lmdb
-# Ensure this value matches the one in convert_to_lmdb.py
-EXPECTED_SAMPLES_PER_BATCH = 5000 
-
 logger = logging.getLogger(__name__)
 # Configure basic logging if run standalone
 if not logger.hasHandlers():
@@ -71,7 +67,6 @@ class LMDBHPOGraphDataset(Dataset):
         self._metadata_path = self.root_dir / "metadata.json"
         self._metadata: Optional[Dict[str, Any]] = None
         self._db = None
-        self._txn = None
         self._readonly = readonly
         self._map_size = map_size
         self._length = None

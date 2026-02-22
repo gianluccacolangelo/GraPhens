@@ -155,7 +155,7 @@ def convert_to_dataset(
     current_batch_count = 0
     
     # Process each gene
-    for gene_idx, (gene, cases) in enumerate(tqdm(gene_data.items(), desc="Processing genes")):
+    for gene, cases in tqdm(gene_data.items(), desc="Processing genes"):
         gene_start_time = time.time()
         
         # Apply sample limit if specified
@@ -294,6 +294,16 @@ def create_train_val_test_splits(
     """
     total_split_start_time = time.time()
     logger.info("Starting dataset split creation...")
+
+    if not (0 <= train_ratio <= 1 and 0 <= val_ratio <= 1 and 0 <= test_ratio <= 1):
+        raise ValueError("train_ratio, val_ratio, and test_ratio must each be between 0 and 1.")
+
+    total_ratio = train_ratio + val_ratio + test_ratio
+    if not np.isclose(total_ratio, 1.0):
+        raise ValueError(
+            f"Split ratios must sum to 1.0, got {total_ratio:.6f} "
+            f"(train={train_ratio}, val={val_ratio}, test={test_ratio})."
+        )
     
     dataset_dir = Path(dataset_dir)
     splits_dir = dataset_dir / "splits"
@@ -308,7 +318,8 @@ def create_train_val_test_splits(
     n_total = len(dataset)
     n_train = int(train_ratio * n_total)
     n_val = int(val_ratio * n_total)
-    n_test = n_total - n_train - n_val
+    n_test = int(test_ratio * n_total)
+    n_test += n_total - (n_train + n_val + n_test)
     
     # Create splits
     start_time = time.time()

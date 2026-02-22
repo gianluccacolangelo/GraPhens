@@ -1,0 +1,288 @@
+Total disconnected phenotypes: 164
+
+Gene: BRCA1 (1 disconnected phenotypes)
+  - HP:0031929: Perivascular pseudorosette
+
+Gene: RPL5 (1 disconnected phenotypes)
+  - HP:0001876: Pancytopenia
+
+Gene: ABCB4 (1 disconnected phenotypes)
+  - HP:0007440: Generalized hyperpigmentation
+
+Gene: AOPEP (1 disconnected phenotypes)
+  - HP:0000708: Atypical behavior
+
+Gene: PIK3CA (1 disconnected phenotypes)
+  - HP:0002448: Progressive encephalopathy
+
+Gene: ALDH18A1 (3 disconnected phenotypes)
+  - HP:0002076: Migraine
+  - HP:0003459: Polyclonal elevation of IgM
+  - HP:0002475: Myelomeningocele
+
+Gene: ATM (2 disconnected phenotypes)
+  - HP:0000508: Ptosis
+  - HP:0002922: Increased CSF protein concentration
+
+Gene: ATP7B (1 disconnected phenotypes)
+  - HP:0000611: obsolete Choroid coloboma
+
+Gene: C3 (1 disconnected phenotypes)
+  - HP:0002721: Immunodeficiency
+
+Gene: TBCK (2 disconnected phenotypes)
+  - HP:0001339: Lissencephaly
+  - HP:0008163: Decreased circulating cortisol level
+
+Gene: CNGB3 (1 disconnected phenotypes)
+  - HP:0000488: Retinopathy
+
+Gene: PRKG1 (1 disconnected phenotypes)
+  - HP:0002090: Pneumonia
+
+Gene: COL6A1 (1 disconnected phenotypes)
+  - HP:0002172: Postural instability
+
+Gene: FOCAD (1 disconnected phenotypes)
+  - HP:0000436: Abnormal nasal tip morphology
+
+Gene: KCNJ11 (2 disconnected phenotypes)
+  - HP:0003198: Myopathy
+  - HP:0003202: Skeletal muscle atrophy
+
+Gene: DICER1 (1 disconnected phenotypes)
+  - HP:0100646: Thyroiditis
+
+Gene: DMD (1 disconnected phenotypes)
+  - HP:0001999: Abnormal facial shape
+
+Gene: EDA (1 disconnected phenotypes)
+  - HP:0000975: Hyperhidrosis
+
+Gene: NRAS (2 disconnected phenotypes)
+  - HP:0002721: Immunodeficiency
+  - HP:0000980: Pallor
+
+Gene: FBN1 (2 disconnected phenotypes)
+  - HP:0000821: Hypothyroidism
+  - HP:0001555: Asymmetry of the thorax
+
+Gene: FLCN (3 disconnected phenotypes)
+  - HP:0002149: Hyperuricemia
+  - HP:0000112: Nephropathy
+  - HP:0001487: obsolete Hypopigmented fundi
+
+Gene: TPM2 (4 disconnected phenotypes)
+  - HP:0001388: obsolete Joint laxity
+  - HP:0000563: Keratoconus
+  - HP:0004444: Spherocytosis
+  - HP:0001903: Anemia
+
+Gene: MYH7 (3 disconnected phenotypes)
+  - HP:0002375: Hypokinesia
+  - HP:0005185: Global systolic dysfunction
+  - HP:0001903: Anemia
+
+Gene: SUGCT (1 disconnected phenotypes)
+  - HP:0001385: Hip dysplasia
+
+Gene: MDH2 (6 disconnected phenotypes)
+  - HP:0002242: Abnormal intestine morphology
+  - HP:0002721: Immunodeficiency
+  - HP:0004313: Decreased circulating immunoglobulin concentration
+  - HP:0011473: Villous atrophy
+  - HP:0002843: Abnormal T cell morphology
+  - HP:0002583: Colitis
+
+Gene: IL12RB1 (4 disconnected phenotypes)
+  - HP:0001974: Increased total leukocyte count
+  - HP:0001880: Increased total eosinophil count
+  - HP:0025085: Bloody diarrhea
+  - HP:0002027: Abdominal pain
+
+Gene: IL36RN (11 disconnected phenotypes)
+  - HP:0002011: Morphological central nervous system abnormality
+  - HP:0033838: Dysphoria
+  - HP:0005403: Decreased total T cell count
+  - HP:0004312: Abnormal reticulocyte morphology
+  - HP:0000988: Skin rash
+  - HP:0003459: Polyclonal elevation of IgM
+  - HP:0000651: Diplopia
+  - HP:0002133: Status epilepticus
+  - HP:0000647: Sclerocornea
+  - HP:0001081: Cholelithiasis
+  - HP:0000486: Strabismus
+
+Gene: GATA6 (2 disconnected phenotypes)
+  - HP:0001396: Cholestasis
+  - HP:0000627: Posterior embryotoxon
+
+Gene: KCNH2 (3 disconnected phenotypes)
+  - HP:0002315: Headache
+  - HP:0001324: Muscle weakness
+  - HP:0002018: Nausea
+
+Gene: GBA1 (3 disconnected phenotypes)
+  - HP:0002835: Aspiration
+  - HP:0012209: Juvenile myelomonocytic leukemia
+  - HP:0001974: Increased total leukocyte count
+
+Gene: LZTR1 (3 disconnected phenotypes)
+  - HP:0000472: Long neck
+  - HP:0001831: Short toe
+  - HP:0009381: Short finger
+
+Gene: MECP2 (3 disconnected phenotypes)
+  - HP:0005384: Defective B cell activation
+  - HP:0000961: Cyanosis
+  - HP:0002090: Pneumonia
+
+Gene: CARMIL2 (4 disconnected phenotypes)
+  - HP:0000613: Photophobia
+  - HP:0000491: Keratitis
+  - HP:0005263: Gastritis
+  - HP:0002020: Gastroesophageal reflux
+
+Gene: MFN2 (2 disconnected phenotypes)
+  - HP:0002312: Clumsiness
+  - HP:0002355: obsolete Difficulty walking
+
+Gene: CHD4 (20 disconnected phenotypes)
+  - HP:0009733: Glioma
+  - HP:0030692: Brain neoplasm
+  - HP:0002315: Headache
+  - HP:0100526: Neoplasm of the lung
+  - HP:0009737: Lisch nodules
+  - HP:0007663: Reduced visual acuity
+  - HP:0001067: Neurofibroma
+  - HP:0000651: Diplopia
+  - HP:0000445: Wide nose
+  - HP:0032144: Coffee ground vomitus
+  - HP:0000470: Short neck
+  - HP:0000154: Wide mouth
+  - HP:0002664: Neoplasm
+  - HP:0007565: Multiple cafe-au-lait spots
+  - HP:0001508: Failure to thrive
+  - HP:0012174: Glioblastoma multiforme
+  - HP:0000391: Thickened helices
+  - HP:0001831: Short toe
+  - HP:0000957: Cafe-au-lait spot
+  - HP:0009381: Short finger
+
+Gene: NPHS2 (1 disconnected phenotypes)
+  - HP:0000112: Nephropathy
+
+Gene: SPRED2 (1 disconnected phenotypes)
+  - HP:0000472: Long neck
+
+Gene: NTRK1 (1 disconnected phenotypes)
+  - HP:0000763: Sensory neuropathy
+
+Gene: PANK2 (1 disconnected phenotypes)
+  - HP:0000006: Autosomal dominant inheritance
+
+Gene: PHEX (1 disconnected phenotypes)
+  - HP:0003109: Hyperphosphaturia
+
+Gene: PKD1 (1 disconnected phenotypes)
+  - HP:0002027: Abdominal pain
+
+Gene: PKHD1 (1 disconnected phenotypes)
+  - HP:0001370: Rheumatoid arthritis
+
+Gene: ACY1 (2 disconnected phenotypes)
+  - HP:0002357: obsolete Dysphasia
+  - HP:0002172: Postural instability
+
+Gene: PTPN11 (5 disconnected phenotypes)
+  - HP:0001250: Seizure
+  - HP:0002643: Neonatal respiratory distress
+  - HP:0000472: Long neck
+  - HP:0500165: Abnormal blood oxygen level
+  - HP:0100581: Dilatation of renal calices
+
+Gene: TRAF7 (1 disconnected phenotypes)
+  - HP:0000527: Long eyelashes
+
+Gene: CACNA1C (6 disconnected phenotypes)
+  - HP:0001265: Hyporeflexia
+  - HP:0003391: Gowers sign
+  - HP:0003198: Myopathy
+  - HP:0002355: obsolete Difficulty walking
+  - HP:0012531: Pain
+  - HP:0001513: Obesity
+
+Gene: RYR2 (5 disconnected phenotypes)
+  - HP:0000708: Atypical behavior
+  - HP:0001249: Intellectual disability
+  - HP:0000246: Sinusitis
+  - HP:0001657: Prolonged QT interval
+  - HP:0002463: Language impairment
+
+Gene: BTK (1 disconnected phenotypes)
+  - HP:0006480: Premature loss of teeth
+
+Gene: POLR1A (5 disconnected phenotypes)
+  - HP:0002092: Pulmonary arterial hypertension
+  - HP:0100581: Dilatation of renal calices
+  - HP:0000961: Cyanosis
+  - HP:0002104: Apnea
+  - HP:0005180: Tricuspid regurgitation
+
+Gene: POLR3GL (1 disconnected phenotypes)
+  - HP:0003457: EMG abnormality
+
+Gene: THAP1 (1 disconnected phenotypes)
+  - HP:0002650: Scoliosis
+
+Gene: TNFAIP3 (5 disconnected phenotypes)
+  - HP:0002591: Polyphagia
+  - HP:0000389: Chronic otitis media
+  - HP:0001510: Growth delay
+  - HP:0005217: Abdominal organ duplication
+  - HP:0004447: Poikilocytosis
+
+Gene: SRP19 (6 disconnected phenotypes)
+  - HP:0020072: Persistent EBV viremia
+  - HP:0012115: Hepatitis
+  - HP:0001882: Decreased total leukocyte count
+  - HP:0002037: Inflammation of the large intestine
+  - HP:0032381: Hydroa vacciniforme
+  - HP:0002665: Lymphoma
+
+Gene: TNNT2 (1 disconnected phenotypes)
+  - HP:0031196: Thin myocardium compact layer
+
+Gene: TRPM3 (4 disconnected phenotypes)
+  - HP:0000267: Cranial asymmetry
+  - HP:0000256: Macrocephaly
+  - HP:0000483: Astigmatism
+  - HP:0012704: Widened subarachnoid space
+
+Gene: TTN (5 disconnected phenotypes)
+  - HP:0002002: Deep philtrum
+  - HP:0000337: Broad forehead
+  - HP:0001159: Syndactyly
+  - HP:0000343: Long philtrum
+  - HP:0002240: Hepatomegaly
+
+Gene: TTPA (4 disconnected phenotypes)
+  - HP:0002936: Distal sensory impairment
+  - HP:0002359: Frequent falls
+  - HP:0007083: Hyperactive patellar reflex
+  - HP:0009046: Difficulty running
+
+Gene: TUBB4A (1 disconnected phenotypes)
+  - HP:0002529: Neuronal loss in central nervous system
+
+Gene: UNC13D (3 disconnected phenotypes)
+  - HP:0001882: Decreased total leukocyte count
+  - HP:0002725: Systemic lupus erythematosus
+  - HP:0002719: Recurrent infections
+
+Gene: WFS1 (1 disconnected phenotypes)
+  - HP:0007641: Dyschromatopsia
+
+Gene: STAR (1 disconnected phenotypes)
+  - HP:0031273: Shock
+

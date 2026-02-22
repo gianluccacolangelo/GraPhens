@@ -29,7 +29,7 @@ OUTPUT_FILE_TITLE = "Custom_Phenotype_Augmentation"
 OBSERVED_ONLY_GRAPH_TITLE = "Observed_Phenotypes_Only"
 
 # HPO IDs provided by the user
-USER_INITIAL_HPO_IDS_STR = "HP:0001260,HP:0002141,HP:0002167,HP:0001250,HP:0001025"
+USER_INITIAL_HPO_IDS_STR = "HP:0000832,HP:0008263,HP:0000851,HP:0008251"
 
 def get_phenotype_objects(hpo_ids: Set[str], provider: HPOGraphProvider) -> List[Phenotype]:
     """Creates a list of Phenotype objects from a set of HPO IDs."""

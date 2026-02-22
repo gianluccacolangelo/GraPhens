@@ -143,6 +143,10 @@ def simulate_and_save_patients(
         data_dir_hpo=dirs['hpo'],
         data_dir_gene_phenotype=dirs['gene_phenotype'],
         distribution_type="empirical",
+        count_file=args.count_file,
+        distance_file=args.distance_file,
+        count_column=args.count_column,
+        distance_column=args.distance_column,
         selector_type="hpo_distance",
         selector_kwargs={
             "allow_duplicates": args.allow_duplicates,
@@ -283,6 +287,16 @@ def main():
                         help="Regenerate example data files")
     parser.add_argument("--log-level", type=str, default="INFO", choices=["DEBUG", "INFO", "WARNING", "ERROR"],
                         help="Set the logging level (e.g., DEBUG for performance tracing)")
+
+    # Distribution arguments
+    parser.add_argument("--count-file", type=str, default=None,
+                        help="Path to custom phenotype count distribution CSV file")
+    parser.add_argument("--distance-file", type=str, default=None,
+                        help="Path to custom phenotype distance distribution CSV file")
+    parser.add_argument("--count-column", type=str, default="count",
+                        help="Column name for phenotype counts in the CSV file")
+    parser.add_argument("--distance-column", type=str, default="distance",
+                        help="Column name for phenotype distances in the CSV file")
     
     args = parser.parse_args()
     

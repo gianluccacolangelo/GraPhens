@@ -55,7 +55,6 @@ KERAS_BACKEND=jax python -m training.training \
 - `last_model.state.json`
 - `history.json`
 - `test_results.json`
-- `migration_report.json`
 - `training.log`
 
 ## Model Support

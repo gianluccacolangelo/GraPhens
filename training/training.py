@@ -14,7 +14,6 @@ import numpy as np
 
 from src.simulation.phenotype_simulation.jax_dataset_schema import load_and_validate_manifest
 from training.datasets.keras_npz_sequence import build_sequences
-from training.migration_report import build_migration_report, write_migration_report
 
 try:
     import wandb
@@ -495,15 +494,8 @@ def main() -> int:
     }
     _save_json(output_dir / "test_results.json", test_results)
 
-    migration_report = build_migration_report(
-        args=args_payload,
-        split_source=split_resolution.source,
-    )
-    report_path = write_migration_report(output_dir=output_dir, report=migration_report)
-
     logger.info("Saved history to %s", history_path)
     logger.info("Saved test results to %s", output_dir / "test_results.json")
-    logger.info("Saved migration report to %s", report_path)
     logger.info(
         "Final Test Metrics | Loss: %.4f | MRR: %.4f | %s",
         test_metrics["loss"],

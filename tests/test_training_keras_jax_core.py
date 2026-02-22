@@ -12,7 +12,6 @@ import numpy as np
 
 from src.simulation.phenotype_simulation.jax_npz_writer import GraphSample, JAXNPZShardWriter
 from training.datasets.keras_npz_sequence import resolve_split_indices
-from training.migration_report import build_migration_report
 from training.training import compute_ranking_metrics
 
 def _create_tiny_npz_dataset(dataset_root: Path, *, num_samples: int = 12) -> Path:
@@ -118,16 +117,6 @@ def test_split_resolver_fallback_is_deterministic(tmp_path: Path) -> None:
     assert np.array_equal(first.test_indices, second.test_indices)
 
 
-def test_migration_report_contains_expected_deltas() -> None:
-    report = build_migration_report(
-        args={"model_version": "2.0"},
-        split_source="precomputed",
-    )
-    assert report["summary"]["training_stack"] == "Keras 3 + JAX + NPZ shards"
-    assert "best_model.keras" in report["artifacts"]["checkpoints"]
-    assert report["model_support"]["supported"] == ["2.0"]
-
-
 def test_masked_layers_handle_padding_semantics() -> None:
     from training.models.keras_layers import MaskedAttentionalPooling, MaskedGCNLayer
 
@@ -214,7 +203,6 @@ def test_integration_one_epoch_training_and_artifacts(tmp_path: Path) -> None:
         "last_model.state.json",
         "history.json",
         "test_results.json",
-        "migration_report.json",
     ]
     for name in expected_files:
         assert (output_dir / name).exists(), f"Missing expected artifact: {name}"

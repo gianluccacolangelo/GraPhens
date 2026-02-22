@@ -20,7 +20,6 @@ flowchart LR
   M --> C[best_model.keras / last_model.keras]
   T --> R[test_results.json]
   T --> H[history.json]
-  T --> MR[migration_report.json]
 ```
 
 ## Core Modules
@@ -41,9 +40,6 @@ flowchart LR
 
 - `training/models/keras_models.py`
   - `GenePhenAIv2_0JAX` factory and custom object registry.
-
-- `training/migration_report.py`
-  - Writes run metadata and artifact format summary.
 
 ## Format Contract
 

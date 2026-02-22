@@ -1,7 +1,7 @@
 # Keras + JAX Dataset Format (JSON -> NPZ)
 
-This document describes the Phase 1 dataset pipeline migration from
-`JSON -> PyG .pt` to `JSON -> NPZ shards`.
+This document describes the dataset pipeline for
+`JSON -> NPZ shards`.
 
 ## Workflow Diagram
 
@@ -118,5 +118,5 @@ KERAS_BACKEND=jax python scripts/validate_jax_stack.py
 
 ## Notes
 
-- NPZ is now the canonical artifact format for this phase.
+- NPZ is the canonical artifact format.
 - PyG `.pt` and LMDB conversion are not supported by the refactored JSON -> dataset pipeline.

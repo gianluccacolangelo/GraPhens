@@ -1,4 +1,4 @@
-"""Keras/JAX model factory for Graphens training migration."""
+"""Keras/JAX model factory for GraPhens training."""
 
 from __future__ import annotations
 
@@ -73,8 +73,7 @@ def create_keras_model(
 ) -> keras.Model:
     if model_version != "2.0":
         raise NotImplementedError(
-            f"Model version '{model_version}' is not migrated yet. "
-            "Supported in this phase: 2.0"
+            f"Unsupported model version '{model_version}'. Supported: 2.0"
         )
 
     return build_genephenai_v2_0_jax(

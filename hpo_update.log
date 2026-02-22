@@ -1,5 +1,0 @@
-2025-03-16 11:30:58,874 - src.ontology.hpo_updater - INFO - New HPO version available: 2025-03-03
-2025-03-16 11:30:58,987 - src.ontology.hpo_updater - INFO - New HPO version available: 2025-03-03
-2025-03-16 11:30:59,096 - src.ontology.hpo_updater - INFO - Downloading hp.json from GitHub...
-2025-03-16 11:31:00,279 - src.ontology.hpo_updater - INFO - Successfully downloaded to data/ontology/hp.json
-2025-03-16 11:31:00,280 - src.ontology.hpo_updater - INFO - Successfully updated HPO to version 2025-03-03

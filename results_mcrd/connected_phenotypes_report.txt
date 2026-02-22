@@ -1,6 +1,0 @@
-Total connected non-specific phenotypes: 2
-
-Gene: GNPTAB (2 connected phenotypes)
-  - HP:0011912 (Abnormality of the glenoid fossa) -> HP:0000924 (Abnormality of the skeletal system), distance=4, direction=ancestor
-  - HP:0003888 (Flattened humeral heads) -> HP:0011314 (Abnormal long bone morphology), distance=3, direction=ancestor
-

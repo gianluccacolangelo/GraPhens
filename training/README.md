@@ -1,75 +1,66 @@
-# HPO Graph Training Datasets
+# Training (Keras + JAX)
 
-This directory now contains two dataset paths:
+`training/training.py` is the training entrypoint and expects NPZ graph datasets (`manifest.json` + `shards/*.npz`).
 
-- **Current path (Phase 1):** JSON -> NPZ shards for Keras 3 + JAX
-- **Legacy path:** PyG `.pt` -> LMDB for historical reproducibility
+PyTorch/PyG training is not supported in this repository.
 
-## Structure
+## Dataset Contract
 
-```text
-training/
-  datasets/
-    jax_npz_graph_dataset.py   # Keras/JAX NPZ loader (current)
-    convert_to_lmdb.py         # Legacy converter from old PyG artifacts
-    lmdb_hpo_dataset.py        # Legacy LMDB dataset for PyG training
-    test.py                    # Legacy LMDB speed/integrity script
-```
-
-## Current: NPZ Dataset (Keras + JAX)
-
-Dataset generation is handled by:
-
-- `src/simulation/phenotype_simulation/create_hpo_dataset.py`
-
-Artifacts:
+Expected dataset root layout:
 
 ```text
 <dataset_root>/
   manifest.json
-  shards/shard_XXXXX.npz
-  splits/train_indices.npy   # optional
-  splits/val_indices.npy     # optional
-  splits/test_indices.npy    # optional
+  shards/
+    shard_00000.npz
+    ...
+  splits/                 # optional
+    train_indices.npy
+    val_indices.npy
+    test_indices.npy
 ```
 
-Loader usage:
+Split policy in the new trainer:
 
-```python
-from training.datasets.jax_npz_graph_dataset import JAXNPZGraphDataset
+- Precomputed-first: uses `.npy` split files when present.
+- Deterministic fallback: creates split indices in memory using `--seed`.
+- Optional persistence of fallback splits: `--write_random_splits`.
 
-train_ds = JAXNPZGraphDataset(
-    dataset_root="data/simulation/output_jax_npz",
-    split="train",
-    batch_size=64,
-    shuffle=True,
-    seed=42,
-)
-
-for batch in train_ds:
-    # x, node_mask, edge_index, edge_mask, y
-    x = batch["x"]
-    y = batch["y"]
-    break
-```
-
-## Legacy: LMDB/PyG Dataset
-
-`convert_to_lmdb.py` and `lmdb_hpo_dataset.py` are preserved for older experiments that depend on PyTorch Geometric + LMDB.
-
-Important:
-
-- The refactored JSON -> dataset pipeline no longer writes PyG `.pt` batches.
-- New dataset generation should target NPZ shards.
-- LMDB conversion remains available only for old artifacts.
-
-## Runtime Validation for Keras + JAX
+## Usage
 
 ```bash
-KERAS_BACKEND=jax python scripts/validate_jax_stack.py
+KERAS_BACKEND=jax python -m training.training \
+  --dataset_root data/simulation/output_jax_npz \
+  --output_dir training_output_jax \
+  --model_version 2.0 \
+  --epochs 20 \
+  --batch_size 64 \
+  --jit_compile
 ```
 
-## Requirements
+Resume training:
 
-- Keras 3 + JAX stack: see `requirements-jax-cpu.txt` or `requirements-jax-cuda12.txt`
-- Legacy LMDB stack: PyTorch, PyTorch Geometric, `lmdb`, NumPy, tqdm
+```bash
+KERAS_BACKEND=jax python -m training.training \
+  --dataset_root data/simulation/output_jax_npz \
+  --output_dir training_output_jax \
+  --resume_from_checkpoint training_output_jax/last_model.keras \
+  --epochs 30
+```
+
+## Output Artifacts
+
+- `best_model.keras`
+- `last_model.keras`
+- `last_model.state.json`
+- `history.json`
+- `test_results.json`
+- `migration_report.json`
+- `training.log`
+
+## Model Support
+
+- `model_version=2.0`
+- Other model versions are not available in this trainer.
+
+See `docs/training_keras_jax.md` for implementation details.

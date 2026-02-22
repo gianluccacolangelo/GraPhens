@@ -115,6 +115,20 @@ class JAXNPZGraphDataset:
     def __iter__(self) -> Iterator[Dict[str, np.ndarray]]:
         return self.iter_batches()
 
+    def materialize_batch(self, global_indices: np.ndarray) -> Dict[str, np.ndarray]:
+        """Materialize a batch from explicit global sample indices."""
+        indices = np.asarray(global_indices, dtype=np.int32)
+        if indices.ndim != 1:
+            raise ValueError(f"global_indices must be rank-1, got shape {indices.shape}.")
+        if indices.size == 0:
+            raise ValueError("global_indices must not be empty.")
+        if np.min(indices) < 0 or np.max(indices) >= int(self.manifest["num_samples"]):
+            raise ValueError(
+                "global_indices contains out-of-bounds values for dataset size "
+                f"{self.manifest['num_samples']}."
+            )
+        return self._materialize_batch(indices)
+
     def iter_batches(self) -> Iterator[Dict[str, np.ndarray]]:
         batch_indices = self.indices.copy()
         if self.shuffle and batch_indices.size > 0:

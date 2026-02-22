@@ -38,8 +38,6 @@ flowchart TD
   - Split-aware loader for Keras/JAX training.
   - Yields batched NumPy arrays with deterministic optional shuffle.
 
-- `training/datasets/convert_to_lmdb.py` and `training/datasets/lmdb_hpo_dataset.py`
-  - Legacy PyG/LMDB path retained for reproducibility only.
 
 ## Output Layout
 
@@ -121,4 +119,4 @@ KERAS_BACKEND=jax python scripts/validate_jax_stack.py
 ## Notes
 
 - NPZ is now the canonical artifact format for this phase.
-- PyG `.pt` and LMDB conversion are legacy-only paths and are not produced by the refactored JSON -> dataset pipeline.
+- PyG `.pt` and LMDB conversion are not supported by the refactored JSON -> dataset pipeline.

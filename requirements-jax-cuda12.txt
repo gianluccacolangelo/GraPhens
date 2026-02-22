@@ -1,0 +1,9 @@
+# Keras + JAX stack for CUDA 12 (Python 3.12)
+# Install with: pip install -r requirements-jax-cuda12.txt
+# Requires compatible NVIDIA driver + CUDA runtime.
+keras==3.8.0
+jax[cuda12]==0.4.38
+numpy==2.2.3
+ml-dtypes==0.5.1
+optax==0.2.4
+orbax-checkpoint==0.11.0

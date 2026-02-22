@@ -106,6 +106,21 @@ node_embeddings = model(batched_graph) # Processes entire batch
 pip install graphens
 ```
 
+## Dataset Generation (Keras + JAX)
+
+The current dataset generation path for model training is:
+
+`Simulation JSON -> NPZ shards -> Keras/JAX loader`
+
+- Generate dataset:
+  - `python -m src.simulation.phenotype_simulation.create_hpo_dataset --input <simulated_json> --output-dir <dataset_dir> --shard-size 2048 --create-splits`
+- Consume dataset:
+  - `training/datasets/jax_npz_graph_dataset.py`
+- Validate runtime stack:
+  - `KERAS_BACKEND=jax python scripts/validate_jax_stack.py`
+
+See `docs/dataset_keras_jax.md` for schema, workflow, and module dependencies.
+
 ## Design Philosophy
 
 GraPhens prioritizes usability and intuitive design, inspired by principles from Don Norman's "The Design of Everyday Things". It aims to be self-explanatory with sensible defaults, allowing complexity to be revealed progressively.

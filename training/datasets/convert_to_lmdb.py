@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Convert existing HPO dataset .pt batch files to LMDB format.
+Legacy utility: convert old HPO `.pt` batch datasets to LMDB format.
 
 Usage:
   python -m training.datasets.convert_to_lmdb /path/to/dataset
@@ -10,6 +10,10 @@ containing all the graph samples from the processed .pt batch files.
 
 For large datasets, this can take some time, but it's a one-time cost that will
 dramatically improve data loading performance, especially for random access.
+
+NOTE:
+This script is kept for historical reproducibility. The current dataset generation
+path writes NPZ shards for Keras/JAX and does not emit `.pt` batches.
 """
 
 import os
@@ -41,7 +45,9 @@ from training.datasets.lmdb_hpo_dataset import _worker_serialize_batch
 
 def get_arg_parser():
     """Parse command line arguments."""
-    parser = argparse.ArgumentParser(description='Convert HPO dataset to LMDB format')
+    parser = argparse.ArgumentParser(
+        description='[Legacy] Convert old HPO .pt batch dataset to LMDB format'
+    )
     parser.add_argument('dataset_root', type=str, help='Path to the dataset root directory')
     parser.add_argument('--num-workers', type=int, default=mp.cpu_count(),
                        help='Number of worker processes (default: number of CPU cores)')

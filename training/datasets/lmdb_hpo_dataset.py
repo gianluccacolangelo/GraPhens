@@ -17,11 +17,15 @@ if not logger.hasHandlers():
 
 class LMDBHPOGraphDataset(Dataset):
     """
-    PyTorch Geometric Dataset for HPO graphs with LMDB backend.
+    Legacy PyTorch Geometric dataset for HPO graphs with LMDB backend.
     
     This dataset uses LMDB (Lightning Memory-Mapped Database) for fast random access
     to graph data. It provides significant performance improvements over loading
     individual files, especially for random batch access during training.
+
+    NOTE:
+    The current JSON -> dataset pipeline is NPZ-based for Keras/JAX. This class is
+    retained for older PyG/LMDB experiments.
     """
 
     def __init__(self, 

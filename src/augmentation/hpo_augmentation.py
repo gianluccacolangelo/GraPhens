@@ -163,6 +163,7 @@ class HPOAugmentationService(AugmentationService):
         self.include_ancestors = include_ancestors
         self.include_descendants = include_descendants
         self.logger = logging.getLogger(__name__)
+        self._graph_ready = self.hpo_graph.last_loaded is not None or self.hpo_graph.load()
     
     def augment(self, observed: List[Phenotype]) -> List[Phenotype]:
         """
@@ -174,8 +175,7 @@ class HPOAugmentationService(AugmentationService):
         Returns:
             List of phenotypes including the original set plus related terms
         """
-        # Ensure the graph is loaded
-        if not self.hpo_graph.load():
+        if not self._graph_ready:
             self.logger.error("Failed to load HPO graph, returning original phenotypes")
             return observed
             
@@ -240,6 +240,7 @@ class SiblingsAugmentationService(AugmentationService):
         """
         self.hpo_graph = HPOGraphProvider.get_instance(data_dir=data_dir)
         self.logger = logging.getLogger(__name__)
+        self._graph_ready = self.hpo_graph.last_loaded is not None or self.hpo_graph.load()
 
     def augment(self, observed: List[Phenotype]) -> List[Phenotype]:
         """
@@ -251,7 +252,7 @@ class SiblingsAugmentationService(AugmentationService):
         Returns:
             List of phenotypes including the original set plus their siblings.
         """
-        if not self.hpo_graph.load():
+        if not self._graph_ready:
             self.logger.error("Failed to load HPO graph, returning original phenotypes")
             return observed
 
@@ -430,7 +431,7 @@ class CompositeAugmentationService(AugmentationService):
         augmented_phenotypes = observed
         for i, service in enumerate(self.services):
             service_name = service.__class__.__name__
-            self.logger.info(f"Applying augmentation chain step {i+1}/{len(self.services)}: {service_name}")
+            self.logger.debug(f"Applying augmentation chain step {i+1}/{len(self.services)}: {service_name}")
             augmented_phenotypes = service.augment(augmented_phenotypes)
         
         return augmented_phenotypes

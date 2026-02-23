@@ -8,3 +8,7 @@ __pycache__/
 .python-version
 .venv/
 
+
+# Generated simulation artifacts
+data/simulation/output/simulated_patients_all_*.json
+data/simulation/output_jax_npz*/

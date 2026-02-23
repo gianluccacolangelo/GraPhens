@@ -35,6 +35,10 @@ class HPOGraphProvider:
         self.version: Optional[str] = None
         self.last_loaded: Optional[datetime] = None
         self.logger = logging.getLogger(__name__)
+        self._ancestors_cache: Dict[str, Set[str]] = {}
+        self._descendants_cache: Dict[str, Set[str]] = {}
+        self._direct_parents_cache: Dict[str, Set[str]] = {}
+        self._direct_children_cache: Dict[str, Set[str]] = {}
         
         # Ensure data directory exists
         os.makedirs(data_dir, exist_ok=True)
@@ -42,6 +46,13 @@ class HPOGraphProvider:
         # Default filenames
         self.json_file = os.path.join(data_dir, "hp.json")
         self.obo_file = os.path.join(data_dir, "hp.obo")
+
+    def _clear_traversal_caches(self) -> None:
+        """Invalidate traversal caches after ontology reload."""
+        self._ancestors_cache.clear()
+        self._descendants_cache.clear()
+        self._direct_parents_cache.clear()
+        self._direct_children_cache.clear()
         
     @classmethod
     def get_instance(cls, data_dir: str = "data/ontology") -> 'HPOGraphProvider':
@@ -100,6 +111,7 @@ class HPOGraphProvider:
             
         if success:
             self.last_loaded = datetime.now()
+            self._clear_traversal_caches()
             self.logger.info(f"Loaded HPO ontology version {self.version}")
             return True
         return False
@@ -119,6 +131,7 @@ class HPOGraphProvider:
             # Clear existing data
             self.graph.clear()
             self.terms = {}
+            self._clear_traversal_caches()
             
             # Handle different JSON structures
             if "graphs" in data:
@@ -314,6 +327,7 @@ class HPOGraphProvider:
             # Clear existing data
             self.graph.clear()
             self.terms = {}
+            self._clear_traversal_caches()
             
             current_term = None
             with open(self.obo_file, 'r') as f:
@@ -379,6 +393,7 @@ class HPOGraphProvider:
         # Clear existing data
         self.graph.clear()
         self.terms = {}
+        self._clear_traversal_caches()
         
         # Load ontology
         ontology = pronto.Ontology(self.obo_file)
@@ -449,7 +464,7 @@ class HPOGraphProvider:
         Returns:
             Set of HPO term IDs representing all ancestors (direct and indirect)
         """
-        if not self.load():
+        if self.last_loaded is None and not self.load():
             return set()
         
         # Normalize the input ID
@@ -458,20 +473,14 @@ class HPOGraphProvider:
         if term_id not in self.graph:
             self.logger.warning(f"Term ID {term_id} not found in HPO graph")
             return set()
-            
-        # Get all ancestors by traversing from the term to the root(s)
-        ancestors = set()
-        queue = [term_id]
-        visited = set(queue)
-        
-        while queue:
-            current = queue.pop(0)
-            for parent in self.graph.successors(current):  # Changed from predecessors to successors since edge direction is child->parent
-                if parent not in visited:
-                    ancestors.add(parent)
-                    queue.append(parent)
-                    visited.add(parent)
-                    
+
+        cached = self._ancestors_cache.get(term_id)
+        if cached is not None:
+            return cached
+
+        # With child->parent edges, reachable successors are ontology ancestors.
+        ancestors = set(nx.descendants(self.graph, term_id))
+        self._ancestors_cache[term_id] = ancestors
         return ancestors
 
     def get_direct_parents(self, term_id: str) -> Set[str]:
@@ -484,7 +493,7 @@ class HPOGraphProvider:
         Returns:
             Set of HPO term IDs representing the direct parents.
         """
-        if not self.load():
+        if self.last_loaded is None and not self.load():
             return set()
 
         # Normalize the input ID
@@ -494,8 +503,13 @@ class HPOGraphProvider:
             self.logger.warning(f"Term ID {term_id} not found in HPO graph")
             return set()
 
-        # Since edges are child -> parent, successors are the direct parents
+        cached = self._direct_parents_cache.get(term_id)
+        if cached is not None:
+            return cached
+
+        # Since edges are child -> parent, successors are the direct parents.
         parents = set(self.graph.successors(term_id))
+        self._direct_parents_cache[term_id] = parents
         return parents
 
     def get_direct_children(self, term_id: str) -> Set[str]:
@@ -508,7 +522,7 @@ class HPOGraphProvider:
         Returns:
             Set of HPO term IDs representing the direct children.
         """
-        if not self.load():
+        if self.last_loaded is None and not self.load():
             return set()
 
         # Normalize the input ID
@@ -518,8 +532,13 @@ class HPOGraphProvider:
             self.logger.warning(f"Term ID {term_id} not found in HPO graph")
             return set()
 
-        # Since edges are child -> parent, predecessors are the direct children
+        cached = self._direct_children_cache.get(term_id)
+        if cached is not None:
+            return cached
+
+        # Since edges are child -> parent, predecessors are the direct children.
         children = set(self.graph.predecessors(term_id))
+        self._direct_children_cache[term_id] = children
         return children
 
     def get_descendants(self, term_id: str) -> Set[str]:
@@ -532,7 +551,7 @@ class HPOGraphProvider:
         Returns:
             Set of HPO term IDs representing all descendants
         """
-        if not self.load():
+        if self.last_loaded is None and not self.load():
             return set()
         
         # Normalize the input ID
@@ -541,20 +560,14 @@ class HPOGraphProvider:
         if term_id not in self.graph:
             self.logger.warning(f"Term ID {term_id} not found in HPO graph")
             return set()
-            
-        # Get all descendants by traversing from the term to the leaves
-        descendants = set()
-        queue = [term_id]
-        visited = set(queue)
-        
-        while queue:
-            current = queue.pop(0)
-            for child in self.graph.predecessors(current):  # Changed from successors to predecessors since edge direction is child->parent
-                if child not in visited:
-                    descendants.add(child)
-                    queue.append(child)
-                    visited.add(child)
-                    
+
+        cached = self._descendants_cache.get(term_id)
+        if cached is not None:
+            return cached
+
+        # With child->parent edges, ontology descendants are graph ancestors.
+        descendants = set(nx.ancestors(self.graph, term_id))
+        self._descendants_cache[term_id] = descendants
         return descendants
         
     def get_metadata(self, term_id: str) -> Dict[str, Any]:

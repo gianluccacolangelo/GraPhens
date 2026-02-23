@@ -71,12 +71,13 @@ def _build_graphens_pipeline(
     include_ancestors: bool,
     include_reverse_edges: bool,
 ) -> GraPhens:
+    # Ancestors are resolved through HPOGraphProvider.get_ancestors() in the
+    # local augmentation service (edge direction is child -> parent in hpo_graph.py).
     return (
         GraPhens()
         .with_lookup_embeddings(embedding_lookup_path)
         .with_augmentation(
             strategy=[
-                {"type": "siblings"},
                 {
                     "type": "local",
                     "include_ancestors": include_ancestors,

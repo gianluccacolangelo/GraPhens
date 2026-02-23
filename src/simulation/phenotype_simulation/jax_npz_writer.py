@@ -35,6 +35,8 @@ class JAXNPZShardWriter:
         self,
         *,
         output_dir: str | Path,
+        shards_subdir: str | Path = "shards",
+        manifest_path: str | Path = "manifest.json",
         source_json: str,
         feature_dim: int,
         max_nodes: int,
@@ -44,8 +46,15 @@ class JAXNPZShardWriter:
         config: Dict[str, Any],
     ) -> None:
         self.output_dir = Path(output_dir)
-        self.shards_dir = self.output_dir / "shards"
-        self.manifest_path = self.output_dir / "manifest.json"
+        shards_subdir_path = Path(shards_subdir)
+        if shards_subdir_path.is_absolute():
+            raise ValueError("shards_subdir must be a relative path inside output_dir.")
+        manifest_path_path = Path(manifest_path)
+        if manifest_path_path.is_absolute():
+            raise ValueError("manifest_path must be a relative path inside output_dir.")
+
+        self.shards_dir = self.output_dir / shards_subdir_path
+        self.manifest_path = self.output_dir / manifest_path_path
 
         self.source_json = source_json
         self.feature_dim = int(feature_dim)
@@ -139,10 +148,11 @@ class JAXNPZShardWriter:
             case_idx=case_idx,
         )
 
+        relative_output_path = output_path.relative_to(self.output_dir).as_posix()
         index_start = self.total_samples
         index_end = index_start + shard_size - 1
         shard_entry = {
-            "file": f"shards/{file_name}",
+            "file": relative_output_path,
             "num_samples": shard_size,
             "index_start": index_start,
             "index_end": index_end,
@@ -168,6 +178,7 @@ class JAXNPZShardWriter:
             "config": self.config,
         }
         validate_manifest(manifest)
+        self.manifest_path.parent.mkdir(parents=True, exist_ok=True)
         with self.manifest_path.open("w", encoding="utf-8") as f:
             json.dump(manifest, f, indent=2, sort_keys=False)
         return manifest

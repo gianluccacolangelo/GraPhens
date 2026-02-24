@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "evaluated_at": "2026-02-24T00:04:24.181765+00:00",
+  "model_version": "fnn-1.0",
+  "checkpoint_used_for_test": "training/output_fnn_all_20260223_201256_mean_full/best_model.keras",
+  "start_epoch": 1,
+  "requested_epochs": 40,
+  "split_source": "precomputed",
+  "num_samples": {
+    "train": 36603,
+    "val": 5229,
+    "test": 10458
+  },
+  "val_metrics": {
+    "loss": 6.317463872689938,
+    "mrr": 0.15271780478608446,
+    "top_k": {
+      "1": 0.09791547140944731,
+      "5": 0.19410977242302543,
+      "10": 0.2577930770701855,
+      "20": 0.32759609868043604
+    },
+    "num_samples": 5229
+  },
+  "test_metrics": {
+    "loss": 6.311395717481134,
+    "mrr": 0.1575200211772905,
+    "top_k": {
+      "1": 0.1022183973991203,
+      "5": 0.204245553643144,
+      "10": 0.26314782941288967,
+      "20": 0.3333333333333333
+    },
+    "num_samples": 10458
+  }
+}

@@ -1,0 +1,160 @@
+Epoch 1/40
+
+Epoch 1: val_loss improved from inf to 8.49775, saving model to training/output_fnn_all_20260223_201256_mean_full/best_model.keras
+36/36 - 5s - 134ms/step - loss: 8.5669 - val_loss: 8.4978 - val_mrr: 0.0064 - val_top1_acc: 0.0017 - val_top5_acc: 0.0061 - val_top10_acc: 0.0107 - val_top20_acc: 0.0201
+Epoch 2/40
+
+Epoch 2: val_loss improved from 8.49775 to 7.37602, saving model to training/output_fnn_all_20260223_201256_mean_full/best_model.keras
+36/36 - 3s - 95ms/step - loss: 8.1096 - val_loss: 7.3760 - val_mrr: 0.0402 - val_top1_acc: 0.0176 - val_top5_acc: 0.0511 - val_top10_acc: 0.0792 - val_top20_acc: 0.1193
+Epoch 3/40
+
+Epoch 3: val_loss improved from 7.37602 to 6.66253, saving model to training/output_fnn_all_20260223_201256_mean_full/best_model.keras
+36/36 - 3s - 89ms/step - loss: 6.8634 - val_loss: 6.6625 - val_mrr: 0.0846 - val_top1_acc: 0.0417 - val_top5_acc: 0.1146 - val_top10_acc: 0.1622 - val_top20_acc: 0.2220
+Epoch 4/40
+
+Epoch 4: val_loss improved from 6.66253 to 6.43115, saving model to training/output_fnn_all_20260223_201256_mean_full/best_model.keras
+36/36 - 3s - 94ms/step - loss: 5.9414 - val_loss: 6.4311 - val_mrr: 0.1163 - val_top1_acc: 0.0683 - val_top5_acc: 0.1528 - val_top10_acc: 0.2046 - val_top20_acc: 0.2687
+Epoch 5/40
+
+Epoch 5: val_loss improved from 6.43115 to 6.33393, saving model to training/output_fnn_all_20260223_201256_mean_full/best_model.keras
+36/36 - 3s - 89ms/step - loss: 5.3192 - val_loss: 6.3339 - val_mrr: 0.1366 - val_top1_acc: 0.0820 - val_top5_acc: 0.1821 - val_top10_acc: 0.2415 - val_top20_acc: 0.3052
+Epoch 6/40
+
+Epoch 6: val_loss improved from 6.33393 to 6.31746, saving model to training/output_fnn_all_20260223_201256_mean_full/best_model.keras
+36/36 - 3s - 90ms/step - loss: 4.8394 - val_loss: 6.3175 - val_mrr: 0.1527 - val_top1_acc: 0.0979 - val_top5_acc: 0.1941 - val_top10_acc: 0.2578 - val_top20_acc: 0.3276
+Epoch 7/40
+
+Epoch 7: val_loss did not improve from 6.31746
+36/36 - 3s - 85ms/step - loss: 4.3932 - val_loss: 6.3342 - val_mrr: 0.1587 - val_top1_acc: 0.1015 - val_top5_acc: 0.2067 - val_top10_acc: 0.2708 - val_top20_acc: 0.3408
+Epoch 8/40
+
+Epoch 8: val_loss did not improve from 6.31746
+36/36 - 3s - 86ms/step - loss: 3.9950 - val_loss: 6.4458 - val_mrr: 0.1648 - val_top1_acc: 0.1077 - val_top5_acc: 0.2142 - val_top10_acc: 0.2767 - val_top20_acc: 0.3479
+Epoch 9/40
+
+Epoch 9: val_loss did not improve from 6.31746
+36/36 - 3s - 92ms/step - loss: 3.5957 - val_loss: 6.5737 - val_mrr: 0.1693 - val_top1_acc: 0.1105 - val_top5_acc: 0.2199 - val_top10_acc: 0.2878 - val_top20_acc: 0.3574
+Epoch 10/40
+
+Epoch 10: val_loss did not improve from 6.31746
+36/36 - 3s - 87ms/step - loss: 3.2479 - val_loss: 6.7963 - val_mrr: 0.1766 - val_top1_acc: 0.1184 - val_top5_acc: 0.2303 - val_top10_acc: 0.2859 - val_top20_acc: 0.3582
+Epoch 11/40
+
+Epoch 11: val_loss did not improve from 6.31746
+36/36 - 3s - 86ms/step - loss: 2.8768 - val_loss: 6.9907 - val_mrr: 0.1764 - val_top1_acc: 0.1163 - val_top5_acc: 0.2303 - val_top10_acc: 0.2939 - val_top20_acc: 0.3660
+Epoch 12/40
+
+Epoch 12: val_loss did not improve from 6.31746
+36/36 - 3s - 84ms/step - loss: 2.5567 - val_loss: 7.2115 - val_mrr: 0.1804 - val_top1_acc: 0.1209 - val_top5_acc: 0.2343 - val_top10_acc: 0.2943 - val_top20_acc: 0.3653
+Epoch 13/40
+
+Epoch 13: val_loss did not improve from 6.31746
+36/36 - 3s - 85ms/step - loss: 2.2193 - val_loss: 7.4629 - val_mrr: 0.1810 - val_top1_acc: 0.1205 - val_top5_acc: 0.2348 - val_top10_acc: 0.2932 - val_top20_acc: 0.3641
+Epoch 14/40
+
+Epoch 14: val_loss did not improve from 6.31746
+36/36 - 3s - 85ms/step - loss: 1.9582 - val_loss: 7.7842 - val_mrr: 0.1839 - val_top1_acc: 0.1251 - val_top5_acc: 0.2383 - val_top10_acc: 0.2959 - val_top20_acc: 0.3657
+Epoch 15/40
+
+Epoch 15: val_loss did not improve from 6.31746
+36/36 - 3s - 85ms/step - loss: 1.6791 - val_loss: 8.0745 - val_mrr: 0.1849 - val_top1_acc: 0.1268 - val_top5_acc: 0.2362 - val_top10_acc: 0.2947 - val_top20_acc: 0.3613
+Epoch 16/40
+
+Epoch 16: val_loss did not improve from 6.31746
+36/36 - 3s - 83ms/step - loss: 1.4731 - val_loss: 8.3425 - val_mrr: 0.1868 - val_top1_acc: 0.1295 - val_top5_acc: 0.2381 - val_top10_acc: 0.2934 - val_top20_acc: 0.3613
+Epoch 17/40
+
+Epoch 17: val_loss did not improve from 6.31746
+36/36 - 3s - 83ms/step - loss: 1.2742 - val_loss: 8.7306 - val_mrr: 0.1829 - val_top1_acc: 0.1232 - val_top5_acc: 0.2396 - val_top10_acc: 0.2955 - val_top20_acc: 0.3607
+Epoch 18/40
+
+Epoch 18: val_loss did not improve from 6.31746
+36/36 - 3s - 84ms/step - loss: 1.1248 - val_loss: 9.0052 - val_mrr: 0.1845 - val_top1_acc: 0.1253 - val_top5_acc: 0.2368 - val_top10_acc: 0.3018 - val_top20_acc: 0.3611
+Epoch 19/40
+
+Epoch 19: val_loss did not improve from 6.31746
+36/36 - 3s - 84ms/step - loss: 0.9734 - val_loss: 9.1606 - val_mrr: 0.1867 - val_top1_acc: 0.1276 - val_top5_acc: 0.2377 - val_top10_acc: 0.2947 - val_top20_acc: 0.3624
+Epoch 20/40
+
+Epoch 20: val_loss did not improve from 6.31746
+36/36 - 3s - 86ms/step - loss: 0.8714 - val_loss: 9.4333 - val_mrr: 0.1876 - val_top1_acc: 0.1289 - val_top5_acc: 0.2410 - val_top10_acc: 0.2972 - val_top20_acc: 0.3618
+Epoch 21/40
+
+Epoch 21: val_loss did not improve from 6.31746
+36/36 - 3s - 85ms/step - loss: 0.7749 - val_loss: 9.7058 - val_mrr: 0.1855 - val_top1_acc: 0.1266 - val_top5_acc: 0.2404 - val_top10_acc: 0.2962 - val_top20_acc: 0.3597
+Epoch 22/40
+
+Epoch 22: val_loss did not improve from 6.31746
+36/36 - 3s - 85ms/step - loss: 0.7035 - val_loss: 9.8828 - val_mrr: 0.1859 - val_top1_acc: 0.1277 - val_top5_acc: 0.2375 - val_top10_acc: 0.2941 - val_top20_acc: 0.3584
+Epoch 23/40
+
+Epoch 23: val_loss did not improve from 6.31746
+36/36 - 3s - 85ms/step - loss: 0.6380 - val_loss: 10.0418 - val_mrr: 0.1829 - val_top1_acc: 0.1237 - val_top5_acc: 0.2358 - val_top10_acc: 0.2962 - val_top20_acc: 0.3576
+Epoch 24/40
+
+Epoch 24: val_loss did not improve from 6.31746
+36/36 - 3s - 84ms/step - loss: 0.5853 - val_loss: 10.2374 - val_mrr: 0.1843 - val_top1_acc: 0.1247 - val_top5_acc: 0.2377 - val_top10_acc: 0.2934 - val_top20_acc: 0.3580
+Epoch 25/40
+
+Epoch 25: val_loss did not improve from 6.31746
+36/36 - 3s - 85ms/step - loss: 0.5473 - val_loss: 10.4352 - val_mrr: 0.1856 - val_top1_acc: 0.1287 - val_top5_acc: 0.2375 - val_top10_acc: 0.2920 - val_top20_acc: 0.3593
+Epoch 26/40
+
+Epoch 26: val_loss did not improve from 6.31746
+36/36 - 3s - 87ms/step - loss: 0.5057 - val_loss: 10.5845 - val_mrr: 0.1857 - val_top1_acc: 0.1279 - val_top5_acc: 0.2369 - val_top10_acc: 0.2957 - val_top20_acc: 0.3595
+Epoch 27/40
+
+Epoch 27: val_loss did not improve from 6.31746
+36/36 - 3s - 83ms/step - loss: 0.4776 - val_loss: 10.5976 - val_mrr: 0.1849 - val_top1_acc: 0.1285 - val_top5_acc: 0.2345 - val_top10_acc: 0.2939 - val_top20_acc: 0.3590
+Epoch 28/40
+
+Epoch 28: val_loss did not improve from 6.31746
+36/36 - 3s - 85ms/step - loss: 0.4429 - val_loss: 10.7976 - val_mrr: 0.1861 - val_top1_acc: 0.1276 - val_top5_acc: 0.2402 - val_top10_acc: 0.2960 - val_top20_acc: 0.3561
+Epoch 29/40
+
+Epoch 29: val_loss did not improve from 6.31746
+36/36 - 3s - 86ms/step - loss: 0.4175 - val_loss: 10.8061 - val_mrr: 0.1879 - val_top1_acc: 0.1302 - val_top5_acc: 0.2394 - val_top10_acc: 0.2945 - val_top20_acc: 0.3580
+Epoch 30/40
+
+Epoch 30: val_loss did not improve from 6.31746
+36/36 - 3s - 88ms/step - loss: 0.4021 - val_loss: 10.9810 - val_mrr: 0.1874 - val_top1_acc: 0.1300 - val_top5_acc: 0.2412 - val_top10_acc: 0.2957 - val_top20_acc: 0.3601
+Epoch 31/40
+
+Epoch 31: val_loss did not improve from 6.31746
+36/36 - 3s - 85ms/step - loss: 0.3757 - val_loss: 11.0439 - val_mrr: 0.1862 - val_top1_acc: 0.1277 - val_top5_acc: 0.2392 - val_top10_acc: 0.2959 - val_top20_acc: 0.3582
+Epoch 32/40
+
+Epoch 32: val_loss did not improve from 6.31746
+36/36 - 3s - 86ms/step - loss: 0.3579 - val_loss: 11.0659 - val_mrr: 0.1868 - val_top1_acc: 0.1277 - val_top5_acc: 0.2379 - val_top10_acc: 0.2955 - val_top20_acc: 0.3576
+Epoch 33/40
+
+Epoch 33: val_loss did not improve from 6.31746
+36/36 - 3s - 86ms/step - loss: 0.3443 - val_loss: 11.1412 - val_mrr: 0.1854 - val_top1_acc: 0.1260 - val_top5_acc: 0.2387 - val_top10_acc: 0.2934 - val_top20_acc: 0.3597
+Epoch 34/40
+
+Epoch 34: val_loss did not improve from 6.31746
+36/36 - 3s - 85ms/step - loss: 0.3322 - val_loss: 11.1394 - val_mrr: 0.1870 - val_top1_acc: 0.1304 - val_top5_acc: 0.2352 - val_top10_acc: 0.2943 - val_top20_acc: 0.3597
+Epoch 35/40
+
+Epoch 35: val_loss did not improve from 6.31746
+36/36 - 3s - 93ms/step - loss: 0.3247 - val_loss: 11.3216 - val_mrr: 0.1858 - val_top1_acc: 0.1279 - val_top5_acc: 0.2337 - val_top10_acc: 0.2949 - val_top20_acc: 0.3607
+Epoch 36/40
+
+Epoch 36: val_loss did not improve from 6.31746
+36/36 - 4s - 124ms/step - loss: 0.3085 - val_loss: 11.3853 - val_mrr: 0.1837 - val_top1_acc: 0.1253 - val_top5_acc: 0.2343 - val_top10_acc: 0.2930 - val_top20_acc: 0.3567
+Epoch 37/40
+
+Epoch 37: val_loss did not improve from 6.31746
+36/36 - 4s - 111ms/step - loss: 0.2936 - val_loss: 11.5051 - val_mrr: 0.1877 - val_top1_acc: 0.1302 - val_top5_acc: 0.2396 - val_top10_acc: 0.2957 - val_top20_acc: 0.3614
+Epoch 38/40
+
+Epoch 38: val_loss did not improve from 6.31746
+36/36 - 27s - 756ms/step - loss: 0.2862 - val_loss: 11.3848 - val_mrr: 0.1879 - val_top1_acc: 0.1308 - val_top5_acc: 0.2385 - val_top10_acc: 0.2920 - val_top20_acc: 0.3592
+Epoch 39/40
+
+Epoch 39: val_loss did not improve from 6.31746
+36/36 - 3s - 92ms/step - loss: 0.2815 - val_loss: 11.5187 - val_mrr: 0.1864 - val_top1_acc: 0.1289 - val_top5_acc: 0.2366 - val_top10_acc: 0.2915 - val_top20_acc: 0.3593
+Epoch 40/40
+
+Epoch 40: val_loss did not improve from 6.31746
+36/36 - 3s - 88ms/step - loss: 0.2695 - val_loss: 11.5472 - val_mrr: 0.1846 - val_top1_acc: 0.1258 - val_top5_acc: 0.2352 - val_top10_acc: 0.2943 - val_top20_acc: 0.3603

@@ -1,18 +1,16 @@
-# GraPhens: The Intuitive Way to Build Phenotype Graphs
+# GraPhens
 
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## What is GraPhens?
 
-GraPhens transforms phenotype data into powerful graph representations for machine learning—with almost no learning curve. Whether you're studying rare genetic disorders or exploring phenotype relationships, GraPhens makes building graph neural networks (GNNs) as simple as a few lines of code.
+GraPhens is a phenotype graph construction library and training pipeline. It builds graphs from HPO phenotype sets and supports dataset generation and model training in the current Keras+JAX stack.
 
-## Why You'll Love It
+## Project Status
 
-- **Just Works™:** Reasonable defaults handle the complex stuff behind the scenes
-- **Speaks Your Language:** Methods named for what they do, not how they do it
-- **Grows With You:** Simple by default, powerful when needed
+GraPhens uses Keras+JAX for dataset generation and model training, with fixed-shape NPZ graph data consumed through Keras data sequences.
 
-## Quick Start (30 Seconds!)
+## Quick Start
 
 ```python
 from graphens import GraPhens
@@ -21,15 +19,13 @@ from graphens import GraPhens
 graphens = GraPhens()
 graph = graphens.create_graph_from_phenotypes(["HP:0001250", "HP:0001251"])  # Seizure phenotypes
 
-# Export for machine learning
-pyg_graph = graphens.export_graph(graph, format="pytorch")
-
-# That's it! Ready for your GNN model
+# Export to a format you need
+graph_json = graphens.export_graph(graph, format="json")
 ```
 
-## Key Features
+## Core Capabilities
 
-### 1. Find Phenotypes Without Memorizing IDs
+### Phenotype lookup
 
 ```python
 # Search for phenotypes by keyword
@@ -38,7 +34,7 @@ for phenotype in seizure_phenotypes[:3]:
     print(f"{phenotype.id} - {phenotype.name}")
 ```
 
-### 2. Customize With a Fluent Interface
+### Configurable graph pipeline
 
 ```python
 # Chain methods for clear, readable configuration
@@ -52,7 +48,7 @@ graph = graphens.create_graph_from_phenotypes(phenotype_ids)
 graphens.visualize(graph=graph, phenotypes=graph.metadata["phenotypes"])
 ```
 
-### 3. Use Pre-computed Embeddings
+### Pre-computed embeddings
 
 ```python
 # Load biomedical embeddings directly from file
@@ -62,42 +58,27 @@ graphens = GraPhens().with_lookup_embeddings("data/embeddings/hpo_biobert.pkl")
 graph = graphens.create_graph_from_phenotypes(phenotype_ids)
 ```
 
-### 4. Export to Any ML Framework
+### Export formats
 
 ```python
-# PyTorch Geometric (most common for GNNs)
-pyg_graph = graphens.export_graph(graph, format="pytorch")
-
-# NetworkX (for general graph analysis)
+# NetworkX
 nx_graph = graphens.export_graph(graph, format="networkx")
 
-# JSON (for sharing/storage)
+# JSON
 graphens.export_graph(graph, format="json", output_path="graph.json")
-# Other formats like TensorFlow also available
 ```
 
-### 5. Efficient Batch Processing for ML Training
+### Multi-patient graph creation
 
 ```python
-# Process multiple patients at once (40-70x faster)
 patient_data = {
     "patient_1": ["HP:0001250", "HP:0002066"],
     "patient_2": ["HP:0000407", "HP:0001263"],
     # ... more patients
 }
 
-# Create all graphs efficiently
+# Create graphs for multiple patients
 patient_graphs = graphens.create_graphs_from_multiple_patients(patient_data)
-
-# Export as a single batched graph for efficient PyTorch training
-batched_graph = graphens.export_graph(patient_graphs, format="pytorch", batch=True)
-
-# Train your PyTorch Geometric model with the batched graph
-# (See full example for model definition)
-model = GNN() 
-node_embeddings = model(batched_graph) # Processes entire batch
-
-# Results maintain patient ID mapping (batched_graph.patient_ids, etc.)
 ```
 
 ## Installation
@@ -108,22 +89,43 @@ pip install graphens
 
 ## Dataset Generation (Keras + JAX)
 
-The current dataset generation path for model training is:
+Current training dataset path:
 
 `Simulation JSON -> NPZ shards -> Keras/JAX loader`
 
-- Generate dataset:
-  - `python -m src.simulation.phenotype_simulation.create_hpo_dataset --input <simulated_json> --output-dir <dataset_dir> --shard-size 2048 --create-splits`
-- Consume dataset:
+- Dataset builder: `src/simulation/phenotype_simulation/create_hpo_dataset.py`
+  - Two-pass process: collect `max_nodes/max_edges` statistics, then write padded NPZ shards.
+- NPZ shard writer: `src/simulation/phenotype_simulation/jax_npz_writer.py`
+  - Stores fixed-shape arrays and masks: `x`, `node_mask`, `edge_index`, `edge_mask`, `y`.
+- Dataset loaders:
   - `training/datasets/jax_npz_graph_dataset.py`
-- Validate runtime stack:
-  - `KERAS_BACKEND=jax python scripts/validate_jax_stack.py`
+  - `training/datasets/keras_npz_sequence.py`
 
-See `docs/dataset_keras_jax.md` for schema, workflow, and module dependencies.
+Example command:
+
+`python -m src.simulation.phenotype_simulation.create_hpo_dataset --input <simulated_json> --output-dir <dataset_dir> --shard-size 2048 --create-splits`
+
+Validate runtime stack:
+
+`KERAS_BACKEND=jax python scripts/validate_jax_stack.py`
+
+See `docs/dataset_keras_jax.md` for schema, workflow, and dependencies.
+
+## Keras+JAX Training Notes
+
+- Graph samples are pre-sharded as fixed-shape NPZ tensors and consumed via Keras `Sequence` for `model.fit`.
+- Batches use static padded tensors with explicit masks (`node_mask`, `edge_mask`) so JAX/XLA can compile stable programs.
+
+## TPU Performance Tips
+
+- Set backend to JAX: `export KERAS_BACKEND=jax`.
+- Use larger `--shard-size` and training `batch_size` when memory allows to improve device utilization.
+- Keep graph tensors fixed-shape (already done via NPZ + masks) so XLA can compile stable TPU programs.
+- Avoid frequent shape changes between runs; keep `max_nodes`, `max_edges`, and model config stable for better compile reuse.
 
 ## Design Philosophy
 
-GraPhens prioritizes usability and intuitive design, inspired by principles from Don Norman's "The Design of Everyday Things". It aims to be self-explanatory with sensible defaults, allowing complexity to be revealed progressively.
+GraPhens prioritizes clear APIs, reproducible preprocessing, and explicit training data contracts across the graph construction and model training pipeline.
 
 ## Learn More
 
@@ -135,9 +137,7 @@ from examples import quick_start, custom_embeddings, visualization_demo
 help(GraPhens.create_graph_from_phenotypes)
 ```
 
-## Need Advanced Features?
-
-The simple facade hides a powerful, extensible system. When you need more:
+## Advanced Configuration
 
 ```python
 # Custom embedding models
@@ -148,6 +148,6 @@ graphens.save_config("my_config.json")
 loaded_graphens = GraPhens().with_config_from_file("my_config.json")
 ```
 
-## Get Started Now
+## Examples
 
-Check out the [examples directory](src/examples/) for complete working examples! 
+See the [examples directory](src/examples/) for end-to-end usage examples.
